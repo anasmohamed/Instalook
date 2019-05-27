@@ -15,6 +15,9 @@
 		CC561C47229BDBEC0048EB86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC561C45229BDBEC0048EB86 /* LaunchScreen.storyboard */; };
 		CC561C52229BDBEC0048EB86 /* InstalookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C51229BDBEC0048EB86 /* InstalookTests.swift */; };
 		CC561C5D229BDBEC0048EB86 /* InstalookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */; };
+		CC561C80229BFB720048EB86 /* SalonInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C7F229BFB720048EB86 /* SalonInteractor.swift */; };
+		CC561C82229BFBE00048EB86 /* SalonVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C81229BFBE00048EB86 /* SalonVCPresenter.swift */; };
+		CC561C84229C04DD0048EB86 /* APICallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C83229C04DD0048EB86 /* APICallManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		CC561C58229BDBEC0048EB86 /* InstalookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstalookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalookUITests.swift; sourceTree = "<group>"; };
 		CC561C5E229BDBEC0048EB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC561C7F229BFB720048EB86 /* SalonInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonInteractor.swift; sourceTree = "<group>"; };
+		CC561C81229BFBE00048EB86 /* SalonVCPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonVCPresenter.swift; sourceTree = "<group>"; };
+		CC561C83229C04DD0048EB86 /* APICallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICallManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		CC561C38229BDBEC0048EB86 /* Instalook */ = {
 			isa = PBXGroup;
 			children = (
+				CC561C70229BE30C0048EB86 /* Model */,
 				CC561C6E229BDCC40048EB86 /* Scenes */,
 				CC561C6D229BDC9A0048EB86 /* Storyboards */,
 				CC561C6C229BDC8C0048EB86 /* Core */,
@@ -163,6 +170,8 @@
 		CC561C6E229BDCC40048EB86 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CC561C7E229BF98B0048EB86 /* Interactor */,
+				CC561C7D229BF9780048EB86 /* Presenter */,
 				CC561C6F229BDD040048EB86 /* SalonProfile */,
 			);
 			name = Scenes;
@@ -174,6 +183,38 @@
 				CC561C3B229BDBEC0048EB86 /* ViewController.swift */,
 			);
 			name = SalonProfile;
+			sourceTree = "<group>";
+		};
+		CC561C70229BE30C0048EB86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CC561C7D229BF9780048EB86 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CC561C81229BFBE00048EB86 /* SalonVCPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		CC561C7E229BF98B0048EB86 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CC561C85229C06B70048EB86 /* API */,
+				CC561C7F229BFB720048EB86 /* SalonInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		CC561C85229C06B70048EB86 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CC561C83229C04DD0048EB86 /* APICallManager.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,8 +351,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC561C80229BFB720048EB86 /* SalonInteractor.swift in Sources */,
+				CC561C82229BFBE00048EB86 /* SalonVCPresenter.swift in Sources */,
 				CC561C42229BDBEC0048EB86 /* Instalook.xcdatamodeld in Sources */,
 				CC561C3C229BDBEC0048EB86 /* ViewController.swift in Sources */,
+				CC561C84229C04DD0048EB86 /* APICallManager.swift in Sources */,
 				CC561C3A229BDBEC0048EB86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,6 +599,7 @@
 				CC561C63229BDBEC0048EB86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC561C64229BDBEC0048EB86 /* Build configuration list for PBXNativeTarget "InstalookTests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +608,7 @@
 				CC561C66229BDBEC0048EB86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC561C67229BDBEC0048EB86 /* Build configuration list for PBXNativeTarget "InstalookUITests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +617,7 @@
 				CC561C69229BDBEC0048EB86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
