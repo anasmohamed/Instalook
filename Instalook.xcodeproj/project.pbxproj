@@ -99,12 +99,11 @@
 		CC561C38229BDBEC0048EB86 /* Instalook */ = {
 			isa = PBXGroup;
 			children = (
-				CC561C39229BDBEC0048EB86 /* AppDelegate.swift */,
-				CC561C3B229BDBEC0048EB86 /* ViewController.swift */,
-				CC561C3D229BDBEC0048EB86 /* Main.storyboard */,
-				CC561C43229BDBEC0048EB86 /* Assets.xcassets */,
-				CC561C45229BDBEC0048EB86 /* LaunchScreen.storyboard */,
-				CC561C48229BDBEC0048EB86 /* Info.plist */,
+				CC561C6E229BDCC40048EB86 /* Scenes */,
+				CC561C6D229BDC9A0048EB86 /* Storyboards */,
+				CC561C6C229BDC8C0048EB86 /* Core */,
+				CC561C6B229BDC1A0048EB86 /* Resources */,
+				CC561C6A229BDC0D0048EB86 /* Configuration */,
 				CC561C40229BDBEC0048EB86 /* Instalook.xcdatamodeld */,
 			);
 			path = Instalook;
@@ -126,6 +125,55 @@
 				CC561C5E229BDBEC0048EB86 /* Info.plist */,
 			);
 			path = InstalookUITests;
+			sourceTree = "<group>";
+		};
+		CC561C6A229BDC0D0048EB86 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CC561C48229BDBEC0048EB86 /* Info.plist */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		CC561C6B229BDC1A0048EB86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC561C43229BDBEC0048EB86 /* Assets.xcassets */,
+				CC561C45229BDBEC0048EB86 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CC561C6C229BDC8C0048EB86 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CC561C39229BDBEC0048EB86 /* AppDelegate.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		CC561C6D229BDC9A0048EB86 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CC561C3D229BDBEC0048EB86 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CC561C6E229BDCC40048EB86 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CC561C6F229BDD040048EB86 /* SalonProfile */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		CC561C6F229BDD040048EB86 /* SalonProfile */ = {
+			isa = PBXGroup;
+			children = (
+				CC561C3B229BDBEC0048EB86 /* ViewController.swift */,
+			);
+			name = SalonProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
