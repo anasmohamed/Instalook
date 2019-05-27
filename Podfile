@@ -17,4 +17,7 @@ target 'Instalook' do
     # Pods for testing
   end
 
+  pod 'Cosmos', '~> 11.0'
+
+
 end
