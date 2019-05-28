@@ -22,6 +22,10 @@
 		CC561C47229BDBEC0048EB86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC561C45229BDBEC0048EB86 /* LaunchScreen.storyboard */; };
 		CC561C52229BDBEC0048EB86 /* InstalookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C51229BDBEC0048EB86 /* InstalookTests.swift */; };
 		CC561C5D229BDBEC0048EB86 /* InstalookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */; };
+		CCD918E2229C196C0024A1D0 /* SalonServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD918E0229C196C0024A1D0 /* SalonServiceVC.swift */; };
+		CCD918E3229C196C0024A1D0 /* SalonServiceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD918E1229C196C0024A1D0 /* SalonServiceVC.xib */; };
+		CCD918E7229C19D20024A1D0 /* SalonGiftsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD918E5229C19D20024A1D0 /* SalonGiftsVC.swift */; };
+		CCD918E8229C19D20024A1D0 /* SalonGiftsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD918E6229C19D20024A1D0 /* SalonGiftsVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		CC561C58229BDBEC0048EB86 /* InstalookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstalookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalookUITests.swift; sourceTree = "<group>"; };
 		CC561C5E229BDBEC0048EB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD918E0229C196C0024A1D0 /* SalonServiceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonServiceVC.swift; sourceTree = "<group>"; };
+		CCD918E1229C196C0024A1D0 /* SalonServiceVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalonServiceVC.xib; sourceTree = "<group>"; };
+		CCD918E5229C19D20024A1D0 /* SalonGiftsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonGiftsVC.swift; sourceTree = "<group>"; };
+		CCD918E6229C19D20024A1D0 /* SalonGiftsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalonGiftsVC.xib; sourceTree = "<group>"; };
 		D51231ADBEA24F073F386B4B /* Pods_InstalookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstalookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6314E582C9C69F992F56D82 /* Pods_Instalook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instalook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,7 +117,6 @@
 				0C6EA7713356BECD072E7999 /* Pods-InstalookUITests.debug.xcconfig */,
 				BA7F5AEF1BE2C4AA66DF9F55 /* Pods-InstalookUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -220,6 +227,8 @@
 		CC561C6E229BDCC40048EB86 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CCD918E4229C19AF0024A1D0 /* SalonGifts */,
+				CCD918DF229C193A0024A1D0 /* SalonService */,
 				CC503B0D229BEF9100173A09 /* SalonImagesCollectionViewCells */,
 				CC561C6F229BDD040048EB86 /* SalonProfile */,
 			);
@@ -233,6 +242,24 @@
 				CC503B12229BF1E300173A09 /* SalonProfileVC+ImagesCollectionView.swift */,
 			);
 			name = SalonProfile;
+			sourceTree = "<group>";
+		};
+		CCD918DF229C193A0024A1D0 /* SalonService */ = {
+			isa = PBXGroup;
+			children = (
+				CCD918E0229C196C0024A1D0 /* SalonServiceVC.swift */,
+				CCD918E1229C196C0024A1D0 /* SalonServiceVC.xib */,
+			);
+			name = SalonService;
+			sourceTree = "<group>";
+		};
+		CCD918E4229C19AF0024A1D0 /* SalonGifts */ = {
+			isa = PBXGroup;
+			children = (
+				CCD918E5229C19D20024A1D0 /* SalonGiftsVC.swift */,
+				CCD918E6229C19D20024A1D0 /* SalonGiftsVC.xib */,
+			);
+			name = SalonGifts;
 			sourceTree = "<group>";
 		};
 		EBAF3AE2A4E62F8A77107F31 /* Frameworks */ = {
@@ -358,7 +385,9 @@
 			files = (
 				CC503B11229BF00900173A09 /* SalonImagesCellCollectionViewCell.xib in Resources */,
 				CC561C47229BDBEC0048EB86 /* LaunchScreen.storyboard in Resources */,
+				CCD918E3229C196C0024A1D0 /* SalonServiceVC.xib in Resources */,
 				CC561C44229BDBEC0048EB86 /* Assets.xcassets in Resources */,
+				CCD918E8229C19D20024A1D0 /* SalonGiftsVC.xib in Resources */,
 				CC561C3F229BDBEC0048EB86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,15 +414,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Instalook/Pods-Instalook-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 			);
@@ -407,15 +432,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-InstalookUITests-checkManifestLockResult.txt",
 			);
@@ -429,15 +450,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Instalook-checkManifestLockResult.txt",
 			);
@@ -451,15 +468,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-InstalookTests-checkManifestLockResult.txt",
 			);
@@ -475,7 +488,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD918E7229C19D20024A1D0 /* SalonGiftsVC.swift in Sources */,
 				CC503B13229BF1E300173A09 /* SalonProfileVC+ImagesCollectionView.swift in Sources */,
+				CCD918E2229C196C0024A1D0 /* SalonServiceVC.swift in Sources */,
 				CC503B10229BF00900173A09 /* SalonImagesCellCollectionViewCell.swift in Sources */,
 				CC561C42229BDBEC0048EB86 /* Instalook.xcdatamodeld in Sources */,
 				CC561C3C229BDBEC0048EB86 /* SalonProfileVC.swift in Sources */,

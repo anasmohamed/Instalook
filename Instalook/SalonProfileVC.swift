@@ -12,18 +12,28 @@ let reuseIdentifier = "SalonImageCell"
 
 class SalonProfileVC: UIViewController {
     @IBOutlet weak var salonImagesCollectionView: UICollectionView!
-
     @IBOutlet weak var salonFollowBtn: UIButton!
     @IBOutlet weak var salonProfileImage: UIImageView!
+    @IBOutlet weak var viewsContainer: UIView!
+    var views :[UIView]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        views = [UIView]()
         setupCollectionView()
         Utils.roundBtn(button: salonFollowBtn)
         Utils.roundImage(imageView: salonProfileImage)
-        
-        
+        views.append(SalonServiceVC().view)
+        views.append(SalonGiftsVC().view)
+        for v in views{
+            viewsContainer.addSubview(v)
+        }
+        viewsContainer.bringSubview(toFront: views[0])
     }
 
+    @IBAction func switchViews(_ sender: UISegmentedControl) {
+        self.viewsContainer.bringSubview(toFront: views[sender.selectedSegmentIndex])
+    }
 
 
 }
