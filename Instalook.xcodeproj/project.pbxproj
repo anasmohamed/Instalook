@@ -10,6 +10,10 @@
 		3E10CE852805222916E17BAE /* Pods_InstalookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51231ADBEA24F073F386B4B /* Pods_InstalookUITests.framework */; };
 		49888B667A515F0214E3CCEE /* Pods_Instalook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6314E582C9C69F992F56D82 /* Pods_Instalook.framework */; };
 		AB506B7CEAEE2B79F779C429 /* Pods_InstalookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CC501214783B2DAB07555F /* Pods_InstalookTests.framework */; };
+		CC0162D4229C281100F624AF /* SalonProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0162D3229C281100F624AF /* SalonProfileInteractor.swift */; };
+		CC0162D6229C286400F624AF /* APICallManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0162D5229C286400F624AF /* APICallManager .swift */; };
+		CC0162D8229C2C4E00F624AF /* SalonProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0162D7229C2C4E00F624AF /* SalonProfileModel.swift */; };
+		CC0162DB229C361900F624AF /* SalonProfilePresenter .swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0162DA229C361900F624AF /* SalonProfilePresenter .swift */; };
 		CC0249BB229C01CD00921074 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0249BA229C01CD00921074 /* Utils.swift */; };
 		CC503B10229BF00900173A09 /* SalonImagesCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC503B0E229BF00900173A09 /* SalonImagesCellCollectionViewCell.swift */; };
 		CC503B11229BF00900173A09 /* SalonImagesCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC503B0F229BF00900173A09 /* SalonImagesCellCollectionViewCell.xib */; };
@@ -26,6 +30,8 @@
 		CCD918E3229C196C0024A1D0 /* SalonServiceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD918E1229C196C0024A1D0 /* SalonServiceVC.xib */; };
 		CCD918E7229C19D20024A1D0 /* SalonGiftsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD918E5229C19D20024A1D0 /* SalonGiftsVC.swift */; };
 		CCD918E8229C19D20024A1D0 /* SalonGiftsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD918E6229C19D20024A1D0 /* SalonGiftsVC.xib */; };
+		CCC630A8229D3B0D00E2EB50 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC630A7229D3B0D00E2EB50 /* PeopleModel.swift */; };
+		CCC630AA229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC630A9229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,10 @@
 		BA7F5AEF1BE2C4AA66DF9F55 /* Pods-InstalookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstalookUITests.release.xcconfig"; path = "Target Support Files/Pods-InstalookUITests/Pods-InstalookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CB6BEEEDCEB0C5E14AE28A8D /* Pods-Instalook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instalook.release.xcconfig"; path = "Target Support Files/Pods-Instalook/Pods-Instalook.release.xcconfig"; sourceTree = "<group>"; };
 		CBDE5DD142DA2524878892B3 /* Pods-InstalookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstalookTests.release.xcconfig"; path = "Target Support Files/Pods-InstalookTests/Pods-InstalookTests.release.xcconfig"; sourceTree = "<group>"; };
+		CC0162D3229C281100F624AF /* SalonProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonProfileInteractor.swift; sourceTree = "<group>"; };
+		CC0162D5229C286400F624AF /* APICallManager .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APICallManager .swift"; sourceTree = "<group>"; };
+		CC0162D7229C2C4E00F624AF /* SalonProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonProfileModel.swift; sourceTree = "<group>"; };
+		CC0162DA229C361900F624AF /* SalonProfilePresenter .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SalonProfilePresenter .swift"; sourceTree = "<group>"; };
 		CC0249BA229C01CD00921074 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CC503B0E229BF00900173A09 /* SalonImagesCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonImagesCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		CC503B0F229BF00900173A09 /* SalonImagesCellCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalonImagesCellCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -75,6 +85,8 @@
 		CCD918E1229C196C0024A1D0 /* SalonServiceVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalonServiceVC.xib; sourceTree = "<group>"; };
 		CCD918E5229C19D20024A1D0 /* SalonGiftsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonGiftsVC.swift; sourceTree = "<group>"; };
 		CCD918E6229C19D20024A1D0 /* SalonGiftsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalonGiftsVC.xib; sourceTree = "<group>"; };
+		CCC630A7229D3B0D00E2EB50 /* PeopleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		CCC630A9229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SalonProfileVC+PresenterDelegate.swift"; sourceTree = "<group>"; };
 		D51231ADBEA24F073F386B4B /* Pods_InstalookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstalookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6314E582C9C69F992F56D82 /* Pods_Instalook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instalook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,6 +132,40 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CC0162D0229C277100F624AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC0162D7229C2C4E00F624AF /* SalonProfileModel.swift */,
+				CCC630A7229D3B0D00E2EB50 /* PeopleModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CC0162D1229C27D100F624AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CC0162D3229C281100F624AF /* SalonProfileInteractor.swift */,
+				CC0162D2229C27DE00F624AF /* API */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		CC0162D2229C27DE00F624AF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CC0162D5229C286400F624AF /* APICallManager .swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		CC0162D9229C357600F624AF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CC0162DA229C361900F624AF /* SalonProfilePresenter .swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
 		CC0249B9229C019300921074 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +208,7 @@
 		CC561C38229BDBEC0048EB86 /* Instalook */ = {
 			isa = PBXGroup;
 			children = (
+				CC0162D0229C277100F624AF /* Model */,
 				CC0249B9229C019300921074 /* Utils */,
 				CC561C6E229BDCC40048EB86 /* Scenes */,
 				CC561C6D229BDC9A0048EB86 /* Storyboards */,
@@ -229,6 +276,8 @@
 			children = (
 				CCD918E4229C19AF0024A1D0 /* SalonGifts */,
 				CCD918DF229C193A0024A1D0 /* SalonService */,
+				CC0162D9229C357600F624AF /* Presenter */,
+				CC0162D1229C27D100F624AF /* Interactor */,
 				CC503B0D229BEF9100173A09 /* SalonImagesCollectionViewCells */,
 				CC561C6F229BDD040048EB86 /* SalonProfile */,
 			);
@@ -240,6 +289,7 @@
 			children = (
 				CC561C3B229BDBEC0048EB86 /* SalonProfileVC.swift */,
 				CC503B12229BF1E300173A09 /* SalonProfileVC+ImagesCollectionView.swift */,
+				CCC630A9229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift */,
 			);
 			name = SalonProfile;
 			sourceTree = "<group>";
@@ -416,11 +466,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Instalook/Pods-Instalook-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -491,10 +547,17 @@
 				CCD918E7229C19D20024A1D0 /* SalonGiftsVC.swift in Sources */,
 				CC503B13229BF1E300173A09 /* SalonProfileVC+ImagesCollectionView.swift in Sources */,
 				CCD918E2229C196C0024A1D0 /* SalonServiceVC.swift in Sources */,
+				CCC630AA229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift in Sources */,
+				CC0162DB229C361900F624AF /* SalonProfilePresenter .swift in Sources */,
+				CC503B13229BF1E300173A09 /* SalonProfileVC+ImagesCollectionView.swift in Sources */,
+				CC0162D6229C286400F624AF /* APICallManager .swift in Sources */,
 				CC503B10229BF00900173A09 /* SalonImagesCellCollectionViewCell.swift in Sources */,
+				CC0162D4229C281100F624AF /* SalonProfileInteractor.swift in Sources */,
+				CC0162D8229C2C4E00F624AF /* SalonProfileModel.swift in Sources */,
 				CC561C42229BDBEC0048EB86 /* Instalook.xcdatamodeld in Sources */,
 				CC561C3C229BDBEC0048EB86 /* SalonProfileVC.swift in Sources */,
 				CC561C3A229BDBEC0048EB86 /* AppDelegate.swift in Sources */,
+				CCC630A8229D3B0D00E2EB50 /* PeopleModel.swift in Sources */,
 				CC0249BB229C01CD00921074 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,17 @@ let reuseIdentifier = "SalonImageCell"
 
 class SalonProfileVC: UIViewController {
     @IBOutlet weak var salonImagesCollectionView: UICollectionView!
+    
+   // var presenter: SalonProfileVCPresenter!
+   /* let presenter = SalonProfileVCPresenter(s: SalonProfileInteractor)
+    var peopleToDisplay = [PeopleViewData]()
+    
+    */
+    
+    let presenter = SalonProfilePresenter(view: self as! SalonView)
+    var peopleToDisplay = [PeopleViewData]()
+    
+
     @IBOutlet weak var salonFollowBtn: UIButton!
     @IBOutlet weak var salonProfileImage: UIImageView!
     @IBOutlet weak var viewsContainer: UIView!
@@ -29,6 +40,9 @@ class SalonProfileVC: UIViewController {
             viewsContainer.addSubview(v)
         }
         viewsContainer.bringSubview(toFront: views[0])
+        
+        //presenter.attachView(view: self as! SalonView)
+        presenter.getPeople()
     }
 
     @IBAction func switchViews(_ sender: UISegmentedControl) {
