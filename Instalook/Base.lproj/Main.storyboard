@@ -24,22 +24,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barber  salon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHc-ii-SYR">
-                                <rect key="frame" x="155.33333333333331" y="40" width="103.33333333333331" height="36.666666666666671"/>
+                                <rect key="frame" x="155" y="40" width="104" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dtrdutdtyfuytfuyfuyt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tX8-vF-Kgl">
-                                <rect key="frame" x="155.33333333333331" y="84.666666666666686" width="103.33333333333331" height="66.333333333333314"/>
+                                <rect key="frame" x="155" y="85" width="104" height="66"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4gZ-JO-7E1">
-                                <rect key="frame" x="64.333333333333343" y="40.000000000000007" width="83.000000000000028" height="73.666666666666686"/>
+                                <rect key="frame" x="64" y="40" width="83" height="74"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqJ-ns-4nl">
-                                <rect key="frame" x="278.66666666666669" y="33" width="83" height="51.666666666666671"/>
+                                <rect key="frame" x="279" y="33" width="83" height="52"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Follow">
@@ -62,7 +62,7 @@
                                 </subviews>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QeP-RE-eaa">
-                                <rect key="frame" x="20" y="194.33333333333337" width="374" height="110.66666666666663"/>
+                                <rect key="frame" x="20" y="194.33333333333331" width="374" height="110.99999999999994"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MPC-Zt-QEt">
                                     <size key="itemSize" width="116" height="105"/>
@@ -73,7 +73,7 @@
                                 <cells/>
                             </collectionView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gow-SC-R7A">
-                                <rect key="frame" x="20" y="313" width="374" height="45"/>
+                                <rect key="frame" x="20" y="313.33333333333331" width="374" height="45"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
