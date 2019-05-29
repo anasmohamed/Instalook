@@ -15,13 +15,14 @@ class SalonProfileVC: UIViewController {
     
     @IBOutlet weak var salonImagesCollectionView: UICollectionView!
     let presenter = SalonProfilePresenter()
-    var peopleToDisplay = [PeopleViewData]()
-    
-
+    var salonToDisplay = [SalonViewData]()
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var salonNameLbl: UILabel!
     @IBOutlet weak var salonFollowBtn: UIButton!
     @IBOutlet weak var salonProfileImage: UIImageView!
     @IBOutlet weak var viewsContainer: UIView!
     var views :[UIView]!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +37,13 @@ class SalonProfileVC: UIViewController {
         }
         viewsContainer.bringSubview(toFront: views[0])
         
+        activityIndicator?.hidesWhenStopped = true
+        
+        presenter.attachView(view: self)
+        presenter.getSalonData()
+        
         //presenter.attachView(view: self as! SalonView)
-        presenter.getPeople()
+      //  presenter.getPeople()
     }
 
     @IBAction func switchViews(_ sender: UISegmentedControl) {

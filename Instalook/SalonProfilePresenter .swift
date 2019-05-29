@@ -7,11 +7,62 @@
 //
 
 import Foundation
+/*
+ 
+ struct PeopleViewData{
+ let name: String
+ let email: String
+ }
+ 
+ protocol PeopleView: NSObjectProtocol {
+ func startLoading()
+ func finishLoading()
+ func setPeople(people: [PeopleViewData])
+ func setEmptyPeople()
+ }
+ 
+ class PeoplePresenter {
+ private let peopleService:PeopleService
+ weak private var peopleView : PeopleView?
+ 
+ init(peopleService:PeopleService) {
+ self.peopleService = peopleService
+ }
+ 
+ func attachView(view:PeopleView) {
+ peopleView = view
+ }
+ 
+ func detachView() {
+ peopleView = nil
+ }
+ 
+ func getPeople() {
+ self.peopleView?.startLoading()
+ peopleService.callAPIGetPeople(
+ onSuccess: { (people) in
+ self.peopleView?.finishLoading()
+ if (people.count == 0){
+ self.peopleView?.setEmptyPeople()
+ } else {
+ let mappedUsers = people.map {
+ return PeopleViewData(name: "\($0.name!)", email: "\($0.email!)")
+ }
+ self.peopleView?.setPeople(people: mappedUsers)
+ }
+ },
+ onFailure: { (errorMessage) in
+ self.peopleView?.finishLoading()
+ }
+ )
+ }
+ }
 
+ */
 
-struct PeopleViewData{
-    let name: String
-    let email: String
+struct SalonViewData{
+    var salonName: String
+    var salonEmail: String
 }
 
 protocol SalonView: NSObjectProtocol {
@@ -25,8 +76,8 @@ protocol SalonView: NSObjectProtocol {
     
     func startLoading()
     func finishLoading()
-    func setPeople(people: [PeopleViewData])
-    func setEmptyPeople()
+    func setSalon(salon : [SalonViewData])
+    func setEmptySalon()
 
 }
 
@@ -35,7 +86,20 @@ class SalonProfilePresenter {
     
     private weak var salonView: SalonView?
     private var salonInteractor = SalonProfileInteractor()
-   // private var users = [User]()
+
+    
+    init(salonInteractor : SalonProfileInteractor) {
+        self.salonInteractor = salonInteractor
+    }
+    
+    func attachView(view:SalonView) {
+        salonView = view
+    }
+    
+    func detachView() {
+        salonView = nil
+    }
+
     
  /*
     init(salonProfileInteractor:SalonProfileInteractor) {
@@ -48,19 +112,18 @@ class SalonProfilePresenter {
 //    }
 // 
     
-    
-    func getPeople() {
+    func getSalonData() {
         self.salonView?.startLoading()
-        salonInteractor.callAPIGetPeople(
-            onSuccess: { (people) in
+        salonInteractor.callAPIGetSalon(
+            onSuccess: { (salon) in
                 self.salonView?.finishLoading()
-                if (people.count == 0){
-                    self.salonView?.setEmptyPeople()
+                if (salon.count == 0){
+                    self.salonView?.setEmptySalon()
                 } else {
-                    let mappedUsers = people.map {
-                        return PeopleViewData(name: "\($0.name!)", email: "\($0.email!)")
+                    let mappedUsers = salon.map {
+                        return SalonViewData(salonName: "\($0.name!)", salonEmail: "\($0.email!)")
                     }
-                    self.salonView?.setPeople(people: mappedUsers)
+                    self.salonView?.setSalon(salon: mappedUsers)
                 }
         },
             onFailure: { (errorMessage) in

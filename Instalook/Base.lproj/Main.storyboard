@@ -128,6 +128,7 @@
                     <connections>
                         <outlet property="salonFollowBtn" destination="YqJ-ns-4nl" id="BMr-BH-m0u"/>
                         <outlet property="salonImagesCollectionView" destination="QeP-RE-eaa" id="E33-9f-7hy"/>
+                        <outlet property="salonNameLbl" destination="gHc-ii-SYR" id="joI-2T-3JI"/>
                         <outlet property="salonProfileImage" destination="4gZ-JO-7E1" id="oBe-su-Ksc"/>
                         <outlet property="viewsContainer" destination="ef1-bh-aXd" id="vT2-xs-yhz"/>
                     </connections>
