@@ -13,20 +13,22 @@ import Alamofire
 import SwiftyJSON
 import Foundation
 
-let API_BASE_URL = "http://api.nandawperdana.com"
+let API_BASE_URL = "https://instalook-api.herokuapp.com"
 
 class APICallManager {
     static let instance = APICallManager()
-    
+    let id = "1"
     enum RequestMethod {
         case get
         case post
     }
     
     enum Endpoint: String {
-        case People = "/people.json"
-        case Salon = "/getSalon.json"
+        case People = "/salon/getSalonsById/1"
+       
+       
     }
+    
 
     
     // MARK: People API
@@ -38,7 +40,7 @@ class APICallManager {
         
         // call API
         self.createRequest(
-            url, method: .get, headers: nil, parameters: nil,
+            url, method: .get, headers: nil, parameters: nil as AnyObject?,
             onSuccess: {(responseObject: JSON) -> Void in
                 // Create dictionary
                 if let responseDict = responseObject["data"].arrayObject {
@@ -51,7 +53,7 @@ class APICallManager {
                         let single = PeopleModel.build(item)
                         data.append(single)
                     }
-                    //print("\(data)")
+                    print("anas\(data)")
                     // Fire callback
                     successCallback?(data)
                 } else {
@@ -69,7 +71,7 @@ class APICallManager {
                           onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
         
         // Build URL
-        let url = API_BASE_URL + Endpoint.Salon.rawValue
+        let url = API_BASE_URL + Endpoint.People.rawValue
         
         // call API
         self.createRequest(

@@ -43,10 +43,10 @@ class SalonProfilePresenter {
     }*/
     
     
-    init(view: SalonView) {
-        self.salonView = view
-    }
- 
+//    init(view: SalonView) {
+//        self.salonView = view
+//    }
+// 
     
     
     func getPeople() {

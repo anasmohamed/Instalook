@@ -11,15 +11,10 @@ import UIKit
 let reuseIdentifier = "SalonImageCell"
 
 class SalonProfileVC: UIViewController {
+    
+    
     @IBOutlet weak var salonImagesCollectionView: UICollectionView!
-    
-   // var presenter: SalonProfileVCPresenter!
-   /* let presenter = SalonProfileVCPresenter(s: SalonProfileInteractor)
-    var peopleToDisplay = [PeopleViewData]()
-    
-    */
-    
-    let presenter = SalonProfilePresenter(view: self as! SalonView)
+    let presenter = SalonProfilePresenter()
     var peopleToDisplay = [PeopleViewData]()
     
 

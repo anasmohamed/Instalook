@@ -549,7 +549,7 @@
 				CCD918E2229C196C0024A1D0 /* SalonServiceVC.swift in Sources */,
 				CCC630AA229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift in Sources */,
 				CC0162DB229C361900F624AF /* SalonProfilePresenter .swift in Sources */,
-				CC503B13229BF1E300173A09 /* SalonProfileVC+ImagesCollectionView.swift in Sources */,
+				
 				CC0162D6229C286400F624AF /* APICallManager .swift in Sources */,
 				CC503B10229BF00900173A09 /* SalonImagesCellCollectionViewCell.swift in Sources */,
 				CC0162D4229C281100F624AF /* SalonProfileInteractor.swift in Sources */,
