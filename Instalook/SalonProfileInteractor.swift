@@ -25,7 +25,7 @@ class SalonProfileInteractor {
     }
  */
     
-    public func callAPIGetPeople(onSuccess successCallback: ((_ people: [PeopleModel]) -> Void)?,
+    public func callAPIGetSalon(onSuccess successCallback: ((_ people: [PeopleModel]) -> Void)?,
                                  onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
         APICallManager.instance.callAPIGetPeople(
             onSuccess: { (people) in

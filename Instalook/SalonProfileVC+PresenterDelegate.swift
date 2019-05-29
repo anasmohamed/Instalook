@@ -12,22 +12,25 @@ import Foundation
 extension SalonProfileVC : SalonView {
     func startLoading() {
         // Show your loader
-        //  activityIndicator?.startAnimating()
+          activityIndicator?.startAnimating()
     }
     
     func finishLoading() {
         // Dismiss your loader
-        //    activityIndicator?.stopAnimating()
+            activityIndicator?.stopAnimating()
     }
     
-    func setPeople(people: [PeopleViewData]) {
-      //  peopleToDisplay = people
-        /*   tableView?.isHidden = false
-         tableView?.reloadData()
-         */
+    func setSalon(salon : [SalonViewData]){
+     
+      salonNameLbl.text = salon[0].salonEmail
+        
+        
+        
+    }
+    func setEmptySalon(){
+    
+    
     }
     
-    func setEmptyPeople() {
-        //         tableView?.isHidden = true
-    }
+    
 }

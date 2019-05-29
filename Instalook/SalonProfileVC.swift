@@ -12,27 +12,28 @@ let reuseIdentifier = "SalonImageCell"
 
 class SalonProfileVC: UIViewController {
     @IBOutlet weak var salonImagesCollectionView: UICollectionView!
+    let presenter = SalonProfilePresenter(salonInteractor :SalonProfileInteractor())
+    var salonToDisplay = [SalonViewData]()
     
-   // var presenter: SalonProfileVCPresenter!
-   /* let presenter = SalonProfileVCPresenter(s: SalonProfileInteractor)
-    var peopleToDisplay = [PeopleViewData]()
+    @IBOutlet weak var salonNameLbl: UILabel!
     
-    */
-    
-    let presenter = SalonProfilePresenter(view: self as! SalonView)
-    var peopleToDisplay = [PeopleViewData]()
-    
-
     @IBOutlet weak var salonFollowBtn: UIButton!
     @IBOutlet weak var salonProfileImage: UIImageView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
         Utils.roundBtn(button: salonFollowBtn)
         Utils.roundImage(imageView: salonProfileImage)
         
+        activityIndicator?.hidesWhenStopped = true
+        
+        presenter.attachView(view: self)
+        presenter.getSalonData()
+        
         //presenter.attachView(view: self as! SalonView)
-        presenter.getPeople()
+      //  presenter.getPeople()
     }
 
 
