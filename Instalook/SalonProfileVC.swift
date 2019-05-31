@@ -28,12 +28,10 @@ class SalonProfileVC: UIViewController {
         Utils.roundImage(imageView: salonProfileImage)
         
         activityIndicator?.hidesWhenStopped = true
-        
         presenter.attachView(view: self)
         presenter.getSalonData()
         
-        //presenter.attachView(view: self as! SalonView)
-      //  presenter.getPeople()
+       
     }
 
 

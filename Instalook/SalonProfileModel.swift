@@ -14,21 +14,21 @@ class SalonProfileModel {
     var salonEmail: String?
     var salonLocation: String?
     var salonType: String?
-
+    
     func loadFromDictionary(_ dict: [String: AnyObject]) {
-        if let data = dict["id"] as? Int {
+        if let data = dict["salonId"] as? Int {
             self.id = data
         }
-        if let data = dict["name"] as? String {
+        if let data = dict["salonName"] as? String {
             self.salonName = data
         }
-        if let data = dict["email"] as? String {
+        if let data = dict["salonEmail"] as? String {
             self.salonEmail = data
         }
-        if let data = dict["address"] as? String {
+        if let data = dict["salonLocation"] as? String {
             self.salonLocation = data
         }
-        if let data = dict["gender"] as? String {
+        if let data = dict["salonType"] as? String {
             self.salonType = data
         }
        
@@ -40,6 +40,8 @@ class SalonProfileModel {
         profile.loadFromDictionary(dict)
         return profile
     }
+ 
+
     
 
 }

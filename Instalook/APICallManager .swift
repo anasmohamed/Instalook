@@ -13,7 +13,7 @@ import Alamofire
 import SwiftyJSON
 import Foundation
 
-let API_BASE_URL = "http://api.nandawperdana.com"
+let API_BASE_URL = "https://instalook-api.herokuapp.com"
 
 class APICallManager {
     static let instance = APICallManager()
@@ -24,31 +24,34 @@ class APICallManager {
     }
     
     enum Endpoint: String {
-        case People = "/people.json"
-        case Salon = "/getSalon.json"
+         case Salon = "/salon/getSalons"
+       // case Salon = "/salon/getSalonsById/12"
+        
     }
-
     
-    // MARK: People API
-    func callAPIGetPeople(onSuccess successCallback: ((_ people: [PeopleModel]) -> Void)?,
+    
+    
+    // MARK: Salon API
+    func callAPIGetSalon(onSuccess successCallback: ((_ salonData: [SalonProfileModel]) -> Void)?,
                           onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
         
         // Build URL
-        let url = API_BASE_URL + Endpoint.People.rawValue
+        let url = API_BASE_URL + Endpoint.Salon.rawValue
         
         // call API
         self.createRequest(
             url, method: .get, headers: nil, parameters: nil,
             onSuccess: {(responseObject: JSON) -> Void in
                 // Create dictionary
-                if let responseDict = responseObject["data"].arrayObject {
-                    let peopleDict = responseDict as! [[String:AnyObject]]
+               
+                if let responseDict = responseObject.arrayObject {
+                let salonDict = responseDict as! [[String:AnyObject]]
                     
                     // Create object
-                    var data = [PeopleModel]()
-                    for item in peopleDict {
-                        print(item)
-                        let single = PeopleModel.build(item)
+                    var data = [SalonProfileModel]()
+                    for item in salonDict {
+                       // print(item)
+                        let single = SalonProfileModel.build(item)
                         data.append(single)
                     }
                     //print("\(data)")
@@ -60,43 +63,11 @@ class APICallManager {
         },
             onFailure: {(errorMessage: String) -> Void in
                 failureCallback?(errorMessage)
+                print(errorMessage)
         }
         )
     }
 
-    // MARK: Salon API
-    func callAPIGetSalon(onSuccess successCallback: ((_ salon: [SalonProfileModel]) -> Void)?,
-                          onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
-        
-        // Build URL
-        let url = API_BASE_URL + Endpoint.Salon.rawValue
-        
-        // call API
-        self.createRequest(
-            url, method: .get, headers: nil, parameters: nil,
-            onSuccess: {(responseObject: JSON) -> Void in
-                // Create dictionary
-                if let responseDict = responseObject["data"].arrayObject {
-                    let salonDict = responseDict as! [[String:AnyObject]]
-                    
-                    // Create object
-                    var data = [SalonProfileModel]()
-                    for item in salonDict {
-                        let single = SalonProfileModel.build(item)
-                        data.append(single)
-                    }
-         
-                // Fire callback
-                    successCallback?(data)
-                } else {
-                    failureCallback?("An error has occured.")
-                }
-        },
-            onFailure: {(errorMessage: String) -> Void in
-                failureCallback?(errorMessage)
-        }
-        )
-    }
     
     // MARK: Request Handler
     // Create request
@@ -122,5 +93,5 @@ class APICallManager {
             }
         }
     }
- 
 }
+

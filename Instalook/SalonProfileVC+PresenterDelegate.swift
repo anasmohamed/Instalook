@@ -10,27 +10,26 @@ import Foundation
 
 
 extension SalonProfileVC : SalonView {
-    func startLoading() {
+    func showIndicator() {
         // Show your loader
           activityIndicator?.startAnimating()
     }
     
-    func finishLoading() {
+    func hideIndicator() {
+        
         // Dismiss your loader
             activityIndicator?.stopAnimating()
     }
     
-    func setSalon(salon : [SalonViewData]){
-     
-      salonNameLbl.text = salon[0].salonEmail
-        
-        
+     func setSalon(salon : [SalonViewData]){
+      salonNameLbl.text = salon[0].salonName
         
     }
+
     func setEmptySalon(){
-    
+        print("no data for this salon")
     
     }
-    
+   
     
 }

@@ -26,7 +26,6 @@
 		CC561C47229BDBEC0048EB86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC561C45229BDBEC0048EB86 /* LaunchScreen.storyboard */; };
 		CC561C52229BDBEC0048EB86 /* InstalookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C51229BDBEC0048EB86 /* InstalookTests.swift */; };
 		CC561C5D229BDBEC0048EB86 /* InstalookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */; };
-		CCC630A8229D3B0D00E2EB50 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC630A7229D3B0D00E2EB50 /* PeopleModel.swift */; };
 		CCC630AA229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC630A9229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +76,6 @@
 		CC561C58229BDBEC0048EB86 /* InstalookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstalookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalookUITests.swift; sourceTree = "<group>"; };
 		CC561C5E229BDBEC0048EB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCC630A7229D3B0D00E2EB50 /* PeopleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
 		CCC630A9229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SalonProfileVC+PresenterDelegate.swift"; sourceTree = "<group>"; };
 		D51231ADBEA24F073F386B4B /* Pods_InstalookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstalookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6314E582C9C69F992F56D82 /* Pods_Instalook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instalook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				CC0162D7229C2C4E00F624AF /* SalonProfileModel.swift */,
-				CCC630A7229D3B0D00E2EB50 /* PeopleModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -524,7 +521,6 @@
 				CC561C42229BDBEC0048EB86 /* Instalook.xcdatamodeld in Sources */,
 				CC561C3C229BDBEC0048EB86 /* SalonProfileVC.swift in Sources */,
 				CC561C3A229BDBEC0048EB86 /* AppDelegate.swift in Sources */,
-				CCC630A8229D3B0D00E2EB50 /* PeopleModel.swift in Sources */,
 				CC0249BB229C01CD00921074 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
