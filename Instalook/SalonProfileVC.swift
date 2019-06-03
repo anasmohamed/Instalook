@@ -37,10 +37,10 @@ class SalonProfileVC: UIViewController {
         }
         viewsContainer.bringSubview(toFront: views[0])
         
-        activityIndicator?.hidesWhenStopped = true
+        //activityIndicator?.hidesWhenStopped = true
         
-        presenter.attachView(view: self)
-        presenter.getSalonData()
+//presenter.attachView(view: self)
+       // presenter.getSalonData()
         
         //presenter.attachView(view: self as! SalonView)
       //  presenter.getPeople()

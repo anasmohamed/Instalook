@@ -26,12 +26,18 @@
 		CC561C47229BDBEC0048EB86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC561C45229BDBEC0048EB86 /* LaunchScreen.storyboard */; };
 		CC561C52229BDBEC0048EB86 /* InstalookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C51229BDBEC0048EB86 /* InstalookTests.swift */; };
 		CC561C5D229BDBEC0048EB86 /* InstalookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */; };
+		CC8526F0229EBCE500A128CD /* SalonServicePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8526EF229EBCE500A128CD /* SalonServicePresenter.swift */; };
+		CC8526F2229EBD1900A128CD /* SalonServiceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8526F1229EBD1900A128CD /* SalonServiceInteractor.swift */; };
+		CC8526F4229EBD9F00A128CD /* SalonServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8526F3229EBD9F00A128CD /* SalonServiceModel.swift */; };
+		CC8526F6229ED6CD00A128CD /* SalonServiceVC+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8526F5229ED6CD00A128CD /* SalonServiceVC+PresenterDelegate.swift */; };
+		CCB2513F22A3484600CD58EF /* InstalookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2513E22A3484600CD58EF /* InstalookRouter.swift */; };
+		CCB2514122A356C800CD58EF /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2514022A356C800CD58EF /* NetworkingConstants.swift */; };
+		CCC630A8229D3B0D00E2EB50 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC630A7229D3B0D00E2EB50 /* PeopleModel.swift */; };
+		CCC630AA229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC630A9229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift */; };
 		CCD918E2229C196C0024A1D0 /* SalonServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD918E0229C196C0024A1D0 /* SalonServiceVC.swift */; };
 		CCD918E3229C196C0024A1D0 /* SalonServiceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD918E1229C196C0024A1D0 /* SalonServiceVC.xib */; };
 		CCD918E7229C19D20024A1D0 /* SalonGiftsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD918E5229C19D20024A1D0 /* SalonGiftsVC.swift */; };
 		CCD918E8229C19D20024A1D0 /* SalonGiftsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD918E6229C19D20024A1D0 /* SalonGiftsVC.xib */; };
-		CCC630A8229D3B0D00E2EB50 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC630A7229D3B0D00E2EB50 /* PeopleModel.swift */; };
-		CCC630AA229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC630A9229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,12 +87,18 @@
 		CC561C58229BDBEC0048EB86 /* InstalookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstalookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalookUITests.swift; sourceTree = "<group>"; };
 		CC561C5E229BDBEC0048EB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC8526EF229EBCE500A128CD /* SalonServicePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonServicePresenter.swift; sourceTree = "<group>"; };
+		CC8526F1229EBD1900A128CD /* SalonServiceInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonServiceInteractor.swift; sourceTree = "<group>"; };
+		CC8526F3229EBD9F00A128CD /* SalonServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonServiceModel.swift; sourceTree = "<group>"; };
+		CC8526F5229ED6CD00A128CD /* SalonServiceVC+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SalonServiceVC+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		CCB2513E22A3484600CD58EF /* InstalookRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstalookRouter.swift; sourceTree = "<group>"; };
+		CCB2514022A356C800CD58EF /* NetworkingConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
+		CCC630A7229D3B0D00E2EB50 /* PeopleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		CCC630A9229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SalonProfileVC+PresenterDelegate.swift"; sourceTree = "<group>"; };
 		CCD918E0229C196C0024A1D0 /* SalonServiceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonServiceVC.swift; sourceTree = "<group>"; };
 		CCD918E1229C196C0024A1D0 /* SalonServiceVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalonServiceVC.xib; sourceTree = "<group>"; };
 		CCD918E5229C19D20024A1D0 /* SalonGiftsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonGiftsVC.swift; sourceTree = "<group>"; };
 		CCD918E6229C19D20024A1D0 /* SalonGiftsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalonGiftsVC.xib; sourceTree = "<group>"; };
-		CCC630A7229D3B0D00E2EB50 /* PeopleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
-		CCC630A9229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SalonProfileVC+PresenterDelegate.swift"; sourceTree = "<group>"; };
 		D51231ADBEA24F073F386B4B /* Pods_InstalookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstalookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6314E582C9C69F992F56D82 /* Pods_Instalook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instalook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -137,6 +149,7 @@
 			children = (
 				CC0162D7229C2C4E00F624AF /* SalonProfileModel.swift */,
 				CCC630A7229D3B0D00E2EB50 /* PeopleModel.swift */,
+				CC8526F3229EBD9F00A128CD /* SalonServiceModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -145,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				CC0162D3229C281100F624AF /* SalonProfileInteractor.swift */,
+				CC8526F1229EBD1900A128CD /* SalonServiceInteractor.swift */,
 				CC0162D2229C27DE00F624AF /* API */,
 			);
 			name = Interactor;
@@ -154,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				CC0162D5229C286400F624AF /* APICallManager .swift */,
+				CCB2513E22A3484600CD58EF /* InstalookRouter.swift */,
+				CCB2514022A356C800CD58EF /* NetworkingConstants.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -162,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				CC0162DA229C361900F624AF /* SalonProfilePresenter .swift */,
+				CC8526EF229EBCE500A128CD /* SalonServicePresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -299,6 +316,7 @@
 			children = (
 				CCD918E0229C196C0024A1D0 /* SalonServiceVC.swift */,
 				CCD918E1229C196C0024A1D0 /* SalonServiceVC.xib */,
+				CC8526F5229ED6CD00A128CD /* SalonServiceVC+PresenterDelegate.swift */,
 			);
 			name = SalonService;
 			sourceTree = "<group>";
@@ -467,16 +485,18 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Instalook/Pods-Instalook-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -544,21 +564,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8526F2229EBD1900A128CD /* SalonServiceInteractor.swift in Sources */,
+				CCB2514122A356C800CD58EF /* NetworkingConstants.swift in Sources */,
 				CCD918E7229C19D20024A1D0 /* SalonGiftsVC.swift in Sources */,
 				CC503B13229BF1E300173A09 /* SalonProfileVC+ImagesCollectionView.swift in Sources */,
 				CCD918E2229C196C0024A1D0 /* SalonServiceVC.swift in Sources */,
 				CCC630AA229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift in Sources */,
 				CC0162DB229C361900F624AF /* SalonProfilePresenter .swift in Sources */,
-				
 				CC0162D6229C286400F624AF /* APICallManager .swift in Sources */,
 				CC503B10229BF00900173A09 /* SalonImagesCellCollectionViewCell.swift in Sources */,
+				CC8526F6229ED6CD00A128CD /* SalonServiceVC+PresenterDelegate.swift in Sources */,
 				CC0162D4229C281100F624AF /* SalonProfileInteractor.swift in Sources */,
 				CC0162D8229C2C4E00F624AF /* SalonProfileModel.swift in Sources */,
 				CC561C42229BDBEC0048EB86 /* Instalook.xcdatamodeld in Sources */,
 				CC561C3C229BDBEC0048EB86 /* SalonProfileVC.swift in Sources */,
+				CC8526F0229EBCE500A128CD /* SalonServicePresenter.swift in Sources */,
+				CC8526F4229EBD9F00A128CD /* SalonServiceModel.swift in Sources */,
 				CC561C3A229BDBEC0048EB86 /* AppDelegate.swift in Sources */,
 				CCC630A8229D3B0D00E2EB50 /* PeopleModel.swift in Sources */,
 				CC0249BB229C01CD00921074 /* Utils.swift in Sources */,
+				CCB2513F22A3484600CD58EF /* InstalookRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -61,10 +61,9 @@ import Foundation
  */
 
 struct SalonViewData{
-    var salonName: String
-    var salonEmail: String
+    let salonName: String
+    let salonEmail: String
 }
-
 protocol SalonView: NSObjectProtocol {
    /* func showIndicator()
     func hideIndicator()
@@ -76,7 +75,7 @@ protocol SalonView: NSObjectProtocol {
     
     func startLoading()
     func finishLoading()
-    func setSalon(salon : [SalonViewData])
+   // func setSalon(salon : [SalonViewData])
     func setEmptySalon()
 
 }
@@ -88,10 +87,7 @@ class SalonProfilePresenter {
     private var salonInteractor = SalonProfileInteractor()
 
     
-    init(salonInteractor : SalonProfileInteractor) {
-        self.salonInteractor = salonInteractor
-    }
-    
+   
     func attachView(view:SalonView) {
         salonView = view
     }
@@ -114,22 +110,22 @@ class SalonProfilePresenter {
     
     func getSalonData() {
         self.salonView?.startLoading()
-        salonInteractor.callAPIGetSalon(
-            onSuccess: { (salon) in
-                self.salonView?.finishLoading()
-                if (salon.count == 0){
-                    self.salonView?.setEmptySalon()
-                } else {
-                    let mappedUsers = salon.map {
-                        return SalonViewData(salonName: "\($0.name!)", salonEmail: "\($0.email!)")
-                    }
-                    self.salonView?.setSalon(salon: mappedUsers)
-                }
-        },
-            onFailure: { (errorMessage) in
-                self.salonView?.finishLoading()
-        }
-        )
+//        salonInteractor.callAPIGetSalon(
+//            onSuccess: { (salon) in
+//                self.salonView?.finishLoading()
+//                if (salon.count == 0){
+//                    self.salonView?.setEmptySalon()
+//                } else {
+//                    let mappedUsers = salon.map {
+//                        return SalonViewData(salonName: "\($0.name!)", salonEmail: "\($0.email!)")
+//                    }
+//                  //  self.salonView?.setSalon(salon: mappedUsers)
+//                }
+//        },
+//            onFailure: { (errorMessage) in
+//                self.salonView?.finishLoading()
+//        }
+//        )
 }
 }
    /* func getUsers() {

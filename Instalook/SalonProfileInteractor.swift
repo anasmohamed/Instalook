@@ -25,17 +25,17 @@ class SalonProfileInteractor {
     }
  */
     
-    public func callAPIGetSalon(onSuccess successCallback: ((_ people: [PeopleModel]) -> Void)?,
-                                 onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
-        APICallManager.instance.callAPIGetPeople(
-            onSuccess: { (people) in
-                successCallback?(people)
-        },
-            onFailure: { (errorMessage) in
-                failureCallback?(errorMessage)
-        }
-        )
-    }
+//    public func callAPIGetSalon(onSuccess successCallback: ((_ people: [PeopleModel]) -> Void)?,
+//                                 onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
+//        APICallManager.instance.callAPIGetSalon(
+//            onSuccess: {(people) in
+//                successCallback?(people)
+//        },
+//            onFailure: { (errorMessage) in
+//                failureCallback?(errorMessage)
+//        }
+//        )
+//    }
 
 /*    func getUsers(completionHandler: @escaping ([SalonProfileModel]?, Error?) -> ()) {
         request("https://jsonplaceholder.typicode.com/users").responseArray { (response: DataResponse<[SalonProfileModel]>) in
