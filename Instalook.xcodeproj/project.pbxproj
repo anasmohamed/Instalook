@@ -27,6 +27,9 @@
 		CC561C52229BDBEC0048EB86 /* InstalookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C51229BDBEC0048EB86 /* InstalookTests.swift */; };
 		CC561C5D229BDBEC0048EB86 /* InstalookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */; };
 		CCC630AA229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC630A9229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift */; };
+		CCDC570E22A596A30073F1F7 /* InstalookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC570D22A596A30073F1F7 /* InstalookRouter.swift */; };
+		CCDC571022A596E10073F1F7 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC570F22A596E10073F1F7 /* NetworkingConstants.swift */; };
+		CCDC571222A5970A0073F1F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC571122A5970A0073F1F7 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalookUITests.swift; sourceTree = "<group>"; };
 		CC561C5E229BDBEC0048EB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCC630A9229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SalonProfileVC+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		CCDC570D22A596A30073F1F7 /* InstalookRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstalookRouter.swift; sourceTree = "<group>"; };
+		CCDC570F22A596E10073F1F7 /* NetworkingConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
+		CCDC571122A5970A0073F1F7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D51231ADBEA24F073F386B4B /* Pods_InstalookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstalookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6314E582C9C69F992F56D82 /* Pods_Instalook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instalook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +131,7 @@
 		CC0162D0229C277100F624AF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CCDC571122A5970A0073F1F7 /* User.swift */,
 				CC0162D7229C2C4E00F624AF /* SalonProfileModel.swift */,
 			);
 			name = Model;
@@ -197,13 +204,14 @@
 		CC561C38229BDBEC0048EB86 /* Instalook */ = {
 			isa = PBXGroup;
 			children = (
-				CC0162D0229C277100F624AF /* Model */,
-				CC0249B9229C019300921074 /* Utils */,
-				CC561C6E229BDCC40048EB86 /* Scenes */,
-				CC561C6D229BDC9A0048EB86 /* Storyboards */,
+				CC561C6A229BDC0D0048EB86 /* Configuration */,
 				CC561C6C229BDC8C0048EB86 /* Core */,
 				CC561C6B229BDC1A0048EB86 /* Resources */,
-				CC561C6A229BDC0D0048EB86 /* Configuration */,
+				CC561C6D229BDC9A0048EB86 /* Storyboards */,
+				CC0162D0229C277100F624AF /* Model */,
+				CC561C6E229BDCC40048EB86 /* Scenes */,
+				CCDC570C22A596720073F1F7 /* Network */,
+				CC0249B9229C019300921074 /* Utils */,
 				CC561C40229BDBEC0048EB86 /* Instalook.xcdatamodeld */,
 			);
 			path = Instalook;
@@ -279,6 +287,16 @@
 				CCC630A9229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift */,
 			);
 			name = SalonProfile;
+			sourceTree = "<group>";
+		};
+		CCDC570C22A596720073F1F7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CCDC570D22A596A30073F1F7 /* InstalookRouter.swift */,
+				CCDC570F22A596E10073F1F7 /* NetworkingConstants.swift */,
+			);
+			name = Network;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		EBAF3AE2A4E62F8A77107F31 /* Frameworks */ = {
@@ -518,12 +536,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCC630AA229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift in Sources */,
+				CCDC570E22A596A30073F1F7 /* InstalookRouter.swift in Sources */,
 				CC0162DB229C361900F624AF /* SalonProfilePresenter .swift in Sources */,
 				CC503B13229BF1E300173A09 /* SalonProfileVC+ImagesCollectionView.swift in Sources */,
 				CC0162D6229C286400F624AF /* APICallManager .swift in Sources */,
 				CC503B10229BF00900173A09 /* SalonImagesCellCollectionViewCell.swift in Sources */,
+				CCDC571222A5970A0073F1F7 /* User.swift in Sources */,
 				CC0162D4229C281100F624AF /* SalonProfileInteractor.swift in Sources */,
 				CC0162D8229C2C4E00F624AF /* SalonProfileModel.swift in Sources */,
+				CCDC571022A596E10073F1F7 /* NetworkingConstants.swift in Sources */,
 				CC561C42229BDBEC0048EB86 /* Instalook.xcdatamodeld in Sources */,
 				CC561C3C229BDBEC0048EB86 /* SalonProfileVC.swift in Sources */,
 				CC561C3A229BDBEC0048EB86 /* AppDelegate.swift in Sources */,
