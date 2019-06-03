@@ -2,7 +2,7 @@
 //  User.swift
 //  Instalook
 //
-//  Created by jets on 6/3/19.
+//  Created by Amer Shaker on 6/3/19.
 //  Copyright © 2019 instalook. All rights reserved.
 //
 

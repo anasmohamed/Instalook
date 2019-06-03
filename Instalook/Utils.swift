@@ -8,8 +8,10 @@
 
 import Foundation
 import UIKit
+
 struct Utils {
-    static func roundImage(imageView : UIImageView){
+    
+    public static func roundImage(imageView : UIImageView){
         imageView.layer.borderWidth = 1
         imageView.layer.masksToBounds = false
         imageView.layer.borderColor = UIColor.black.cgColor
@@ -17,7 +19,7 @@ struct Utils {
         imageView.clipsToBounds = true
     }
     
-    static func roundBtn(button : UIButton){
+    public static func roundBtn(button : UIButton){
         button.layer.cornerRadius = 9
         button.layer.borderWidth = 1
     }

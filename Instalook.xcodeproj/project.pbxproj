@@ -15,6 +15,7 @@
 		CC0162D8229C2C4E00F624AF /* SalonProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0162D7229C2C4E00F624AF /* SalonProfileModel.swift */; };
 		CC0162DB229C361900F624AF /* SalonProfilePresenter .swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0162DA229C361900F624AF /* SalonProfilePresenter .swift */; };
 		CC0249BB229C01CD00921074 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0249BA229C01CD00921074 /* Utils.swift */; };
+		CC1BCEA922A5E1EF00E0F187 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1BCEA822A5E1EF00E0F187 /* Service.swift */; };
 		CC503B10229BF00900173A09 /* SalonImagesCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC503B0E229BF00900173A09 /* SalonImagesCellCollectionViewCell.swift */; };
 		CC503B11229BF00900173A09 /* SalonImagesCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC503B0F229BF00900173A09 /* SalonImagesCellCollectionViewCell.xib */; };
 		CC503B13229BF1E300173A09 /* SalonProfileVC+ImagesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC503B12229BF1E300173A09 /* SalonProfileVC+ImagesCollectionView.swift */; };
@@ -62,6 +63,7 @@
 		CC0162D7229C2C4E00F624AF /* SalonProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonProfileModel.swift; sourceTree = "<group>"; };
 		CC0162DA229C361900F624AF /* SalonProfilePresenter .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SalonProfilePresenter .swift"; sourceTree = "<group>"; };
 		CC0249BA229C01CD00921074 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CC1BCEA822A5E1EF00E0F187 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		CC503B0E229BF00900173A09 /* SalonImagesCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonImagesCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		CC503B0F229BF00900173A09 /* SalonImagesCellCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalonImagesCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		CC503B12229BF1E300173A09 /* SalonProfileVC+ImagesCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SalonProfileVC+ImagesCollectionView.swift"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				CCDC571122A5970A0073F1F7 /* User.swift */,
+				CC1BCEA822A5E1EF00E0F187 /* Service.swift */,
 				CC0162D7229C2C4E00F624AF /* SalonProfileModel.swift */,
 			);
 			name = Model;
@@ -537,6 +540,7 @@
 			files = (
 				CCC630AA229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift in Sources */,
 				CCDC570E22A596A30073F1F7 /* InstalookRouter.swift in Sources */,
+				CC1BCEA922A5E1EF00E0F187 /* Service.swift in Sources */,
 				CC0162DB229C361900F624AF /* SalonProfilePresenter .swift in Sources */,
 				CC503B13229BF1E300173A09 /* SalonProfileVC+ImagesCollectionView.swift in Sources */,
 				CC0162D6229C286400F624AF /* APICallManager .swift in Sources */,

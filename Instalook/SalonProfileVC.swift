@@ -30,11 +30,5 @@ class SalonProfileVC: UIViewController {
         activityIndicator?.hidesWhenStopped = true
         presenter.attachView(view: self)
         presenter.getSalonData()
-        
-       
     }
-
-
-
 }
-

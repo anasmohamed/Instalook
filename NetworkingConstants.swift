@@ -2,7 +2,7 @@
 //  NetworkingConstants.swift
 //  Instalook
 //
-//  Created by jets on 6/3/19.
+//  Created by Amer Shaker on 6/3/19.
 //  Copyright © 2019 instalook. All rights reserved.
 //
 
@@ -20,7 +20,7 @@ struct NetworkingConstants {
     // Request Mappings
     static let userRequestMapping = "user"
     static let salonRequestMapping = "salon"
-    
+    static let serviceRequestMapping = "service"
     
     // User Requests
     static let login = "login"
@@ -36,4 +36,13 @@ struct NetworkingConstants {
     // Salon Requests
     static let getSalons = "getSalons"
     static let getSalonsById = "getSalonsById"
+    
+    // Salon Service Query Parameters
+    static let serviceId = "serviceId"
+    static let serviceName = "serviceName"
+    static let serviceType = "serviceType"
+    static let servicePrice = "servicePrice"
+    
+    // Salon Service Requests
+    static let addService = "add"
 }
