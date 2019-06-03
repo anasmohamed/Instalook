@@ -1,16 +1,54 @@
 PODS:
-  - Cosmos (11.0.3)
+  - Alamofire (4.8.1)
+  - Alamofire-SwiftyJSON (3.0.0):
+    - Alamofire (~> 4.5)
+    - SwiftyJSON (~> 4.0.0)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - Cosmos (8.0.2)
+  - ObjectMapper (2.2.9)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
-  - Cosmos (~> 11.0)
+  - Alamofire
+  - Alamofire-SwiftyJSON
+  - AlamofireObjectMapper
+  - Cosmos (from `https://github.com/marketplacer/Cosmos.git`, tag `8.0.2`)
+  - ObjectMapper (~> 2.2.8)
+  - SDWebImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Cosmos
+    - Alamofire
+    - Alamofire-SwiftyJSON
+    - AlamofireObjectMapper
+    - ObjectMapper
+    - SDWebImage
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Cosmos:
+    :git: https://github.com/marketplacer/Cosmos.git
+    :tag: 8.0.2
+
+CHECKOUT OPTIONS:
+  Cosmos:
+    :git: https://github.com/marketplacer/Cosmos.git
+    :tag: 8.0.2
 
 SPEC CHECKSUMS:
-  Cosmos: eb506859929f4add2d2aec822a27efb2f718a95d
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Alamofire-SwiftyJSON: 2b3649d57dc7bb2880fb8b86f8bb969397666916
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  Cosmos: 83d7e1c5289839a954dfa45376a11e9a9cef0a13
+  ObjectMapper: 63cfe41bc6f8e7c8f44344c49901b8ae7de14c52
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 85be1f7cd95d5833aa5072ce7f6addb08cbe8d40
+PODFILE CHECKSUM: 0ab31fb6e49e38bcadca9b302f69e3f5a98cd7b2
 
 COCOAPODS: 1.6.1
