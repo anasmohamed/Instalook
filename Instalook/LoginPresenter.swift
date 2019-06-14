@@ -11,12 +11,12 @@ import Foundation
 class LoginPresenter {
     
     private weak var view: LoginView?
-    private let userInteractor: UserInteractor
-    private var user: User?
+    private let salonInteractor: SalonInteractor
+    private var salon: Salon?
     
     init(view: LoginView) {
         self.view = view
-        userInteractor = UserInteractor()
+        salonInteractor = SalonInteractor()
     }
     
     func login(email: String, password: String) {
@@ -25,14 +25,14 @@ class LoginPresenter {
             isValidPassword(password: password) {
             
             view?.showIndicator()
-            userInteractor.login(email: email, password: password) { [unowned self] (user, error) in
+            salonInteractor.login(email: email, password: password) { [unowned self] (salon, error) in
                 
                 self.view?.hideIndicator()
                 if let error = error {
                     self.view?.showError(error: error.localizedDescription)
                 } else {
-                    guard let user = user else { return }
-                    self.user = user
+                    guard let salon = salon else { return }
+                    self.salon = salon
                     self.view?.loginSuccess()
                 }
             }

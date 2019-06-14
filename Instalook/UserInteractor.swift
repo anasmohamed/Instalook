@@ -10,28 +10,28 @@ import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
-class UserInteractor {
+class SalonInteractor {
     
     func login(email: String,
                password: String,
-               completionHandler: @escaping (User?, Error?) -> Void) {
+               completionHandler: @escaping (Salon?, Error?) -> Void) {
         
         Alamofire.request(InstalookRouter.login(email: email, password: password)).responseObject {
-            (response: DataResponse<User>) in
+            (response: DataResponse<Salon>) in
             let result = response.result
             switch result {
-            case .success(let user):
-                completionHandler(user, nil)
+            case .success(let salon):
+                completionHandler(salon, nil)
             case .failure(let error):
                 completionHandler(nil, error)
             }
         }
     }
     
-    func register(user: User,
+    func register(salon: Salon,
                   completionHandler: @escaping (Error?) -> Void) {
         
-        Alamofire.request(InstalookRouter.register(user: user)).responseJSON {
+        Alamofire.request(InstalookRouter.register(salon: salon)).responseJSON {
             (response: DataResponse<Any>) in
             let result = response.result
             switch result {

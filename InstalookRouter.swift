@@ -11,11 +11,8 @@ import Alamofire
 
 enum InstalookRouter: URLRequestConvertible {
     
-    // User
     case login(email: String, password: String)
-    case register(user: User)
-    
-    // Salon
+    case register(salon: Salon)
     case search()
     case addService(salonId: Int, service: Service)
     
@@ -23,9 +20,9 @@ enum InstalookRouter: URLRequestConvertible {
         
         switch self {
         case .login:
-            return NetworkingConstants.userRequestMapping + "/" + NetworkingConstants.login
+            return NetworkingConstants.salonRequestMapping + "/" + NetworkingConstants.login
         case .register:
-            return NetworkingConstants.userRequestMapping + "/" + NetworkingConstants.register
+            return NetworkingConstants.salonRequestMapping + "/" + NetworkingConstants.register
         case .search:
             return NetworkingConstants.salonRequestMapping + "/" + NetworkingConstants.getSalons
         case let .addService(salonId, _):
@@ -63,11 +60,10 @@ enum InstalookRouter: URLRequestConvertible {
         var body = [String:Any]()
         
         switch self {
-        case let .register(user):
-            body[NetworkingConstants.firstName] = user.firstName!
-            body[NetworkingConstants.lastName] = user.lastName!
-            body[NetworkingConstants.email] = user.email!
-            body[NetworkingConstants.password] = user.password!
+        case let .register(salon):
+            body[NetworkingConstants.salonName] = salon.salonName!
+            body[NetworkingConstants.salonEmail] = salon.salonEmail!
+            body[NetworkingConstants.salonPassword] = salon.salonPassword!
         case let .addService(_, service):
             body[NetworkingConstants.serviceName] = service.serviceName!
             body[NetworkingConstants.serviceType] = service.serviceType!
@@ -85,8 +81,8 @@ enum InstalookRouter: URLRequestConvertible {
         
         switch self {
         case let .login(email, password):
-            params[NetworkingConstants.email] = email
-            params[NetworkingConstants.password] = password
+            params[NetworkingConstants.salonEmail] = email
+            params[NetworkingConstants.salonPassword] = password
         default:
             print("Empty request params")
         }

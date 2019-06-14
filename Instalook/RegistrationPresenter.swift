@@ -11,35 +11,32 @@ import Foundation
 class RegistrationPresenter {
     
     private weak var view: RegistrationView?
-    private let userInteractor: UserInteractor
-    private var user: User?
+    private let salonInteractor: SalonInteractor
+    private var salon: Salon?
     
     init(view: RegistrationView) {
         self.view = view
-        user = User()
-        userInteractor = UserInteractor()
+        salon = Salon()
+        salonInteractor = SalonInteractor()
     }
     
-    func register(firstName: String,
-                  lastName: String,
+    func register(name: String,
                   email: String,
                   password: String,
                   confirmPassword: String) {
         
-        if !isEmpty(string: firstName),
-            !isEmpty(string: lastName),
+        if !isEmpty(string: name),
             isValidEmailAddress(emailAddressString: email),
             isValidPassword(password: password),
             isValidConfrimPassword(password: password, confirmPassword: confirmPassword) {
             
-            let user = User()
-            user.firstName = firstName
-            user.lastName = lastName
-            user.email = email
-            user.password = password
+            let salon = Salon()
+            salon.salonName = name
+            salon.salonEmail = email
+            salon.salonPassword = password
             
             view?.showIndicator()
-            userInteractor.register(user: user) { [unowned self] error in
+            salonInteractor.register(salon: salon) { [unowned self] error in
                 
                 self.view?.hideIndicator()
                 if let error = error {

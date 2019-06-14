@@ -12,8 +12,7 @@ import UIKit
 class RegistationViewController: UIViewController {
     
     // MARK: Outlets
-    @IBOutlet weak var firstNameTextField: UITextField!
-    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
@@ -29,14 +28,12 @@ class RegistationViewController: UIViewController {
     // MARK: Actions
     @IBAction func register(_ sender: UIButton) {
         
-        guard let firstName = firstNameTextField.text,
-            let lastName = lastNameTextField.text,
+        guard let name = nameTextField.text,
             let email = emailTextField.text,
             let password = passwordTextField.text,
             let confirmPassword = confirmPasswordTextField.text else { return }
         
-        presenter.register(firstName: firstName,
-                           lastName: lastName,
+        presenter.register(name: name,
                            email: email,
                            password: password,
                            confirmPassword: confirmPassword)
