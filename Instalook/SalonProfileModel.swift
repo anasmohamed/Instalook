@@ -9,6 +9,7 @@
 import Foundation
 
 class SalonProfileModel {
+    
     var id: Int?
     var salonName: String?
     var salonEmail: String?
@@ -31,7 +32,6 @@ class SalonProfileModel {
         if let data = dict["salonType"] as? String {
             self.salonType = data
         }
-       
     }
     
     // MARK: Class Method
@@ -40,8 +40,4 @@ class SalonProfileModel {
         profile.loadFromDictionary(dict)
         return profile
     }
- 
-
-    
-
 }

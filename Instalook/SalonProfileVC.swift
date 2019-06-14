@@ -30,5 +30,15 @@ class SalonProfileVC: UIViewController {
         activityIndicator?.hidesWhenStopped = true
         presenter.attachView(view: self)
         presenter.getSalonData()
+        
+        let service = Service()
+        service.serviceName = "Amer's Service"
+        service.serviceType = "Males"
+        service.servicePrice = 100.0
+        
+        let interactor = ServiceInteractor()
+        interactor.addService(salonId: 122, service: service, completionHandler: { error in
+            print("Success")
+        })
     }
 }
