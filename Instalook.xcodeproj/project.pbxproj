@@ -30,7 +30,7 @@
 		CC561C5D229BDBEC0048EB86 /* InstalookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */; };
 		CC73520022B428F300B22B92 /* Salon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7351FF22B428F300B22B92 /* Salon.swift */; };
 		CC7B009822B4085F00EDA3E9 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC7B009722B4085F00EDA3E9 /* Authentication.storyboard */; };
-		CC7B009D22B409C700EDA3E9 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B009C22B409C700EDA3E9 /* UserInteractor.swift */; };
+		CC7B009D22B409C700EDA3E9 /* SalonInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B009C22B409C700EDA3E9 /* SalonInteractor.swift */; };
 		CC7B009F22B40A8E00EDA3E9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B009E22B40A8E00EDA3E9 /* LoginView.swift */; };
 		CC7B00A122B40AAE00EDA3E9 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B00A022B40AAE00EDA3E9 /* LoginPresenter.swift */; };
 		CC7B00A322B40AD400EDA3E9 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B00A222B40AD400EDA3E9 /* RegistrationView.swift */; };
@@ -99,7 +99,7 @@
 		CC561C5E229BDBEC0048EB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC7351FF22B428F300B22B92 /* Salon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salon.swift; sourceTree = "<group>"; };
 		CC7B009722B4085F00EDA3E9 /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
-		CC7B009C22B409C700EDA3E9 /* UserInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		CC7B009C22B409C700EDA3E9 /* SalonInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonInteractor.swift; sourceTree = "<group>"; };
 		CC7B009E22B40A8E00EDA3E9 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CC7B00A022B40AAE00EDA3E9 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		CC7B00A222B40AD400EDA3E9 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -356,7 +356,7 @@
 		CC7B009B22B4099600EDA3E9 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				CC7B009C22B409C700EDA3E9 /* UserInteractor.swift */,
+				CC7B009C22B409C700EDA3E9 /* SalonInteractor.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -633,7 +633,7 @@
 				CC7B009F22B40A8E00EDA3E9 /* LoginView.swift in Sources */,
 				CC561C3C229BDBEC0048EB86 /* SalonProfileVC.swift in Sources */,
 				CC561C3A229BDBEC0048EB86 /* AppDelegate.swift in Sources */,
-				CC7B009D22B409C700EDA3E9 /* UserInteractor.swift in Sources */,
+				CC7B009D22B409C700EDA3E9 /* SalonInteractor.swift in Sources */,
 				CC0A1B3422A5EC09003E0315 /* ServiceInteractor.swift in Sources */,
 				CC0249BB229C01CD00921074 /* Utils.swift in Sources */,
 				CC7B00A322B40AD400EDA3E9 /* RegistrationView.swift in Sources */,

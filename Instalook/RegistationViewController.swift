@@ -6,7 +6,6 @@
 //  Copyright © 2019 instalook. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class RegistationViewController: UIViewController {
@@ -32,7 +31,7 @@ class RegistationViewController: UIViewController {
             let email = emailTextField.text,
             let password = passwordTextField.text,
             let confirmPassword = confirmPasswordTextField.text else { return }
-        
+                
         presenter.register(name: name,
                            email: email,
                            password: password,

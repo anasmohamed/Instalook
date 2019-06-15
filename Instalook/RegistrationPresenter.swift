@@ -34,6 +34,8 @@ class RegistrationPresenter {
             salon.salonName = name
             salon.salonEmail = email
             salon.salonPassword = password
+            salon.salonLocation = "Cairo, Egypt"
+            salon.salonType = "Males"
             
             view?.showIndicator()
             salonInteractor.register(salon: salon) { [unowned self] error in

@@ -64,6 +64,8 @@ enum InstalookRouter: URLRequestConvertible {
             body[NetworkingConstants.salonName] = salon.salonName!
             body[NetworkingConstants.salonEmail] = salon.salonEmail!
             body[NetworkingConstants.salonPassword] = salon.salonPassword!
+            body[NetworkingConstants.salonLocation] = salon.salonLocation!
+            body[NetworkingConstants.salonType] = salon.salonType!
         case let .addService(_, service):
             body[NetworkingConstants.serviceName] = service.serviceName!
             body[NetworkingConstants.serviceType] = service.serviceType!
