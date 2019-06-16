@@ -28,6 +28,8 @@
 		CC561C47229BDBEC0048EB86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC561C45229BDBEC0048EB86 /* LaunchScreen.storyboard */; };
 		CC561C52229BDBEC0048EB86 /* InstalookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C51229BDBEC0048EB86 /* InstalookTests.swift */; };
 		CC561C5D229BDBEC0048EB86 /* InstalookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */; };
+		CC6D082522B5917300A86C27 /* SalonServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D082322B5917300A86C27 /* SalonServices.swift */; };
+		CC6D082622B5917300A86C27 /* SalonServices.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC6D082422B5917300A86C27 /* SalonServices.xib */; };
 		CC73520022B428F300B22B92 /* Salon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7351FF22B428F300B22B92 /* Salon.swift */; };
 		CC7B009822B4085F00EDA3E9 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC7B009722B4085F00EDA3E9 /* Authentication.storyboard */; };
 		CC7B009D22B409C700EDA3E9 /* SalonInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B009C22B409C700EDA3E9 /* SalonInteractor.swift */; };
@@ -97,6 +99,8 @@
 		CC561C58229BDBEC0048EB86 /* InstalookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstalookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalookUITests.swift; sourceTree = "<group>"; };
 		CC561C5E229BDBEC0048EB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC6D082322B5917300A86C27 /* SalonServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonServices.swift; sourceTree = "<group>"; };
+		CC6D082422B5917300A86C27 /* SalonServices.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalonServices.xib; sourceTree = "<group>"; };
 		CC7351FF22B428F300B22B92 /* Salon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salon.swift; sourceTree = "<group>"; };
 		CC7B009722B4085F00EDA3E9 /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		CC7B009C22B409C700EDA3E9 /* SalonInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonInteractor.swift; sourceTree = "<group>"; };
@@ -307,6 +311,7 @@
 		CC561C6E229BDCC40048EB86 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CC7AEDFE22B54BCC00FF9593 /* SalonService */,
 				CC7B009922B4097700EDA3E9 /* Authentication */,
 				CC0162D9229C357600F624AF /* Presenter */,
 				CC0162D1229C27D100F624AF /* Interactor */,
@@ -324,6 +329,15 @@
 				CCC630A9229D576A00E2EB50 /* SalonProfileVC+PresenterDelegate.swift */,
 			);
 			name = SalonProfile;
+			sourceTree = "<group>";
+		};
+		CC7AEDFE22B54BCC00FF9593 /* SalonService */ = {
+			isa = PBXGroup;
+			children = (
+				CC6D082322B5917300A86C27 /* SalonServices.swift */,
+				CC6D082422B5917300A86C27 /* SalonServices.xib */,
+			);
+			name = SalonService;
 			sourceTree = "<group>";
 		};
 		CC7B009922B4097700EDA3E9 /* Authentication */ = {
@@ -493,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC503B11229BF00900173A09 /* SalonImagesCellCollectionViewCell.xib in Resources */,
+				CC6D082622B5917300A86C27 /* SalonServices.xib in Resources */,
 				CC561C47229BDBEC0048EB86 /* LaunchScreen.storyboard in Resources */,
 				CC561C44229BDBEC0048EB86 /* Assets.xcassets in Resources */,
 				CC561C3F229BDBEC0048EB86 /* Main.storyboard in Resources */,
@@ -637,6 +652,7 @@
 				CC0A1B3422A5EC09003E0315 /* ServiceInteractor.swift in Sources */,
 				CC0249BB229C01CD00921074 /* Utils.swift in Sources */,
 				CC7B00A322B40AD400EDA3E9 /* RegistrationView.swift in Sources */,
+				CC6D082522B5917300A86C27 /* SalonServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
