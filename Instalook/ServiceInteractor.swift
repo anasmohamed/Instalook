@@ -7,12 +7,11 @@
 //
 
 import Foundation
-import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
 class ServiceInteractor {
-    
+
     func addService(salonId: Int,
                     service: Service,
                     completionHandler: @escaping (Error?) -> Void) {
@@ -48,8 +47,6 @@ class ServiceInteractor {
             } else {
                 print("Response Error Code: nil")
             }
-            
-            
             
             let result = response.result
             switch result {

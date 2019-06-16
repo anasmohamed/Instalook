@@ -25,8 +25,8 @@ enum InstalookRouter: URLRequestConvertible {
             return NetworkingConstants.salonRequestMapping + "/" + NetworkingConstants.register
         case .search:
             return NetworkingConstants.salonRequestMapping + "/" + NetworkingConstants.getSalons
-        case let .addService(salonId, _):
-            return NetworkingConstants.serviceRequestMapping + "/" + NetworkingConstants.addService + "?salonId=\(salonId)"
+        case .addService:
+            return NetworkingConstants.serviceRequestMapping + "/" + NetworkingConstants.addService
         }
     }
     
@@ -66,10 +66,15 @@ enum InstalookRouter: URLRequestConvertible {
             body[NetworkingConstants.salonPassword] = salon.salonPassword!
             body[NetworkingConstants.salonLocation] = salon.salonLocation!
             body[NetworkingConstants.salonType] = salon.salonType!
-        case let .addService(_, service):
-            body[NetworkingConstants.serviceName] = service.serviceName!
-            body[NetworkingConstants.serviceType] = service.serviceType!
-            body[NetworkingConstants.servicePrice] = service.servicePrice!
+        case let .addService(salonId, service):
+            
+            var serviceBody = [String:Any]()
+            serviceBody[NetworkingConstants.serviceName] = service.serviceName!
+            serviceBody[NetworkingConstants.serviceType] = service.serviceType!
+            serviceBody[NetworkingConstants.servicePrice] = service.servicePrice!
+            
+            body[NetworkingConstants.salonId] = salonId
+            body["service"] = serviceBody
         default:
             print("Empty request body")
         }
