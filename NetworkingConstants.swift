@@ -34,7 +34,8 @@ struct NetworkingConstants {
     static let password = "password"
     
     // Salon Requests
-    static let addSalon = "add"
+    static let salonLogin = "login"
+    static let salonRegister = "register"
     static let getSalons = "getSalons"
     static let getSalonsById = "getSalonsById"
     
