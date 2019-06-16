@@ -21,8 +21,12 @@ class SalonProfileVC: UIViewController {
     @IBOutlet weak var salonProfileImage: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var viewsContainer: UIView!
+    var views :[UIView]!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        views = [UIView]()
         setupCollectionView()
         Utils.roundBtn(button: salonFollowBtn)
         Utils.roundImage(imageView: salonProfileImage)
@@ -30,6 +34,11 @@ class SalonProfileVC: UIViewController {
         activityIndicator?.hidesWhenStopped = true
         presenter.attachView(view: self)
         presenter.getSalonData()
+        views.append(SalonServices().view)
+        for v in views{
+            viewsContainer.addSubview(v)
+        }
+        viewsContainer.bringSubview(toFront: views[0])
         
         let service = Service()
         service.serviceName = "Amer's Service"
@@ -41,4 +50,8 @@ class SalonProfileVC: UIViewController {
             print("Success")
         })
     }
+    @IBAction func switchViews(_ sender: UISegmentedControl) {
+        self.viewsContainer.bringSubview(toFront: views[sender.selectedSegmentIndex])
+    }
+
 }

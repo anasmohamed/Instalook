@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G22010" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SalonServices" customModule="Instalook" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lML-cj-0eY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqb-gE-D2A">
+                            <rect key="frame" x="8" y="15" width="175.5" height="30"/>
+                            <state key="normal" title="Edit"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTA-lc-9vK">
+                            <rect key="frame" x="191.5" y="15" width="175.5" height="30"/>
+                            <state key="normal" title="Add"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="wTA-lc-9vK" firstAttribute="centerY" secondItem="lML-cj-0eY" secondAttribute="centerY" id="1lm-O8-IOf"/>
+                        <constraint firstItem="oqb-gE-D2A" firstAttribute="leading" secondItem="lML-cj-0eY" secondAttribute="leading" constant="8" id="8j5-R1-ZcC"/>
+                        <constraint firstAttribute="height" constant="60" id="KzP-gn-8qe"/>
+                        <constraint firstItem="wTA-lc-9vK" firstAttribute="width" secondItem="oqb-gE-D2A" secondAttribute="width" id="NKd-8L-5lU"/>
+                        <constraint firstItem="oqb-gE-D2A" firstAttribute="centerY" secondItem="lML-cj-0eY" secondAttribute="centerY" id="fEy-yV-93a"/>
+                        <constraint firstItem="wTA-lc-9vK" firstAttribute="leading" secondItem="oqb-gE-D2A" secondAttribute="trailing" constant="8" id="fpz-k7-1iG"/>
+                        <constraint firstAttribute="trailing" secondItem="wTA-lc-9vK" secondAttribute="trailing" constant="8" id="gif-O2-qFz"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nvq-tY-w7L">
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lML-cj-0eY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9rT-PC-lax"/>
+                <constraint firstItem="Nvq-tY-w7L" firstAttribute="trailing" secondItem="lML-cj-0eY" secondAttribute="trailing" id="E87-Ub-LrZ"/>
+                <constraint firstItem="Nvq-tY-w7L" firstAttribute="leading" secondItem="lML-cj-0eY" secondAttribute="leading" id="JxI-GJ-odg"/>
+                <constraint firstAttribute="trailing" secondItem="lML-cj-0eY" secondAttribute="trailing" id="ZBY-J5-XH8"/>
+                <constraint firstItem="Nvq-tY-w7L" firstAttribute="top" secondItem="lML-cj-0eY" secondAttribute="bottom" id="bNl-ft-db3"/>
+                <constraint firstItem="lML-cj-0eY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pqi-NN-6YP"/>
+                <constraint firstAttribute="bottom" secondItem="Nvq-tY-w7L" secondAttribute="bottom" id="q3v-lj-g5j"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
