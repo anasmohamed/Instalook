@@ -2,119 +2,43 @@
 //  SalonProfileVCPresenter .swift
 //  Instalook
 //
-//  Created by jets on 9/22/1440 AH.
-//  Copyright © 1440 AH instalook. All rights reserved.
+//  Created by Amer Shaker on 6/17/19.
+//  Copyright © 2019 instalook. All rights reserved.
 //
 
 import Foundation
-/*
- 
- struct PeopleViewData{
- let name: String
- let email: String
- }
- 
- protocol PeopleView: NSObjectProtocol {
- func startLoading()
- func finishLoading()
- func setPeople(people: [PeopleViewData])
- func setEmptyPeople()
- }
- 
- class PeoplePresenter {
- private let peopleService:PeopleService
- weak private var peopleView : PeopleView?
- 
- init(peopleService:PeopleService) {
- self.peopleService = peopleService
- }
- 
- func attachView(view:PeopleView) {
- peopleView = view
- }
- 
- func detachView() {
- peopleView = nil
- }
- 
- func getPeople() {
- self.peopleView?.startLoading()
- peopleService.callAPIGetPeople(
- onSuccess: { (people) in
- self.peopleView?.finishLoading()
- if (people.count == 0){
- self.peopleView?.setEmptyPeople()
- } else {
- let mappedUsers = people.map {
- return PeopleViewData(name: "\($0.name!)", email: "\($0.email!)")
- }
- self.peopleView?.setPeople(people: mappedUsers)
- }
- },
- onFailure: { (errorMessage) in
- self.peopleView?.finishLoading()
- }
- )
- }
- }
-
- */
-
-struct SalonViewData{
- //   var salonId : Int?
-    var salonName: String?
-    var salonEmail: String?
-   /* var salonLocation: String?
-    var salonType: String?
- */
-}
-
-protocol SalonView: NSObjectProtocol {
-  
-    func showIndicator()
-    func hideIndicator()
-    func setSalon(salon : [SalonViewData])
-    func setEmptySalon()
-
-}
-
 
 class SalonProfilePresenter {
     
-    private weak var salonView: SalonView?
-    private var salonInteractor = SalonProfileInteractor()
-
+    private weak var view: SalonProfileView?
+    private let salonProfileInteractor: SalonProfileInteractor
+    private var salon: Salon?
     
-    init(salonInteractor : SalonProfileInteractor) {
-        self.salonInteractor = salonInteractor
+    init(view: SalonProfileView) {
+        self.view = view
+        salonProfileInteractor = SalonProfileInteractor()
     }
     
-    func attachView(view:SalonView) {
-        salonView = view
-    }
-    
-    func detachView() {
-        salonView = nil
-    }
-
-    
-    func getSalonData() {
-        self.salonView?.showIndicator()
-        salonInteractor.callAPIGetSalon(
-            onSuccess: { (salon) in
-                self.salonView?.hideIndicator()
-                if (salon.count == 0){
-                    self.salonView?.setEmptySalon()
+    func getSalonById(salonId: Int) {
+        
+        if salonId != 0 {
+            
+            view?.showIndicator()
+            salonProfileInteractor.getSalonById(salonId: salonId) { [unowned self] (salon, error) in
+                
+                self.view?.hideIndicator()
+                if let error = error {
+                    self.view?.showError(error: error.localizedDescription)
                 } else {
-                    let mappedUsers = salon.map {
-                       return SalonViewData(salonName: "\($0.salonName!)", salonEmail: "\($0.salonEmail!)")
-                    }
-                    self.salonView?.setSalon(salon: mappedUsers)
+                    guard let salon = salon else { return }
+                    self.salon = salon
+                
+                    guard let salonName = salon.salonName else { return }
+                    self.view?.setSalonName(salonName: salonName)
                 }
-        },
-            onFailure: { (errorMessage) in
-                self.salonView?.hideIndicator()
+            }
+        } else {
+            view?.showError(error: "Invalid Credentials")
         }
-        )
-}
+    }
 }

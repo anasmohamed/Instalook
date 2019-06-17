@@ -36,8 +36,8 @@ struct NetworkingConstants {
     // Salon Requests
     static let salonLogin = "login"
     static let salonRegister = "register"
+    static let getSalonById = "getSalonById"
     static let getSalons = "getSalons"
-    static let getSalonsById = "getSalonsById"
     
     // Salon Query Parameters
     static let salonId = "salonId"
@@ -47,12 +47,13 @@ struct NetworkingConstants {
     static let salonLocation = "salonLocation"
     static let salonType = "salonType"
     
+    // Salon Service Requests
+    static let addService = "add"
+    static let getAllServices = "getAllServices"
+    
     // Salon Service Query Parameters
     static let serviceId = "serviceId"
     static let serviceName = "serviceName"
     static let serviceType = "serviceType"
     static let servicePrice = "servicePrice"
-    
-    // Salon Service Requests
-    static let addService = "add"
 }

@@ -13,8 +13,10 @@ enum InstalookRouter: URLRequestConvertible {
     
     case login(email: String, password: String)
     case register(salon: Salon)
+    case getSalonById(salonId: Int)
     case search()
     case addService(salonId: Int, service: Service)
+    case getAllServices(salonId: Int)
     
     var path: String {
         
@@ -23,17 +25,21 @@ enum InstalookRouter: URLRequestConvertible {
             return NetworkingConstants.salonRequestMapping + "/" + NetworkingConstants.login
         case .register:
             return NetworkingConstants.salonRequestMapping + "/" + NetworkingConstants.register
+        case .getSalonById:
+            return NetworkingConstants.salonRequestMapping + "/" + NetworkingConstants.getSalonById
         case .search:
             return NetworkingConstants.salonRequestMapping + "/" + NetworkingConstants.getSalons
         case .addService:
             return NetworkingConstants.serviceRequestMapping + "/" + NetworkingConstants.addService
+        case .getAllServices:
+            return NetworkingConstants.serviceRequestMapping + "/" + NetworkingConstants.getAllServices
         }
     }
     
     var httpMethod: HTTPMethod {
         
         switch self {
-        case .login, .register, .addService:
+        case .login, .register, .getSalonById, .addService, .getAllServices:
             return .post
         case .search:
             return .get
@@ -66,8 +72,8 @@ enum InstalookRouter: URLRequestConvertible {
             body[NetworkingConstants.salonPassword] = salon.salonPassword!
             body[NetworkingConstants.salonLocation] = salon.salonLocation!
             body[NetworkingConstants.salonType] = salon.salonType!
-        case let .addService(salonId, service):
             
+        case let .addService(salonId, service):
             var serviceBody = [String:Any]()
             serviceBody[NetworkingConstants.serviceName] = service.serviceName!
             serviceBody[NetworkingConstants.serviceType] = service.serviceType!
@@ -75,6 +81,7 @@ enum InstalookRouter: URLRequestConvertible {
             
             body[NetworkingConstants.salonId] = salonId
             body["service"] = serviceBody
+            
         default:
             print("Empty request body")
         }
@@ -90,6 +97,10 @@ enum InstalookRouter: URLRequestConvertible {
         case let .login(email, password):
             params[NetworkingConstants.salonEmail] = email
             params[NetworkingConstants.salonPassword] = password
+        case let .getSalonById(salonId):
+            params[NetworkingConstants.salonId] = salonId
+        case let .getAllServices(salonId):
+            params[NetworkingConstants.salonId] = salonId
         default:
             print("Empty request params")
         }
@@ -106,7 +117,7 @@ enum InstalookRouter: URLRequestConvertible {
         urlRequest.allHTTPHeaderFields = httpHeaders
         
         switch self {
-        case .login, .search:
+        case .login, .getSalonById, .search, .getAllServices:
             return try URLEncoding.methodDependent.encode(urlRequest, with: params)
         case .register, .addService:
             return try JSONEncoding.default.encode(urlRequest, with: body)
