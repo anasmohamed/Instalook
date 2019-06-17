@@ -8,15 +8,15 @@
 
 import Foundation
 
-class SalonProfilePresenter {
+class ProfilePresenter {
     
-    private weak var view: SalonProfileView?
-    private let salonProfileInteractor: SalonProfileInteractor
+    private weak var view: ProfileView?
+    private let profileInteractor: ProfileInteractor
     private var salon: Salon?
     
-    init(view: SalonProfileView) {
+    init(view: ProfileView) {
         self.view = view
-        salonProfileInteractor = SalonProfileInteractor()
+        profileInteractor = ProfileInteractor()
     }
     
     func getSalonById(salonId: Int) {
@@ -24,7 +24,7 @@ class SalonProfilePresenter {
         if salonId != 0 {
             
             view?.showIndicator()
-            salonProfileInteractor.getSalonById(salonId: salonId) { [unowned self] (salon, error) in
+            profileInteractor.getSalonById(salonId: salonId) { [unowned self] (salon, error) in
                 
                 self.view?.hideIndicator()
                 if let error = error {

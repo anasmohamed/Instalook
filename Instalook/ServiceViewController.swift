@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SalonServiceViewController: UITableViewController {
+class ServiceViewController: UITableViewController {
     
     // MARK: Outlets
     @IBOutlet weak var spinner: UIActivityIndicatorView!
@@ -18,6 +18,7 @@ class SalonServiceViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = ServicePresenter(view: self)
+        presenter.viewDidLoad()
     }
     
     // MARK: Actions
@@ -41,11 +42,17 @@ class SalonServiceViewController: UITableViewController {
     }
     
     // MARK: TableView
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 2
-//    }
-//    
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        
-//    }
+    func setupTableView() {
+        tableView.register(UINib(nibName: "ServiceCell", bundle: nil), forCellReuseIdentifier: "ServiceCell")
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return presenter.getServicesCount()
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ServiceCell", for: indexPath) as! ServiceCell
+        presenter.configure(cell: cell, for: indexPath.row)
+        return cell
+    }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SalonProfileView: class {
+protocol ProfileView: class {
     func showIndicator()
     func hideIndicator()
     func setSalonName(salonName: String)

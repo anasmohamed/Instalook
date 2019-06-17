@@ -10,20 +10,20 @@
 		3E10CE852805222916E17BAE /* Pods_InstalookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51231ADBEA24F073F386B4B /* Pods_InstalookUITests.framework */; };
 		49888B667A515F0214E3CCEE /* Pods_Instalook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6314E582C9C69F992F56D82 /* Pods_Instalook.framework */; };
 		AB506B7CEAEE2B79F779C429 /* Pods_InstalookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CC501214783B2DAB07555F /* Pods_InstalookTests.framework */; };
-		CC0162D4229C281100F624AF /* SalonProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0162D3229C281100F624AF /* SalonProfileInteractor.swift */; };
-		CC0162DB229C361900F624AF /* SalonProfilePresenter .swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0162DA229C361900F624AF /* SalonProfilePresenter .swift */; };
+		CC0162D4229C281100F624AF /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0162D3229C281100F624AF /* ProfileInteractor.swift */; };
+		CC0162DB229C361900F624AF /* ProfilePresenter .swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0162DA229C361900F624AF /* ProfilePresenter .swift */; };
 		CC0249BB229C01CD00921074 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0249BA229C01CD00921074 /* Utils.swift */; };
 		CC0A1B3422A5EC09003E0315 /* ServiceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0A1B3322A5EC09003E0315 /* ServiceInteractor.swift */; };
 		CC1BCEA922A5E1EF00E0F187 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1BCEA822A5E1EF00E0F187 /* Service.swift */; };
 		CC561C3A229BDBEC0048EB86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C39229BDBEC0048EB86 /* AppDelegate.swift */; };
-		CC561C3C229BDBEC0048EB86 /* SalonProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C3B229BDBEC0048EB86 /* SalonProfileViewController.swift */; };
+		CC561C3C229BDBEC0048EB86 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C3B229BDBEC0048EB86 /* ProfileViewController.swift */; };
 		CC561C3F229BDBEC0048EB86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC561C3D229BDBEC0048EB86 /* Main.storyboard */; };
 		CC561C42229BDBEC0048EB86 /* Instalook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC561C40229BDBEC0048EB86 /* Instalook.xcdatamodeld */; };
 		CC561C44229BDBEC0048EB86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC561C43229BDBEC0048EB86 /* Assets.xcassets */; };
 		CC561C47229BDBEC0048EB86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC561C45229BDBEC0048EB86 /* LaunchScreen.storyboard */; };
 		CC561C52229BDBEC0048EB86 /* InstalookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C51229BDBEC0048EB86 /* InstalookTests.swift */; };
 		CC561C5D229BDBEC0048EB86 /* InstalookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */; };
-		CC6D082522B5917300A86C27 /* SalonServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D082322B5917300A86C27 /* SalonServiceViewController.swift */; };
+		CC6D082522B5917300A86C27 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D082322B5917300A86C27 /* ServiceViewController.swift */; };
 		CC73520022B428F300B22B92 /* Salon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7351FF22B428F300B22B92 /* Salon.swift */; };
 		CC7B009822B4085F00EDA3E9 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC7B009722B4085F00EDA3E9 /* Authentication.storyboard */; };
 		CC7B009D22B409C700EDA3E9 /* SalonInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B009C22B409C700EDA3E9 /* SalonInteractor.swift */; };
@@ -38,14 +38,17 @@
 		CC7B00AF22B40BC400EDA3E9 /* RegistationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B00AE22B40BC400EDA3E9 /* RegistationViewController.swift */; };
 		CC7B00B122B40BEA00EDA3E9 /* RegistrationViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B00B022B40BEA00EDA3E9 /* RegistrationViewController+PresenterDelegate.swift */; };
 		CC7B00B322B40C1000EDA3E9 /* RegistrationViewController+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B00B222B40C1000EDA3E9 /* RegistrationViewController+TextFieldDelegate.swift */; };
-		CCC608DC22B693A40027FD01 /* SalonProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC608DB22B693A40027FD01 /* SalonProfileView.swift */; };
-		CCC630AA229D576A00E2EB50 /* SalonProfileViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC630A9229D576A00E2EB50 /* SalonProfileViewController+PresenterDelegate.swift */; };
+		CCC608DC22B693A40027FD01 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC608DB22B693A40027FD01 /* ProfileView.swift */; };
+		CCC630AA229D576A00E2EB50 /* ProfileViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC630A9229D576A00E2EB50 /* ProfileViewController+PresenterDelegate.swift */; };
 		CCC99A9922B6653E007E9136 /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC99A9822B6653E007E9136 /* ServiceView.swift */; };
 		CCC99A9B22B66590007E9136 /* ServicePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC99A9A22B66590007E9136 /* ServicePresenter.swift */; };
-		CCC99A9D22B66FEF007E9136 /* SalonServiceViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC99A9C22B66FEF007E9136 /* SalonServiceViewController+PresenterDelegate.swift */; };
+		CCC99A9D22B66FEF007E9136 /* ServiceViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC99A9C22B66FEF007E9136 /* ServiceViewController+PresenterDelegate.swift */; };
+		CCD6C6A322B855B9000E2A8B /* ServiceCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD6C6A222B855B9000E2A8B /* ServiceCellView.swift */; };
 		CCDC570E22A596A30073F1F7 /* InstalookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC570D22A596A30073F1F7 /* InstalookRouter.swift */; };
 		CCDC571022A596E10073F1F7 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC570F22A596E10073F1F7 /* NetworkingConstants.swift */; };
 		CCDC571222A5970A0073F1F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC571122A5970A0073F1F7 /* User.swift */; };
+		CCDE980922B843760087A8B6 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE980722B843760087A8B6 /* ServiceCell.swift */; };
+		CCDE980A22B843760087A8B6 /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCDE980822B843760087A8B6 /* ServiceCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,14 +76,14 @@
 		BA7F5AEF1BE2C4AA66DF9F55 /* Pods-InstalookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstalookUITests.release.xcconfig"; path = "Target Support Files/Pods-InstalookUITests/Pods-InstalookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CB6BEEEDCEB0C5E14AE28A8D /* Pods-Instalook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instalook.release.xcconfig"; path = "Target Support Files/Pods-Instalook/Pods-Instalook.release.xcconfig"; sourceTree = "<group>"; };
 		CBDE5DD142DA2524878892B3 /* Pods-InstalookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstalookTests.release.xcconfig"; path = "Target Support Files/Pods-InstalookTests/Pods-InstalookTests.release.xcconfig"; sourceTree = "<group>"; };
-		CC0162D3229C281100F624AF /* SalonProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonProfileInteractor.swift; sourceTree = "<group>"; };
-		CC0162DA229C361900F624AF /* SalonProfilePresenter .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SalonProfilePresenter .swift"; sourceTree = "<group>"; };
+		CC0162D3229C281100F624AF /* ProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		CC0162DA229C361900F624AF /* ProfilePresenter .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfilePresenter .swift"; sourceTree = "<group>"; };
 		CC0249BA229C01CD00921074 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CC0A1B3322A5EC09003E0315 /* ServiceInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceInteractor.swift; sourceTree = "<group>"; };
 		CC1BCEA822A5E1EF00E0F187 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		CC561C36229BDBEC0048EB86 /* Instalook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instalook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC561C39229BDBEC0048EB86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC561C3B229BDBEC0048EB86 /* SalonProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonProfileViewController.swift; sourceTree = "<group>"; };
+		CC561C3B229BDBEC0048EB86 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CC561C3E229BDBEC0048EB86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC561C41229BDBEC0048EB86 /* Instalook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instalook.xcdatamodel; sourceTree = "<group>"; };
 		CC561C43229BDBEC0048EB86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,7 +95,7 @@
 		CC561C58229BDBEC0048EB86 /* InstalookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstalookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC561C5C229BDBEC0048EB86 /* InstalookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalookUITests.swift; sourceTree = "<group>"; };
 		CC561C5E229BDBEC0048EB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC6D082322B5917300A86C27 /* SalonServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonServiceViewController.swift; sourceTree = "<group>"; };
+		CC6D082322B5917300A86C27 /* ServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		CC7351FF22B428F300B22B92 /* Salon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salon.swift; sourceTree = "<group>"; };
 		CC7B009722B4085F00EDA3E9 /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		CC7B009C22B409C700EDA3E9 /* SalonInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonInteractor.swift; sourceTree = "<group>"; };
@@ -107,14 +110,17 @@
 		CC7B00AE22B40BC400EDA3E9 /* RegistationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistationViewController.swift; sourceTree = "<group>"; };
 		CC7B00B022B40BEA00EDA3E9 /* RegistrationViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RegistrationViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
 		CC7B00B222B40C1000EDA3E9 /* RegistrationViewController+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RegistrationViewController+TextFieldDelegate.swift"; sourceTree = "<group>"; };
-		CCC608DB22B693A40027FD01 /* SalonProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonProfileView.swift; sourceTree = "<group>"; };
-		CCC630A9229D576A00E2EB50 /* SalonProfileViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SalonProfileViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		CCC608DB22B693A40027FD01 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CCC630A9229D576A00E2EB50 /* ProfileViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfileViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
 		CCC99A9822B6653E007E9136 /* ServiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceView.swift; sourceTree = "<group>"; };
 		CCC99A9A22B66590007E9136 /* ServicePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicePresenter.swift; sourceTree = "<group>"; };
-		CCC99A9C22B66FEF007E9136 /* SalonServiceViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SalonServiceViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		CCC99A9C22B66FEF007E9136 /* ServiceViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		CCD6C6A222B855B9000E2A8B /* ServiceCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCellView.swift; sourceTree = "<group>"; };
 		CCDC570D22A596A30073F1F7 /* InstalookRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstalookRouter.swift; sourceTree = "<group>"; };
 		CCDC570F22A596E10073F1F7 /* NetworkingConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
 		CCDC571122A5970A0073F1F7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CCDE980722B843760087A8B6 /* ServiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
+		CCDE980822B843760087A8B6 /* ServiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceCell.xib; sourceTree = "<group>"; };
 		D51231ADBEA24F073F386B4B /* Pods_InstalookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstalookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6314E582C9C69F992F56D82 /* Pods_Instalook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instalook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -174,7 +180,7 @@
 		CC0162D1229C27D100F624AF /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				CC0162D3229C281100F624AF /* SalonProfileInteractor.swift */,
+				CC0162D3229C281100F624AF /* ProfileInteractor.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -182,8 +188,8 @@
 		CC0162D9229C357600F624AF /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				CCC608DB22B693A40027FD01 /* SalonProfileView.swift */,
-				CC0162DA229C361900F624AF /* SalonProfilePresenter .swift */,
+				CCC608DB22B693A40027FD01 /* ProfileView.swift */,
+				CC0162DA229C361900F624AF /* ProfilePresenter .swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -289,32 +295,34 @@
 			isa = PBXGroup;
 			children = (
 				CC7B009922B4097700EDA3E9 /* Authentication */,
-				CC7AEDFE22B54BCC00FF9593 /* SalonService */,
-				CC561C6F229BDD040048EB86 /* SalonProfile */,
+				CCDE980522B8418A0087A8B6 /* Barbers */,
+				CC7AEDFE22B54BCC00FF9593 /* Services */,
+				CC561C6F229BDD040048EB86 /* Profile */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
 		};
-		CC561C6F229BDD040048EB86 /* SalonProfile */ = {
+		CC561C6F229BDD040048EB86 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				CC561C3B229BDBEC0048EB86 /* SalonProfileViewController.swift */,
-				CCC630A9229D576A00E2EB50 /* SalonProfileViewController+PresenterDelegate.swift */,
+				CC561C3B229BDBEC0048EB86 /* ProfileViewController.swift */,
+				CCC630A9229D576A00E2EB50 /* ProfileViewController+PresenterDelegate.swift */,
 				CC0162D9229C357600F624AF /* Presenter */,
 				CC0162D1229C27D100F624AF /* Interactor */,
 			);
-			name = SalonProfile;
+			name = Profile;
 			sourceTree = "<group>";
 		};
-		CC7AEDFE22B54BCC00FF9593 /* SalonService */ = {
+		CC7AEDFE22B54BCC00FF9593 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				CC6D082322B5917300A86C27 /* SalonServiceViewController.swift */,
-				CCC99A9C22B66FEF007E9136 /* SalonServiceViewController+PresenterDelegate.swift */,
+				CC6D082322B5917300A86C27 /* ServiceViewController.swift */,
+				CCC99A9C22B66FEF007E9136 /* ServiceViewController+PresenterDelegate.swift */,
+				CCDE980622B843260087A8B6 /* TableViewCell */,
 				CCC99A9622B663F4007E9136 /* Presenter */,
 				CCC99A9722B66400007E9136 /* Interactor */,
 			);
-			name = SalonService;
+			name = Services;
 			sourceTree = "<group>";
 		};
 		CC7B009922B4097700EDA3E9 /* Authentication */ = {
@@ -356,6 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				CCC99A9822B6653E007E9136 /* ServiceView.swift */,
+				CCD6C6A222B855B9000E2A8B /* ServiceCellView.swift */,
 				CCC99A9A22B66590007E9136 /* ServicePresenter.swift */,
 			);
 			name = Presenter;
@@ -377,6 +386,22 @@
 			);
 			name = Network;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		CCDE980522B8418A0087A8B6 /* Barbers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Barbers;
+			sourceTree = "<group>";
+		};
+		CCDE980622B843260087A8B6 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CCDE980722B843760087A8B6 /* ServiceCell.swift */,
+				CCDE980822B843760087A8B6 /* ServiceCell.xib */,
+			);
+			name = TableViewCell;
 			sourceTree = "<group>";
 		};
 		EBAF3AE2A4E62F8A77107F31 /* Frameworks */ = {
@@ -501,6 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC561C47229BDBEC0048EB86 /* LaunchScreen.storyboard in Resources */,
+				CCDE980A22B843760087A8B6 /* ServiceCell.xib in Resources */,
 				CC561C44229BDBEC0048EB86 /* Assets.xcassets in Resources */,
 				CC561C3F229BDBEC0048EB86 /* Main.storyboard in Resources */,
 				CC7B009822B4085F00EDA3E9 /* Authentication.storyboard in Resources */,
@@ -617,34 +643,36 @@
 			files = (
 				CC7B00B122B40BEA00EDA3E9 /* RegistrationViewController+PresenterDelegate.swift in Sources */,
 				CC7B00AF22B40BC400EDA3E9 /* RegistationViewController.swift in Sources */,
-				CCC630AA229D576A00E2EB50 /* SalonProfileViewController+PresenterDelegate.swift in Sources */,
+				CCC630AA229D576A00E2EB50 /* ProfileViewController+PresenterDelegate.swift in Sources */,
 				CCDC570E22A596A30073F1F7 /* InstalookRouter.swift in Sources */,
+				CCDE980922B843760087A8B6 /* ServiceCell.swift in Sources */,
 				CC7B00AD22B40B8C00EDA3E9 /* LoginViewController+TextFieldDelegate.swift in Sources */,
 				CC7B00AB22B40B6800EDA3E9 /* LoginViewController+TextField.swift in Sources */,
 				CC1BCEA922A5E1EF00E0F187 /* Service.swift in Sources */,
-				CC0162DB229C361900F624AF /* SalonProfilePresenter .swift in Sources */,
+				CC0162DB229C361900F624AF /* ProfilePresenter .swift in Sources */,
 				CC73520022B428F300B22B92 /* Salon.swift in Sources */,
 				CC7B00A122B40AAE00EDA3E9 /* LoginPresenter.swift in Sources */,
 				CC7B00A522B40AEC00EDA3E9 /* RegistrationPresenter.swift in Sources */,
 				CCDC571222A5970A0073F1F7 /* User.swift in Sources */,
 				CCC99A9922B6653E007E9136 /* ServiceView.swift in Sources */,
 				CC7B00A722B40B1A00EDA3E9 /* LoginViewController.swift in Sources */,
-				CC0162D4229C281100F624AF /* SalonProfileInteractor.swift in Sources */,
+				CC0162D4229C281100F624AF /* ProfileInteractor.swift in Sources */,
 				CC7B00A922B40B4300EDA3E9 /* LoginViewController+PresenterDelegate.swift in Sources */,
 				CC7B00B322B40C1000EDA3E9 /* RegistrationViewController+TextFieldDelegate.swift in Sources */,
 				CCDC571022A596E10073F1F7 /* NetworkingConstants.swift in Sources */,
 				CC561C42229BDBEC0048EB86 /* Instalook.xcdatamodeld in Sources */,
 				CC7B009F22B40A8E00EDA3E9 /* LoginView.swift in Sources */,
-				CC561C3C229BDBEC0048EB86 /* SalonProfileViewController.swift in Sources */,
+				CC561C3C229BDBEC0048EB86 /* ProfileViewController.swift in Sources */,
 				CC561C3A229BDBEC0048EB86 /* AppDelegate.swift in Sources */,
 				CCC99A9B22B66590007E9136 /* ServicePresenter.swift in Sources */,
 				CC7B009D22B409C700EDA3E9 /* SalonInteractor.swift in Sources */,
-				CCC608DC22B693A40027FD01 /* SalonProfileView.swift in Sources */,
+				CCC608DC22B693A40027FD01 /* ProfileView.swift in Sources */,
 				CC0A1B3422A5EC09003E0315 /* ServiceInteractor.swift in Sources */,
-				CCC99A9D22B66FEF007E9136 /* SalonServiceViewController+PresenterDelegate.swift in Sources */,
+				CCC99A9D22B66FEF007E9136 /* ServiceViewController+PresenterDelegate.swift in Sources */,
+				CCD6C6A322B855B9000E2A8B /* ServiceCellView.swift in Sources */,
 				CC0249BB229C01CD00921074 /* Utils.swift in Sources */,
 				CC7B00A322B40AD400EDA3E9 /* RegistrationView.swift in Sources */,
-				CC6D082522B5917300A86C27 /* SalonServiceViewController.swift in Sources */,
+				CC6D082522B5917300A86C27 /* ServiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,11 +13,16 @@ class ServicePresenter {
     private weak var view: ServiceView?
     private let serviceInteractor: ServiceInteractor
     private var service: Service?
-    private var services: [Service]?
+    private var services: [Service]
     
     init(view: ServiceView) {
         self.view = view
         serviceInteractor = ServiceInteractor()
+        services = [Service]()
+    }
+    
+    func viewDidLoad() {
+        getAllServices(salonId: 172)
     }
     
     func addService(salonId: Int, service: Service) {
@@ -58,5 +63,17 @@ class ServicePresenter {
         } else {
             view?.showError(error: "Invalid Credentials")
         }
+    }
+    
+    func getServicesCount() -> Int {
+        return services.count
+    }
+    
+    func configure(cell: ServiceCellView, for index: Int) {
+        let service = services[index]
+        
+        guard let serviceName = service.serviceName else { return }
+        
+        cell.displayServiceName(serviceName: serviceName)
     }
 }

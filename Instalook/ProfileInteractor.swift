@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
-class SalonProfileInteractor {
+class ProfileInteractor {
     
     func getSalonById(salonId: Int,
                       completionHandler: @escaping (Salon?, Error?) -> Void) {

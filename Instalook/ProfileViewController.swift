@@ -8,18 +8,18 @@
 
 import UIKit
 
-class SalonProfileViewController: UIViewController {
+class ProfileViewController: UIViewController {
     
     // MARK: Outlets
     @IBOutlet weak var salonNameLabel: UILabel!
     @IBOutlet weak var salonProfileImageView: UIImageView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
-    private var presenter: SalonProfilePresenter!
+    private var presenter: ProfilePresenter!
 
     // MARK: View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = SalonProfilePresenter(view: self)
+        presenter = ProfilePresenter(view: self)
         presenter.getSalonById(salonId: 172)
         
         Utils.roundImage(imageView: salonProfileImageView)

@@ -1,14 +1,14 @@
 //
-//  SalonServiceViewController+PresenterDelegate.swift
+//  SalonProfilePresenter+.swift
 //  Instalook
 //
-//  Created by Amer Shaker on 6/16/19.
+//  Created by Amer Shaker on 6/17/19.
 //  Copyright © 2019 instalook. All rights reserved.
 //
 
 import UIKit
 
-extension SalonServiceViewController: ServiceView {
+extension ProfileViewController: ProfileView {
     
     func showIndicator() {
         spinner.startAnimating()
@@ -17,17 +17,19 @@ extension SalonServiceViewController: ServiceView {
     func hideIndicator() {
         spinner.stopAnimating()
     }
+    
+    func setSalonName(salonName: String) {
+        salonNameLabel.text = salonName
+    }
 
-    func addServiceSuccess() {
-        //        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        //        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        //        self.present(homeViewController, animated: true, completion: nil)
+    func setSalonEmail(salonEmail: String) {
+    
     }
     
-    func getAllServicesSuccess() {
-        
-    }
+    func setSalonType(salonType: String) {
     
+    }
+
     func showError(error: String) {
         let alertController = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
         
