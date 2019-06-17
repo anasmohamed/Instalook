@@ -17,6 +17,7 @@ enum InstalookRouter: URLRequestConvertible {
     case search()
     case addService(salonId: Int, service: Service)
     case getAllServices(salonId: Int)
+    case getAllBarbers(salonId: Int)
     
     var path: String {
         
@@ -33,13 +34,15 @@ enum InstalookRouter: URLRequestConvertible {
             return NetworkingConstants.serviceRequestMapping + "/" + NetworkingConstants.addService
         case .getAllServices:
             return NetworkingConstants.serviceRequestMapping + "/" + NetworkingConstants.getAllServices
+        case .getAllBarbers:
+            return NetworkingConstants.barberRequestMapping + "/" + NetworkingConstants.getAllBarbers
         }
     }
     
     var httpMethod: HTTPMethod {
         
         switch self {
-        case .login, .register, .getSalonById, .addService, .getAllServices:
+        case .login, .register, .getSalonById, .addService, .getAllServices, .getAllBarbers:
             return .post
         case .search:
             return .get
@@ -101,6 +104,8 @@ enum InstalookRouter: URLRequestConvertible {
             params[NetworkingConstants.salonId] = salonId
         case let .getAllServices(salonId):
             params[NetworkingConstants.salonId] = salonId
+        case let .getAllBarbers(salonId):
+            params[NetworkingConstants.salonId] = salonId
         default:
             print("Empty request params")
         }
@@ -117,7 +122,7 @@ enum InstalookRouter: URLRequestConvertible {
         urlRequest.allHTTPHeaderFields = httpHeaders
         
         switch self {
-        case .login, .getSalonById, .search, .getAllServices:
+        case .login, .getSalonById, .search, .getAllServices, .getAllBarbers:
             return try URLEncoding.methodDependent.encode(urlRequest, with: params)
         case .register, .addService:
             return try JSONEncoding.default.encode(urlRequest, with: body)

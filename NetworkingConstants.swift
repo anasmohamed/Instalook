@@ -20,6 +20,7 @@ struct NetworkingConstants {
     // Request Mappings
     static let userRequestMapping = "user"
     static let salonRequestMapping = "salon"
+    static let barberRequestMapping = "barber"
     static let serviceRequestMapping = "service"
     
     // User Requests
@@ -46,6 +47,15 @@ struct NetworkingConstants {
     static let salonPassword = "salonPassword"
     static let salonLocation = "salonLocation"
     static let salonType = "salonType"
+    
+    // Barber Requests
+    static let getAllBarbers = "all"
+
+    // Barber Query Parameters
+    static let barberId = "barberId"
+    static let barberFirstName = "firstName"
+    static let barberLastName = "lastName"
+    static let isAvailable = "isAvailable"
     
     // Salon Service Requests
     static let addService = "add"

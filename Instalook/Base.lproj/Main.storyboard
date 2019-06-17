@@ -160,6 +160,50 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JNG-Pa-9Xt">
+                                <rect key="frame" x="20" y="193.33333333333334" width="374" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4HK-t8-yCa">
+                                <rect key="frame" x="20" y="229.33333333333331" width="374" height="441.66666666666669"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="bpr-PV-MHO">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUZ-hU-lX7">
+                                            <rect key="frame" x="8" y="15" width="175" height="30"/>
+                                            <state key="normal" title="Edit"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5L3-HG-1MG">
+                                            <rect key="frame" x="191" y="15" width="175" height="30"/>
+                                            <state key="normal" title="Add"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="5L3-HG-1MG" firstAttribute="width" secondItem="RUZ-hU-lX7" secondAttribute="width" id="8I8-1X-GjH"/>
+                                        <constraint firstItem="RUZ-hU-lX7" firstAttribute="centerY" secondItem="bpr-PV-MHO" secondAttribute="centerY" id="UOd-F1-7wi"/>
+                                        <constraint firstItem="RUZ-hU-lX7" firstAttribute="leading" secondItem="bpr-PV-MHO" secondAttribute="leading" constant="8" id="Wn4-M4-dFC"/>
+                                        <constraint firstAttribute="trailing" secondItem="5L3-HG-1MG" secondAttribute="trailing" constant="8" id="fwF-YL-d9O"/>
+                                        <constraint firstItem="5L3-HG-1MG" firstAttribute="centerY" secondItem="bpr-PV-MHO" secondAttribute="centerY" id="hKm-G5-jwZ"/>
+                                        <constraint firstItem="5L3-HG-1MG" firstAttribute="leading" secondItem="RUZ-hU-lX7" secondAttribute="trailing" constant="8" id="isI-Xa-bEZ"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Y4b-PQ-vUX">
+                                        <rect key="frame" x="0.0" y="88" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y4b-PQ-vUX" id="dmh-8i-e2e">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="041-WW-KJH">
                                 <rect key="frame" x="203" y="85" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
