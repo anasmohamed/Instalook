@@ -20,4 +20,5 @@ class ServiceCell: UITableViewCell, ServiceCellView {
     func displayServiceName(serviceName: String) {
         serviceNameLabel.text = serviceName
     }
+    
 }

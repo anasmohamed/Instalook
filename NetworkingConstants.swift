@@ -49,12 +49,15 @@ struct NetworkingConstants {
     static let salonType = "salonType"
     
     // Barber Requests
+    static let addBarber = "add"
     static let getAllBarbers = "all"
 
     // Barber Query Parameters
     static let barberId = "barberId"
     static let barberFirstName = "firstName"
     static let barberLastName = "lastName"
+    static let barberRole = "role"
+    static let barberRate = "rate"
     static let isAvailable = "isAvailable"
     
     // Salon Service Requests

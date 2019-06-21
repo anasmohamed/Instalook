@@ -71,9 +71,9 @@ class ServicePresenter {
     
     func configure(cell: ServiceCellView, for index: Int) {
         let service = services[index]
-        
         guard let serviceName = service.serviceName else { return }
         
         cell.displayServiceName(serviceName: serviceName)
     }
+    
 }

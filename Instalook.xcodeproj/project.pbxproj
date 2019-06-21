@@ -20,8 +20,6 @@
 		CC397E4322B83926007308A9 /* BarberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC397E4222B83926007308A9 /* BarberPresenter.swift */; };
 		CC397E4522B83950007308A9 /* BarberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC397E4422B83950007308A9 /* BarberView.swift */; };
 		CC397E4722B83BF3007308A9 /* BarberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC397E4622B83BF3007308A9 /* BarberViewController.swift */; };
-		CC397E4B22B83CEB007308A9 /* BarberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC397E4922B83CEB007308A9 /* BarberCell.swift */; };
-		CC397E4C22B83CEB007308A9 /* BarberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC397E4A22B83CEB007308A9 /* BarberCell.xib */; };
 		CC397E4E22B8509F007308A9 /* BarberViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC397E4D22B8509F007308A9 /* BarberViewController+PresenterDelegate.swift */; };
 		CC397E5022B855C4007308A9 /* BarberCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC397E4F22B855C4007308A9 /* BarberCellView.swift */; };
 		CC561C3A229BDBEC0048EB86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC561C39229BDBEC0048EB86 /* AppDelegate.swift */; };
@@ -47,6 +45,9 @@
 		CC7B00AF22B40BC400EDA3E9 /* RegistationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B00AE22B40BC400EDA3E9 /* RegistationViewController.swift */; };
 		CC7B00B122B40BEA00EDA3E9 /* RegistrationViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B00B022B40BEA00EDA3E9 /* RegistrationViewController+PresenterDelegate.swift */; };
 		CC7B00B322B40C1000EDA3E9 /* RegistrationViewController+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B00B222B40C1000EDA3E9 /* RegistrationViewController+TextFieldDelegate.swift */; };
+		CC84F37422B99BC900484F73 /* BarberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC84F37222B99BC900484F73 /* BarberCell.swift */; };
+		CC84F37522B99BC900484F73 /* BarberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC84F37322B99BC900484F73 /* BarberCell.xib */; };
+		CC963C4322BAEC8500929553 /* BarberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC963C4222BAEC8500929553 /* BarberDetailViewController.swift */; };
 		CCC608DC22B693A40027FD01 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC608DB22B693A40027FD01 /* ProfileView.swift */; };
 		CCC630AA229D576A00E2EB50 /* ProfileViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC630A9229D576A00E2EB50 /* ProfileViewController+PresenterDelegate.swift */; };
 		CCC99A9922B6653E007E9136 /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC99A9822B6653E007E9136 /* ServiceView.swift */; };
@@ -95,8 +96,6 @@
 		CC397E4222B83926007308A9 /* BarberPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarberPresenter.swift; sourceTree = "<group>"; };
 		CC397E4422B83950007308A9 /* BarberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarberView.swift; sourceTree = "<group>"; };
 		CC397E4622B83BF3007308A9 /* BarberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarberViewController.swift; sourceTree = "<group>"; };
-		CC397E4922B83CEB007308A9 /* BarberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarberCell.swift; sourceTree = "<group>"; };
-		CC397E4A22B83CEB007308A9 /* BarberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarberCell.xib; sourceTree = "<group>"; };
 		CC397E4D22B8509F007308A9 /* BarberViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BarberViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
 		CC397E4F22B855C4007308A9 /* BarberCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarberCellView.swift; sourceTree = "<group>"; };
 		CC561C36229BDBEC0048EB86 /* Instalook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instalook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +127,9 @@
 		CC7B00AE22B40BC400EDA3E9 /* RegistationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistationViewController.swift; sourceTree = "<group>"; };
 		CC7B00B022B40BEA00EDA3E9 /* RegistrationViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RegistrationViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
 		CC7B00B222B40C1000EDA3E9 /* RegistrationViewController+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RegistrationViewController+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		CC84F37222B99BC900484F73 /* BarberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarberCell.swift; sourceTree = "<group>"; };
+		CC84F37322B99BC900484F73 /* BarberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarberCell.xib; sourceTree = "<group>"; };
+		CC963C4222BAEC8500929553 /* BarberDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarberDetailViewController.swift; sourceTree = "<group>"; };
 		CCC608DB22B693A40027FD01 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CCC630A9229D576A00E2EB50 /* ProfileViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfileViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
 		CCC99A9822B6653E007E9136 /* ServiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceView.swift; sourceTree = "<group>"; };
@@ -224,11 +226,12 @@
 		CC397E3D22B83781007308A9 /* Barbers */ = {
 			isa = PBXGroup;
 			children = (
+				CC397E4622B83BF3007308A9 /* BarberViewController.swift */,
+				CC397E4D22B8509F007308A9 /* BarberViewController+PresenterDelegate.swift */,
+				CC963C4222BAEC8500929553 /* BarberDetailViewController.swift */,
 				CC397E4822B83C82007308A9 /* TableViewCell */,
 				CC397E4122B83909007308A9 /* Presenter */,
 				CC397E3E22B837B4007308A9 /* Interactor */,
-				CC397E4622B83BF3007308A9 /* BarberViewController.swift */,
-				CC397E4D22B8509F007308A9 /* BarberViewController+PresenterDelegate.swift */,
 			);
 			name = Barbers;
 			sourceTree = "<group>";
@@ -244,9 +247,9 @@
 		CC397E4122B83909007308A9 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				CC397E4222B83926007308A9 /* BarberPresenter.swift */,
 				CC397E4422B83950007308A9 /* BarberView.swift */,
 				CC397E4F22B855C4007308A9 /* BarberCellView.swift */,
+				CC397E4222B83926007308A9 /* BarberPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -254,8 +257,8 @@
 		CC397E4822B83C82007308A9 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				CC397E4922B83CEB007308A9 /* BarberCell.swift */,
-				CC397E4A22B83CEB007308A9 /* BarberCell.xib */,
+				CC84F37222B99BC900484F73 /* BarberCell.swift */,
+				CC84F37322B99BC900484F73 /* BarberCell.xib */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -352,9 +355,8 @@
 		CC561C6E229BDCC40048EB86 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				CC397E3D22B83781007308A9 /* Barbers */,
 				CC7B009922B4097700EDA3E9 /* Authentication */,
-				CCDE980522B8418A0087A8B6 /* Barbers */,
+				CC397E3D22B83781007308A9 /* Barbers */,
 				CC7AEDFE22B54BCC00FF9593 /* Services */,
 				CC561C6F229BDD040048EB86 /* Profile */,
 			);
@@ -445,13 +447,6 @@
 			);
 			name = Network;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		CCDE980522B8418A0087A8B6 /* Barbers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Barbers;
 			sourceTree = "<group>";
 		};
 		CCDE980622B843260087A8B6 /* TableViewCell */ = {
@@ -585,11 +580,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC561C47229BDBEC0048EB86 /* LaunchScreen.storyboard in Resources */,
+				CC84F37522B99BC900484F73 /* BarberCell.xib in Resources */,
 				CCDE980A22B843760087A8B6 /* ServiceCell.xib in Resources */,
 				CC561C44229BDBEC0048EB86 /* Assets.xcassets in Resources */,
 				CC561C3F229BDBEC0048EB86 /* Main.storyboard in Resources */,
 				CC7B009822B4085F00EDA3E9 /* Authentication.storyboard in Resources */,
-				CC397E4C22B83CEB007308A9 /* BarberCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,7 +711,6 @@
 				CC7B00A122B40AAE00EDA3E9 /* LoginPresenter.swift in Sources */,
 				CC397E4522B83950007308A9 /* BarberView.swift in Sources */,
 				CC7B00A522B40AEC00EDA3E9 /* RegistrationPresenter.swift in Sources */,
-				CC397E4B22B83CEB007308A9 /* BarberCell.swift in Sources */,
 				CCDC571222A5970A0073F1F7 /* User.swift in Sources */,
 				CC397E4322B83926007308A9 /* BarberPresenter.swift in Sources */,
 				CCC99A9922B6653E007E9136 /* ServiceView.swift in Sources */,
@@ -733,8 +727,10 @@
 				CC7B009D22B409C700EDA3E9 /* SalonInteractor.swift in Sources */,
 				CCC608DC22B693A40027FD01 /* ProfileView.swift in Sources */,
 				CC397E3C22B82EBD007308A9 /* Barber.swift in Sources */,
+				CC963C4322BAEC8500929553 /* BarberDetailViewController.swift in Sources */,
 				CC397E4022B837E9007308A9 /* BarberInteractor.swift in Sources */,
 				CC0A1B3422A5EC09003E0315 /* ServiceInteractor.swift in Sources */,
+				CC84F37422B99BC900484F73 /* BarberCell.swift in Sources */,
 				CCC99A9D22B66FEF007E9136 /* ServiceViewController+PresenterDelegate.swift in Sources */,
 				CCD6C6A322B855B9000E2A8B /* ServiceCellView.swift in Sources */,
 				CC0249BB229C01CD00921074 /* Utils.swift in Sources */,

@@ -14,31 +14,27 @@ class ServiceViewController: UITableViewController {
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     private var presenter: ServicePresenter!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        navigationItem.leftBarButtonItem = editButtonItem
+    }
+    
     // MARK: View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
         presenter = ServicePresenter(view: self)
         presenter.viewDidLoad()
     }
     
     // MARK: Actions
-    @IBAction func addNewService(_ sender: UIButton) {
-        let salonId = 172
+    @IBAction func addNewService(_ sender: UIBarButtonItem) {
+        let salonId = 182
         let service = Service()
         service.serviceName = "iOS"
         service.serviceType = "iOS"
         service.servicePrice = 100
         presenter.addService(salonId: salonId, service: service)
-    }
-    
-    @IBAction func toggleEditingMode(_ button: UIButton) {
-        if isEditing {
-            button.setTitle("Edit", for: .normal)
-            setEditing(false, animated: true)
-        } else {
-            button.setTitle("Done", for: .normal)
-            setEditing(true, animated: true)
-        }
     }
     
     // MARK: TableView

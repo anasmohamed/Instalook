@@ -2,8 +2,8 @@
 //  Barber.swift
 //  Instalook
 //
-//  Created by jets on 10/13/1440 AH.
-//  Copyright © 1440 AH instalook. All rights reserved.
+//  Created by Amer Shaker on 6/4/19.
+//  Copyright © 2019 instalook. All rights reserved.
 //
 
 import Foundation
@@ -14,8 +14,10 @@ class Barber: Mappable {
     var barberId: Int?
     var firstName: String?
     var lastName: String?
+    var role: String?
+    var rate: Int?
     var isAvailable: Int?
-    
+
     init() {
         
     }
@@ -28,6 +30,8 @@ class Barber: Mappable {
         barberId <- map[NetworkingConstants.barberId]
         firstName <- map[NetworkingConstants.barberFirstName]
         lastName <- map[NetworkingConstants.barberLastName]
+        role <- map[NetworkingConstants.barberRole]
+        rate <- map[NetworkingConstants.barberRate]
         isAvailable <- map[NetworkingConstants.isAvailable]
     }
 }

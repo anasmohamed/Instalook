@@ -19,9 +19,9 @@ extension LoginViewController: LoginView {
     }
     
     func loginSuccess() {
-        //        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        //        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        //        self.present(homeViewController, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let tabBarController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+        self.present(tabBarController, animated: true, completion: nil)
     }
     
     func showError(error: String) {

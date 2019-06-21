@@ -2,8 +2,8 @@
 //  Presenter.swift
 //  Instalook
 //
-//  Created by jets on 10/14/1440 AH.
-//  Copyright © 1440 AH instalook. All rights reserved.
+//  Created by Amer Shaker on 6/16/19.
+//  Copyright © 2019 instalook. All rights reserved.
 //
 
 import Foundation
@@ -21,31 +21,27 @@ class BarberPresenter {
         barbers = [Barber]()
     }
     
-   func viewDidLoad()
-    {
-        getAllBarbers(salonId: 172)
+    func viewDidLoad() {
+        getAllBarbers(salonId: 202)
     }
-//    func addService(salonId: Int, service: Service) {
-//        
-//        if salonId != 0 {
-//            
-//            view?.showIndicator()
-//            serviceInteractor.addService(salonId: salonId, service: service) { [unowned self] error in
-//                
-//                self.view?.hideIndicator()
-//                if let error = error {
-//                    self.view?.showError(error: error.localizedDescription)
-//                } else {
-//                    self.view?.addServiceSuccess()
-//                }
-//            }
-//        } else {
-//            view?.showError(error: "Invalid Credentials")
-//        }
-//    }
     
-    func getBarbersCount() -> Int {
-        return barbers.count
+    func addBarber(salonId: Int, barber: Barber) {
+        
+        if salonId != 0 {
+            
+            view?.showIndicator()
+            barberInteractor.addBarber(salonId: salonId, barber: barber) { [unowned self] error in
+                
+                self.view?.hideIndicator()
+                if let error = error {
+                    self.view?.showError(error: error.localizedDescription)
+                } else {
+                    self.view?.addBarberSuccess()
+                }
+            }
+        } else {
+            view?.showError(error: "Invalid Credentials")
+        }
     }
     
     func getAllBarbers(salonId: Int) {
@@ -68,12 +64,16 @@ class BarberPresenter {
             view?.showError(error: "Invalid Credentials")
         }
     }
-    func configur(cell: BarberCellView, for index: Int)
-    {
-       let barber = barbers[index]
-        guard let baberName = barber.firstName else {
-            return
-        }
-        cell.displayBaberName(barberName : baberName)
+    
+    func getBarbersCount() -> Int {
+        return barbers.count
     }
+    
+    func configure(cell: BarberCellView, for index: Int) {
+        let barber = barbers[index]
+        guard let firstName = barber.firstName,
+            let lastName = barber.lastName else { return }
+        cell.displayBarberName(barberName: firstName + lastName)
+    }
+    
 }

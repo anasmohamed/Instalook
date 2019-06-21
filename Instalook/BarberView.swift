@@ -2,8 +2,8 @@
 //  BarberView.swift
 //  Instalook
 //
-//  Created by jets on 10/14/1440 AH.
-//  Copyright © 1440 AH instalook. All rights reserved.
+//  Created by Amer Shaker on 6/16/19.
+//  Copyright © 2019 instalook. All rights reserved.
 //
 
 import Foundation

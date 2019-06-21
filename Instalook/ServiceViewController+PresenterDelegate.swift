@@ -19,9 +19,6 @@ extension ServiceViewController: ServiceView {
     }
 
     func addServiceSuccess() {
-        //        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        //        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        //        self.present(homeViewController, animated: true, completion: nil)
     }
     
     func getAllServicesSuccess() {

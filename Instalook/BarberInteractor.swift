@@ -3,8 +3,8 @@
 //  BarberInteractor.swift
 //  Instalook
 //
-//  Created by jets on 10/14/1440 AH.
-//  Copyright © 1440 AH instalook. All rights reserved.
+//  Created by Amer Shaker on 6/4/19.
+//  Copyright © 2019 instalook. All rights reserved.
 //
 
 import Foundation
@@ -13,26 +13,26 @@ import AlamofireObjectMapper
 
 class BarberInteractor {
     
-//    func addService(salonId: Int,
-//                    service: Service,
-//                    completionHandler: @escaping (Error?) -> Void) {
-//        
-//        Alamofire.request(InstalookRouter.addService(salonId: salonId, service: service)).responseJSON {
-//            (response: DataResponse<Any>) in
-//            let result = response.result
-//            switch result {
-//            case .success:
-//                completionHandler(nil)
-//            case .failure(let error):
-//                completionHandler(error)
-//            }
-//        }
-//    }
+    func addBarber(salonId: Int,
+                   barber: Barber,
+                   completionHandler: @escaping (Error?) -> Void) {
+        
+        Alamofire.request(InstalookRouter.addBarber(salonId: salonId, barber: barber)).responseJSON {
+            (response: DataResponse<Any>) in
+            let result = response.result
+            switch result {
+            case .success:
+                completionHandler(nil)
+            case .failure(let error):
+                completionHandler(error)
+            }
+        }
+    }
     
     func getAllBarbers(salonId: Int,
-                        completionHandler: @escaping ([Barber]?, Error?) -> Void) {
+                       completionHandler: @escaping ([Barber]?, Error?) -> Void) {
         
-        Alamofire.request(InstalookRouter.getAllServices(salonId: salonId)).responseArray {
+        Alamofire.request(InstalookRouter.getAllBarbers(salonId: salonId)).responseArray {
             (response: DataResponse<[Barber]>) in
             let result = response.result
             switch result {
@@ -44,4 +44,3 @@ class BarberInteractor {
         }
     }
 }
-

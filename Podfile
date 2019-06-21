@@ -11,7 +11,7 @@ target 'Instalook' do
   pod 'ObjectMapper', '~> 2.2.8'
   pod 'SDWebImage'
   pod 'Cosmos', git: 'https://github.com/marketplacer/Cosmos.git', tag: '8.0.2'
-  
+
   target 'InstalookTests' do
     inherit! :search_paths
     # Pods for testing
