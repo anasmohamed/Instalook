@@ -20,6 +20,8 @@ enum InstalookRouter: URLRequestConvertible {
     // Barber
     case addBarber(salonId: Int, barber: Barber)
     case getAllBarbers(salonId: Int)
+    case getBookings(barberId: Int)
+    
     
     // Service
     case addService(salonId: Int, service: Service)
@@ -44,13 +46,16 @@ enum InstalookRouter: URLRequestConvertible {
             return NetworkingConstants.serviceRequestMapping + "/" + NetworkingConstants.addService
         case .getAllServices:
             return NetworkingConstants.serviceRequestMapping + "/" + NetworkingConstants.getAllServices
+        case .getBookings:
+            return NetworkingConstants.salonRequestMapping + "/" +
+                NetworkingConstants.getBookings
         }
     }
     
     var httpMethod: HTTPMethod {
         
         switch self {
-        case .login, .register, .getSalonById, .addBarber, .getAllBarbers, .addService, .getAllServices:
+        case .login, .register, .getSalonById, .addBarber, .getAllBarbers, .addService, .getAllServices, .getBookings:
             return .post
         case .search:
             return .get
@@ -125,6 +130,8 @@ enum InstalookRouter: URLRequestConvertible {
             params[NetworkingConstants.salonId] = salonId
         case let .getAllServices(salonId):
             params[NetworkingConstants.salonId] = salonId
+        case let .getBookings(barberId):
+            params[NetworkingConstants.barberId] = barberId
         default:
             print("Empty request params")
         }
@@ -141,7 +148,7 @@ enum InstalookRouter: URLRequestConvertible {
         urlRequest.allHTTPHeaderFields = httpHeaders
         
         switch self {
-        case .login, .getSalonById, .search, .getAllBarbers, .getAllServices:
+        case .login, .getSalonById, .search, .getAllBarbers, .getAllServices, .getBookings:
             return try URLEncoding.methodDependent.encode(urlRequest, with: params)
         case .register, .addBarber, .addService:
             return try JSONEncoding.default.encode(urlRequest, with: body)

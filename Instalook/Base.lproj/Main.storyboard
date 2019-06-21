@@ -15,7 +15,7 @@
             <objects>
                 <navigationController id="ffm-HU-06J" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Barbers" id="dKo-ps-Gax"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="GhY-qA-IUR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="GhY-qA-IUR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -80,7 +80,7 @@
             <objects>
                 <navigationController id="DG9-Ak-uR7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Services" id="fWe-jc-aXN"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="uiS-sX-7jC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="uiS-sX-7jC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -92,6 +92,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTb-lk-Asf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6580" y="-1297"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="usE-xN-VXX">
+            <objects>
+                <tableViewController id="4Uq-e6-vMY" customClass="BookingViewController" customModule="Instalook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zs3-WI-52y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="2pw-if-rys">
+                            <rect key="frame" x="0.0" y="72" width="414" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aG4-fy-hJQ">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aG4-fy-hJQ" id="zN7-dv-Hir">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4Uq-e6-vMY" id="e6l-NQ-udP"/>
+                            <outlet property="delegate" destination="4Uq-e6-vMY" id="kxv-CO-aY0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="IzK-8r-mYv"/>
+                    <connections>
+                        <outlet property="spinner" destination="2pw-if-rys" id="9Pw-4O-tlf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uuw-fx-ywN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8554" y="-1346"/>
         </scene>
         <!--Services-->
         <scene sceneID="DVi-eX-mLX">

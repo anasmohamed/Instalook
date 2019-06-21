@@ -45,6 +45,14 @@
 		CC7B00AF22B40BC400EDA3E9 /* RegistationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B00AE22B40BC400EDA3E9 /* RegistationViewController.swift */; };
 		CC7B00B122B40BEA00EDA3E9 /* RegistrationViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B00B022B40BEA00EDA3E9 /* RegistrationViewController+PresenterDelegate.swift */; };
 		CC7B00B322B40C1000EDA3E9 /* RegistrationViewController+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B00B222B40C1000EDA3E9 /* RegistrationViewController+TextFieldDelegate.swift */; };
+		CC7EEEA022BCF811008E51BD /* BookingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EEE9F22BCF811008E51BD /* BookingInteractor.swift */; };
+		CC7EEEA222BCF86C008E51BD /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EEEA122BCF86C008E51BD /* Booking.swift */; };
+		CC7EEEA522BD008E008E51BD /* BookingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EEEA422BD008E008E51BD /* BookingPresenter.swift */; };
+		CC7EEEA722BD02A0008E51BD /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EEEA622BD02A0008E51BD /* BookingView.swift */; };
+		CC7EEEAB22BD04DF008E51BD /* BookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EEEA922BD04DF008E51BD /* BookingCell.swift */; };
+		CC7EEEAC22BD04DF008E51BD /* BookingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC7EEEAA22BD04DF008E51BD /* BookingCell.xib */; };
+		CC7EEEAE22BD06D1008E51BD /* BookingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EEEAD22BD06D1008E51BD /* BookingViewCell.swift */; };
+		CC7EEEB022BD0756008E51BD /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EEEAF22BD0756008E51BD /* BookingViewController.swift */; };
 		CC84F37422B99BC900484F73 /* BarberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC84F37222B99BC900484F73 /* BarberCell.swift */; };
 		CC84F37522B99BC900484F73 /* BarberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC84F37322B99BC900484F73 /* BarberCell.xib */; };
 		CC963C4322BAEC8500929553 /* BarberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC963C4222BAEC8500929553 /* BarberDetailViewController.swift */; };
@@ -59,6 +67,7 @@
 		CCDC571222A5970A0073F1F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC571122A5970A0073F1F7 /* User.swift */; };
 		CCDE980922B843760087A8B6 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE980722B843760087A8B6 /* ServiceCell.swift */; };
 		CCDE980A22B843760087A8B6 /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCDE980822B843760087A8B6 /* ServiceCell.xib */; };
+		CCE4FA2422BD22CB0053ACE1 /* BookingViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4FA2322BD22CB0053ACE1 /* BookingViewController+PresenterDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +136,14 @@
 		CC7B00AE22B40BC400EDA3E9 /* RegistationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistationViewController.swift; sourceTree = "<group>"; };
 		CC7B00B022B40BEA00EDA3E9 /* RegistrationViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RegistrationViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
 		CC7B00B222B40C1000EDA3E9 /* RegistrationViewController+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RegistrationViewController+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		CC7EEE9F22BCF811008E51BD /* BookingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingInteractor.swift; sourceTree = "<group>"; };
+		CC7EEEA122BCF86C008E51BD /* Booking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		CC7EEEA422BD008E008E51BD /* BookingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingPresenter.swift; sourceTree = "<group>"; };
+		CC7EEEA622BD02A0008E51BD /* BookingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
+		CC7EEEA922BD04DF008E51BD /* BookingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingCell.swift; sourceTree = "<group>"; };
+		CC7EEEAA22BD04DF008E51BD /* BookingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingCell.xib; sourceTree = "<group>"; };
+		CC7EEEAD22BD06D1008E51BD /* BookingViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingViewCell.swift; sourceTree = "<group>"; };
+		CC7EEEAF22BD0756008E51BD /* BookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
 		CC84F37222B99BC900484F73 /* BarberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarberCell.swift; sourceTree = "<group>"; };
 		CC84F37322B99BC900484F73 /* BarberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarberCell.xib; sourceTree = "<group>"; };
 		CC963C4222BAEC8500929553 /* BarberDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarberDetailViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +158,7 @@
 		CCDC571122A5970A0073F1F7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CCDE980722B843760087A8B6 /* ServiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
 		CCDE980822B843760087A8B6 /* ServiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceCell.xib; sourceTree = "<group>"; };
+		CCE4FA2322BD22CB0053ACE1 /* BookingViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BookingViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
 		D51231ADBEA24F073F386B4B /* Pods_InstalookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstalookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6314E582C9C69F992F56D82 /* Pods_Instalook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instalook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,6 +211,7 @@
 				CC7351FF22B428F300B22B92 /* Salon.swift */,
 				CC397E3B22B82EBD007308A9 /* Barber.swift */,
 				CC1BCEA822A5E1EF00E0F187 /* Service.swift */,
+				CC7EEEA122BCF86C008E51BD /* Booking.swift */,
 				CC561C40229BDBEC0048EB86 /* Instalook.xcdatamodeld */,
 			);
 			name = Model;
@@ -226,6 +245,7 @@
 		CC397E3D22B83781007308A9 /* Barbers */ = {
 			isa = PBXGroup;
 			children = (
+				CC7EEE9D22BCF7D3008E51BD /* Bookings */,
 				CC397E4622B83BF3007308A9 /* BarberViewController.swift */,
 				CC397E4D22B8509F007308A9 /* BarberViewController+PresenterDelegate.swift */,
 				CC963C4222BAEC8500929553 /* BarberDetailViewController.swift */,
@@ -421,6 +441,45 @@
 			name = Interactor;
 			sourceTree = "<group>";
 		};
+		CC7EEE9D22BCF7D3008E51BD /* Bookings */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EEEAF22BD0756008E51BD /* BookingViewController.swift */,
+				CCE4FA2322BD22CB0053ACE1 /* BookingViewController+PresenterDelegate.swift */,
+				CC7EEEA822BD04B4008E51BD /* TableViewCell */,
+				CC7EEEA322BD0043008E51BD /* Presenter */,
+				CC7EEE9E22BCF7EA008E51BD /* Interactor */,
+			);
+			name = Bookings;
+			sourceTree = "<group>";
+		};
+		CC7EEE9E22BCF7EA008E51BD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EEE9F22BCF811008E51BD /* BookingInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		CC7EEEA322BD0043008E51BD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EEEA422BD008E008E51BD /* BookingPresenter.swift */,
+				CC7EEEA622BD02A0008E51BD /* BookingView.swift */,
+				CC7EEEAD22BD06D1008E51BD /* BookingViewCell.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		CC7EEEA822BD04B4008E51BD /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EEEA922BD04DF008E51BD /* BookingCell.swift */,
+				CC7EEEAA22BD04DF008E51BD /* BookingCell.xib */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
 		CCC99A9622B663F4007E9136 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -580,6 +639,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC561C47229BDBEC0048EB86 /* LaunchScreen.storyboard in Resources */,
+				CC7EEEAC22BD04DF008E51BD /* BookingCell.xib in Resources */,
 				CC84F37522B99BC900484F73 /* BarberCell.xib in Resources */,
 				CCDE980A22B843760087A8B6 /* ServiceCell.xib in Resources */,
 				CC561C44229BDBEC0048EB86 /* Assets.xcassets in Resources */,
@@ -696,6 +756,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7EEEA022BCF811008E51BD /* BookingInteractor.swift in Sources */,
 				CC7B00B122B40BEA00EDA3E9 /* RegistrationViewController+PresenterDelegate.swift in Sources */,
 				CC7B00AF22B40BC400EDA3E9 /* RegistationViewController.swift in Sources */,
 				CCC630AA229D576A00E2EB50 /* ProfileViewController+PresenterDelegate.swift in Sources */,
@@ -708,15 +769,18 @@
 				CC0162DB229C361900F624AF /* ProfilePresenter .swift in Sources */,
 				CC73520022B428F300B22B92 /* Salon.swift in Sources */,
 				CC397E4722B83BF3007308A9 /* BarberViewController.swift in Sources */,
+				CC7EEEAB22BD04DF008E51BD /* BookingCell.swift in Sources */,
 				CC7B00A122B40AAE00EDA3E9 /* LoginPresenter.swift in Sources */,
 				CC397E4522B83950007308A9 /* BarberView.swift in Sources */,
 				CC7B00A522B40AEC00EDA3E9 /* RegistrationPresenter.swift in Sources */,
 				CCDC571222A5970A0073F1F7 /* User.swift in Sources */,
+				CC7EEEA222BCF86C008E51BD /* Booking.swift in Sources */,
 				CC397E4322B83926007308A9 /* BarberPresenter.swift in Sources */,
 				CCC99A9922B6653E007E9136 /* ServiceView.swift in Sources */,
 				CC7B00A722B40B1A00EDA3E9 /* LoginViewController.swift in Sources */,
 				CC0162D4229C281100F624AF /* ProfileInteractor.swift in Sources */,
 				CC7B00A922B40B4300EDA3E9 /* LoginViewController+PresenterDelegate.swift in Sources */,
+				CC7EEEAE22BD06D1008E51BD /* BookingViewCell.swift in Sources */,
 				CC7B00B322B40C1000EDA3E9 /* RegistrationViewController+TextFieldDelegate.swift in Sources */,
 				CCDC571022A596E10073F1F7 /* NetworkingConstants.swift in Sources */,
 				CC561C42229BDBEC0048EB86 /* Instalook.xcdatamodeld in Sources */,
@@ -724,6 +788,8 @@
 				CC561C3C229BDBEC0048EB86 /* ProfileViewController.swift in Sources */,
 				CC561C3A229BDBEC0048EB86 /* AppDelegate.swift in Sources */,
 				CCC99A9B22B66590007E9136 /* ServicePresenter.swift in Sources */,
+				CC7EEEA522BD008E008E51BD /* BookingPresenter.swift in Sources */,
+				CCE4FA2422BD22CB0053ACE1 /* BookingViewController+PresenterDelegate.swift in Sources */,
 				CC7B009D22B409C700EDA3E9 /* SalonInteractor.swift in Sources */,
 				CCC608DC22B693A40027FD01 /* ProfileView.swift in Sources */,
 				CC397E3C22B82EBD007308A9 /* Barber.swift in Sources */,
@@ -732,10 +798,12 @@
 				CC0A1B3422A5EC09003E0315 /* ServiceInteractor.swift in Sources */,
 				CC84F37422B99BC900484F73 /* BarberCell.swift in Sources */,
 				CCC99A9D22B66FEF007E9136 /* ServiceViewController+PresenterDelegate.swift in Sources */,
+				CC7EEEA722BD02A0008E51BD /* BookingView.swift in Sources */,
 				CCD6C6A322B855B9000E2A8B /* ServiceCellView.swift in Sources */,
 				CC0249BB229C01CD00921074 /* Utils.swift in Sources */,
 				CC7B00A322B40AD400EDA3E9 /* RegistrationView.swift in Sources */,
 				CC6D082522B5917300A86C27 /* ServiceViewController.swift in Sources */,
+				CC7EEEB022BD0756008E51BD /* BookingViewController.swift in Sources */,
 				CC397E4E22B8509F007308A9 /* BarberViewController+PresenterDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

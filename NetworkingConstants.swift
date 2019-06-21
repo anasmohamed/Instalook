@@ -51,6 +51,7 @@ struct NetworkingConstants {
     // Barber Requests
     static let addBarber = "add"
     static let getAllBarbers = "all"
+    static let getBookings = "getBookings"
 
     // Barber Query Parameters
     static let barberId = "barberId"
