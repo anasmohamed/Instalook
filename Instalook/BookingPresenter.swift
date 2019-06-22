@@ -21,7 +21,7 @@ class BookingPresenter{
     }
     
     func viewDidLoad() {
-        getBarberBooking(barberId: 202)
+        getBarberBooking(barberId: 62)
     }
     
    
@@ -52,8 +52,14 @@ class BookingPresenter{
     }
     
     func configure(cell: BookingCellView, for index: Int) {
-        let barber = bookings[index]
-        guard let userName = booking?.userName,
-            let barberName = barber.barberName else { return }
+        let booking = bookings[index]
+        guard let userName = booking.userName,
+            let barberName = booking.barberName
+        ,
+        let bookTime = booking.bookingTime
+            else { return }
         cell.displayUserName(userName: userName)
+        cell.displayBaberName(barberName: barberName)
+       cell.displayBookTimeName(bookTime:bookTime)
+        
     }}

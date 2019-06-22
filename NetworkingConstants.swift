@@ -70,4 +70,9 @@ struct NetworkingConstants {
     static let serviceName = "serviceName"
     static let serviceType = "serviceType"
     static let servicePrice = "servicePrice"
+    
+    //Bookings
+    static let bookingTime = "time"
+    static let bookingUserName = "userName"
+    static let bookingBarberName = "barberName"
 }
