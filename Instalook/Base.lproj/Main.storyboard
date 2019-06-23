@@ -32,22 +32,23 @@
         <scene sceneID="tBo-yf-3Fq">
             <objects>
                 <tableViewController id="1AC-we-JQT" customClass="BarberViewController" customModule="Instalook" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lbh-tg-619">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="112" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lbh-tg-619">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1960784314" green="0.21176470589999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                         <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="0y2-yQ-ZUI">
-                            <rect key="frame" x="0.0" y="72" width="414" height="20"/>
+                            <rect key="frame" x="0.0" y="140" width="414" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </activityIndicatorView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="X5Q-Gn-OMY">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BarberCell" id="X5Q-Gn-OMY">
+                                <rect key="frame" x="0.0" y="28" width="414" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X5Q-Gn-OMY" id="lqr-Lg-0GY">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="153-vJ-xZM" kind="show" identifier="showBarber" id="2RK-dq-5to"/>
                                 </connections>
@@ -59,7 +60,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Barbers" id="Oh9-5s-pHt"/>
-                    <navigationItem key="navigationItem" id="taf-sj-lGU">
+                    <navigationItem key="navigationItem" title="Barbers" id="taf-sj-lGU">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gSC-VH-fXm">
                             <connections>
                                 <action selector="addNewBarber:" destination="1AC-we-JQT" id="AgB-hp-9Mb"/>
@@ -157,7 +158,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Services" id="Otq-cf-dmh"/>
-                    <navigationItem key="navigationItem" id="YN1-gd-NN9">
+                    <navigationItem key="navigationItem" title="Services" id="YN1-gd-NN9">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Fji-tA-k2T">
                             <connections>
                                 <action selector="addNewService:" destination="dgP-pL-MUr" id="qHh-Qn-BOv"/>
@@ -247,8 +248,8 @@
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="DG9-Ak-uR7" kind="relationship" relationship="viewControllers" id="nkA-5P-G1W"/>
                         <segue destination="ffm-HU-06J" kind="relationship" relationship="viewControllers" id="GMF-Fs-ulh"/>
+                        <segue destination="DG9-Ak-uR7" kind="relationship" relationship="viewControllers" id="nkA-5P-G1W"/>
                         <segue destination="nBa-4w-QLJ" kind="relationship" relationship="viewControllers" id="GkR-jo-sZv"/>
                     </connections>
                 </tabBarController>

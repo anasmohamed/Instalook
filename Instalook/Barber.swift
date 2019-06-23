@@ -15,7 +15,7 @@ class Barber: Mappable {
     var firstName: String?
     var lastName: String?
     var role: String?
-    var rate: Int?
+    var rate: Double?
     var isAvailable: Int?
 
     init() {
