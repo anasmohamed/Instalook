@@ -53,9 +53,9 @@ struct NetworkingConstants {
     // Barber Requests
     static let addBarber = "add"
     static let getAllBarbers = "all"
-    static let deleteBarber = "delete"
     static let getBookings = "getBookings"
-
+    static let deleteBarber = "delete"
+    
     // Barber Query Parameters
     static let barberId = "barberId"
     static let barberFirstName = "firstName"

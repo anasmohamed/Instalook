@@ -65,8 +65,46 @@ class BarberPresenter {
         }
     }
     
+    func deleteBarber(indexPath: IndexPath) {
+        
+        let row = indexPath.row
+        
+        if let barberId = barbers[row].barberId {
+            
+            view?.showIndicator()
+            barberInteractor.deleteBarberById(barberId: barberId) { [unowned self] (error) in
+                
+                self.view?.hideIndicator()
+                if let error = error {
+                    self.view?.showError(error: error.localizedDescription)
+                } else {
+                    let barber = self.barbers[row]
+                    self.removeBarber(barber: barber)
+                    self.view?.deleteBarberSuccess(indexPath: indexPath)
+                }
+            }
+        } else {
+            view?.showError(error: "Invalid Credentials")
+        }
+    }
+
     func getBarbersCount() -> Int {
         return barbers.count
+    }
+    
+    func getBarberName(index: Int) -> String {
+        if let firstName = barbers[index].firstName,
+            let lastName = barbers[index].lastName {
+            return firstName + lastName
+        } else {
+            return ""
+        }
+    }
+    
+    func removeBarber(barber: Barber) {
+        if let index = barbers.index(of: barber) {
+            barbers.remove(at: index)
+        }
     }
     
     func configure(cell: BarberCellView, for index: Int) {

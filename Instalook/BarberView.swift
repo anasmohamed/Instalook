@@ -13,5 +13,6 @@ protocol BarberView: class {
     func hideIndicator()
     func addBarberSuccess()
     func getAllBarbersSuccess()
+    func deleteBarberSuccess(indexPath: IndexPath)
     func showError(error: String)
 }

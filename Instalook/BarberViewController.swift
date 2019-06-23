@@ -54,6 +54,34 @@ class BarberViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView,
+                            commit editingStyle: UITableViewCellEditingStyle,
+                            forRowAt indexPath: IndexPath) {
+        // If the table view is asking to commit a delete command...
+        if editingStyle == .delete {
+            let barberName = presenter.getBarberName(index: indexPath.row)
+            let title = "Delete \(barberName)"
+            let message = "Are you sure you want to delete this barber?"
+            
+            let ac = UIAlertController(title: title,
+                                       message: message,
+                                       preferredStyle: .actionSheet)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            ac.addAction(cancelAction)
+            
+            let deleteAction = UIAlertAction(title: "Delete", style: .destructive,
+                                             handler: { [unowned self] (action) -> Void in
+                                                // Remove the service from the services array
+                                                self.presenter.deleteBarber(indexPath: indexPath)
+            })
+            ac.addAction(deleteAction)
+            
+            // Present the alert controller
+            present(ac, animated: true, completion: nil)
+        }
+    }
+
     /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         /*case "showBarber"?:

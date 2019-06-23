@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Barber: Mappable {
+class Barber: NSObject, Mappable {
     
     var barberId: Int?
     var firstName: String?
@@ -18,7 +18,7 @@ class Barber: Mappable {
     var rate: Double?
     var isAvailable: Int?
 
-    init() {
+    override init() {
         
     }
     

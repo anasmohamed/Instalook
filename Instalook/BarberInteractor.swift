@@ -43,4 +43,19 @@ class BarberInteractor {
             }
         }
     }
+    
+    func deleteBarberById(barberId: Int,
+                          completionHandler: @escaping (Error?) -> Void) {
+        
+        Alamofire.request(InstalookRouter.deleteBarber(barberId: barberId)).responseJSON {
+            (response: DataResponse<Any>) in
+            let result = response.result
+            switch result {
+            case .success:
+                completionHandler(nil)
+            case .failure(let error):
+                completionHandler(error)
+            }
+        }
+    }
 }
