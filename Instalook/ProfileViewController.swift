@@ -28,6 +28,18 @@ class ProfileViewController: UIViewController {
     
     // MARK: Actions
     @IBAction func signOut(_ sender: UIBarButtonItem) {
-        presenter.signOut()
+        let signOutAlert = UIAlertController(title: "Sign Out of Instalook?",
+                                             message: "If you sign out, you will no longer be able to receive reservations.",
+                                             preferredStyle: UIAlertControllerStyle.alert)
+        
+        signOutAlert.addAction(UIAlertAction(title: "Sign Out",
+                                             style: .default,
+                                             handler: { [unowned self]  (action: UIAlertAction!) in
+                                                self.presenter.signOut()
+        }))
+        
+        signOutAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        present(signOutAlert, animated: true, completion: nil)
     }
 }
