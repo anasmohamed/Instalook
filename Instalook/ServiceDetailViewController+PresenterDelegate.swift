@@ -1,14 +1,15 @@
 //
-//  BarberViewController+PresenterDelegate.swift
+//  ServiceDetailViewController+PresenterDelegate.swift
 //  Instalook
 //
-//  Created by Amer Shaker on 6/16/19.
+//  Created by Amer Shaker on 6/24/19.
 //  Copyright © 2019 instalook. All rights reserved.
 //
 
 import UIKit
+import SVProgressHUD
 
-extension BarberViewController: BarberView {
+extension ServiceDetailViewController: ServiceDetailView {
     
     func showIndicator() {
         spinner.startAnimating()
@@ -18,13 +19,18 @@ extension BarberViewController: BarberView {
         spinner.stopAnimating()
     }
     
-    func getAllBarbersSuccess() {
-        tableView.reloadData()
+    func resetForm() {
+        serviceNameTextField.text = ""
+        serviceTypeTextField.text = ""
+        servicePriceTextField.text = ""
     }
     
-    func deleteBarberSuccess(indexPath: IndexPath) {
-        // Also remove that row from the table view with an animation
-        tableView.deleteRows(at: [indexPath], with: .automatic)
+    func addServiceSuccess() {
+        SVProgressHUD.showSuccess(withStatus: "Service has been added successfully.")
+    }
+    
+    func updateServiceSuccess() {
+        
     }
     
     func showError(error: String) {

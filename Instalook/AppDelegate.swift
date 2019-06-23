@@ -31,7 +31,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.window?.rootViewController = UIStoryboard(name: "Authentication", bundle: Bundle.main).instantiateInitialViewController()
             }
         }*/
-
+        
+        let salonId = UserDefaults.standard.integer(forKey: "salonId")
+        
+        if salonId != 0 {
+            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateInitialViewController()
+        }
+        
         return true
     }
 

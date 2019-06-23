@@ -1,17 +1,18 @@
 //
-//  BarberView.swift
+//  BarberDetailView.swift
 //  Instalook
 //
-//  Created by Amer Shaker on 6/16/19.
+//  Created by Amer Shaker on 6/24/19.
 //  Copyright © 2019 instalook. All rights reserved.
 //
 
 import Foundation
 
-protocol BarberView: class {
+protocol BarberDetailView: class {
     func showIndicator()
     func hideIndicator()
-    func getAllBarbersSuccess()
-    func deleteBarberSuccess(indexPath: IndexPath)
+    func resetForm()
+    func addBarberSuccess()
+    func updateBarberSuccess()
     func showError(error: String)
 }

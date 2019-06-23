@@ -10,18 +10,35 @@ import UIKit
 
 class BarberDetailViewController: UIViewController {
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
-        let addBarberBtn = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(BarberDetailViewController.addBarber))
-        self.navigationItem.rightBarButtonItem  = addBarberBtn
-    }
+    // MARK: Outlets
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var roleTextField: UITextField!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    private var presenter: BarberDetailPresenter!
     
+    // MARK: View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter = BarberDetailPresenter(view: self)
     }
     
-    func addBarber() {
+    // MARK: Action
+    @IBAction func addBarber(_ sender: UIButton) {
+        
+        let salonId = UserDefaults.standard.integer(forKey: "salonId")
+
+        guard let firstName = firstNameTextField.text,
+            let lastName = lastNameTextField.text,
+            let barberRole = roleTextField.text else { return }
+        
+        presenter.addBarber(salonId: salonId,
+                            firstName: firstName,
+                            lastName: lastName,
+                            barberRole: barberRole)
+    }
     
+    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
 }

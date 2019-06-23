@@ -22,7 +22,8 @@ class ServicePresenter {
     }
     
     func viewDidLoad() {
-        getAllServices(salonId: 202)
+        let salonId = UserDefaults.standard.integer(forKey: "salonId")
+        getAllServices(salonId: salonId)
     }
     
     func addService(salonId: Int, service: Service) {

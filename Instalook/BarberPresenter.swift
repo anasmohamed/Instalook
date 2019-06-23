@@ -22,26 +22,8 @@ class BarberPresenter {
     }
     
     func viewDidLoad() {
-        getAllBarbers(salonId: 202)
-    }
-    
-    func addBarber(salonId: Int, barber: Barber) {
-        
-        if salonId != 0 {
-            
-            view?.showIndicator()
-            barberInteractor.addBarber(salonId: salonId, barber: barber) { [unowned self] error in
-                
-                self.view?.hideIndicator()
-                if let error = error {
-                    self.view?.showError(error: error.localizedDescription)
-                } else {
-                    self.view?.addBarberSuccess()
-                }
-            }
-        } else {
-            view?.showError(error: "Invalid Credentials")
-        }
+        let salonId = UserDefaults.standard.integer(forKey: "salonId")
+        getAllBarbers(salonId: salonId)
     }
     
     func getAllBarbers(salonId: Int) {
@@ -114,7 +96,7 @@ class BarberPresenter {
             let barberRole = barber.role,
             let barberRate = barber.rate else { return }
         
-        cell.displayBarberName(barberName: firstName + lastName)
+        cell.displayBarberName(barberName: firstName + " " + lastName)
         cell.displayBarberRole(barberRole: barberRole)
         cell.displayBarberRating(barberRating: barberRate)
     }

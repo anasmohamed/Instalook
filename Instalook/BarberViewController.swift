@@ -24,19 +24,17 @@ class BarberViewController: UITableViewController {
         super.viewDidLoad()
         setupTableView()
         presenter = BarberPresenter(view: self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         presenter.viewDidLoad()
     }
     
     // MARK: Actions
     @IBAction func addNewBarber(_ sender: UIBarButtonItem) {
-        let salonId = 202
-        let barber = Barber()
-        barber.firstName = "Shaker"
-        barber.lastName = "Othman"
-        barber.role = "Barber"
-        barber.rate = 5
-        barber.isAvailable = 1
-        presenter.addBarber(salonId: salonId, barber: barber)
+        //let salonId = UserDefaults.standard.integer(forKey: "salonId")
+        //presenter.addBarber(salonId: salonId, barber: barber)
     }
     
     // MARK: TableView

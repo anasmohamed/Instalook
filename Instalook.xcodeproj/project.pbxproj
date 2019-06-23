@@ -68,6 +68,15 @@
 		CCDE980922B843760087A8B6 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE980722B843760087A8B6 /* ServiceCell.swift */; };
 		CCDE980A22B843760087A8B6 /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCDE980822B843760087A8B6 /* ServiceCell.xib */; };
 		CCE4FA2422BD22CB0053ACE1 /* BookingViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4FA2322BD22CB0053ACE1 /* BookingViewController+PresenterDelegate.swift */; };
+		CCF8640822C0256200927F5E /* BarberDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8640722C0256200927F5E /* BarberDetailPresenter.swift */; };
+		CCF8640A22C0263D00927F5E /* BarberDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8640922C0263D00927F5E /* BarberDetailView.swift */; };
+		CCF8640C22C0270A00927F5E /* BarberDetailViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8640B22C0270A00927F5E /* BarberDetailViewController+PresenterDelegate.swift */; };
+		CCF8641022C0299600927F5E /* BarberDetailViewController+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8640F22C0299600927F5E /* BarberDetailViewController+TextFieldDelegate.swift */; };
+		CCF8641222C0374900927F5E /* ServiceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8641122C0374900927F5E /* ServiceDetailViewController.swift */; };
+		CCF8641422C038F900927F5E /* ServiceDetailViewController+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8641322C038F900927F5E /* ServiceDetailViewController+TextFieldDelegate.swift */; };
+		CCF8641622C0396600927F5E /* ServiceDetailViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8641522C0396600927F5E /* ServiceDetailViewController+PresenterDelegate.swift */; };
+		CCF8641822C039BE00927F5E /* ServiceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8641722C039BE00927F5E /* ServiceDetailView.swift */; };
+		CCF8641A22C039FE00927F5E /* ServiceDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8641922C039FE00927F5E /* ServiceDetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +168,15 @@
 		CCDE980722B843760087A8B6 /* ServiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
 		CCDE980822B843760087A8B6 /* ServiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceCell.xib; sourceTree = "<group>"; };
 		CCE4FA2322BD22CB0053ACE1 /* BookingViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BookingViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		CCF8640722C0256200927F5E /* BarberDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarberDetailPresenter.swift; sourceTree = "<group>"; };
+		CCF8640922C0263D00927F5E /* BarberDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarberDetailView.swift; sourceTree = "<group>"; };
+		CCF8640B22C0270A00927F5E /* BarberDetailViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BarberDetailViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		CCF8640F22C0299600927F5E /* BarberDetailViewController+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BarberDetailViewController+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		CCF8641122C0374900927F5E /* ServiceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetailViewController.swift; sourceTree = "<group>"; };
+		CCF8641322C038F900927F5E /* ServiceDetailViewController+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceDetailViewController+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		CCF8641522C0396600927F5E /* ServiceDetailViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceDetailViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		CCF8641722C039BE00927F5E /* ServiceDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetailView.swift; sourceTree = "<group>"; };
+		CCF8641922C039FE00927F5E /* ServiceDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetailPresenter.swift; sourceTree = "<group>"; };
 		D51231ADBEA24F073F386B4B /* Pods_InstalookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstalookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6314E582C9C69F992F56D82 /* Pods_Instalook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instalook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -248,6 +266,8 @@
 				CC397E4622B83BF3007308A9 /* BarberViewController.swift */,
 				CC397E4D22B8509F007308A9 /* BarberViewController+PresenterDelegate.swift */,
 				CC963C4222BAEC8500929553 /* BarberDetailViewController.swift */,
+				CCF8640B22C0270A00927F5E /* BarberDetailViewController+PresenterDelegate.swift */,
+				CCF8640F22C0299600927F5E /* BarberDetailViewController+TextFieldDelegate.swift */,
 				CC397E4822B83C82007308A9 /* TableViewCell */,
 				CC397E4122B83909007308A9 /* Presenter */,
 				CC397E3E22B837B4007308A9 /* Interactor */,
@@ -269,6 +289,8 @@
 				CC397E4422B83950007308A9 /* BarberView.swift */,
 				CC397E4F22B855C4007308A9 /* BarberCellView.swift */,
 				CC397E4222B83926007308A9 /* BarberPresenter.swift */,
+				CCF8640922C0263D00927F5E /* BarberDetailView.swift */,
+				CCF8640722C0256200927F5E /* BarberDetailPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -399,6 +421,9 @@
 			children = (
 				CC6D082322B5917300A86C27 /* ServiceViewController.swift */,
 				CCC99A9C22B66FEF007E9136 /* ServiceViewController+PresenterDelegate.swift */,
+				CCF8641122C0374900927F5E /* ServiceDetailViewController.swift */,
+				CCF8641522C0396600927F5E /* ServiceDetailViewController+PresenterDelegate.swift */,
+				CCF8641322C038F900927F5E /* ServiceDetailViewController+TextFieldDelegate.swift */,
 				CCDE980622B843260087A8B6 /* TableViewCell */,
 				CCC99A9622B663F4007E9136 /* Presenter */,
 				CCC99A9722B66400007E9136 /* Interactor */,
@@ -486,6 +511,8 @@
 				CCC99A9822B6653E007E9136 /* ServiceView.swift */,
 				CCD6C6A222B855B9000E2A8B /* ServiceCellView.swift */,
 				CCC99A9A22B66590007E9136 /* ServicePresenter.swift */,
+				CCF8641722C039BE00927F5E /* ServiceDetailView.swift */,
+				CCF8641922C039FE00927F5E /* ServiceDetailPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -763,15 +790,20 @@
 				CC7B00AF22B40BC400EDA3E9 /* RegistationViewController.swift in Sources */,
 				CCC630AA229D576A00E2EB50 /* ProfileViewController+PresenterDelegate.swift in Sources */,
 				CCDC570E22A596A30073F1F7 /* InstalookRouter.swift in Sources */,
+				CCF8641222C0374900927F5E /* ServiceDetailViewController.swift in Sources */,
 				CCDE980922B843760087A8B6 /* ServiceCell.swift in Sources */,
 				CC7B00AD22B40B8C00EDA3E9 /* LoginViewController+TextFieldDelegate.swift in Sources */,
+				CCF8640822C0256200927F5E /* BarberDetailPresenter.swift in Sources */,
 				CC7B00AB22B40B6800EDA3E9 /* LoginViewController+TextField.swift in Sources */,
 				CC397E5022B855C4007308A9 /* BarberCellView.swift in Sources */,
 				CC1BCEA922A5E1EF00E0F187 /* Service.swift in Sources */,
 				CC0162DB229C361900F624AF /* ProfilePresenter .swift in Sources */,
+				CCF8641022C0299600927F5E /* BarberDetailViewController+TextFieldDelegate.swift in Sources */,
 				CC73520022B428F300B22B92 /* Salon.swift in Sources */,
 				CC397E4722B83BF3007308A9 /* BarberViewController.swift in Sources */,
+				CCF8641822C039BE00927F5E /* ServiceDetailView.swift in Sources */,
 				CC7EEEAB22BD04DF008E51BD /* BookingCell.swift in Sources */,
+				CCF8640C22C0270A00927F5E /* BarberDetailViewController+PresenterDelegate.swift in Sources */,
 				CC7B00A122B40AAE00EDA3E9 /* LoginPresenter.swift in Sources */,
 				CC397E4522B83950007308A9 /* BarberView.swift in Sources */,
 				CC7B00A522B40AEC00EDA3E9 /* RegistrationPresenter.swift in Sources */,
@@ -781,11 +813,14 @@
 				CCC99A9922B6653E007E9136 /* ServiceView.swift in Sources */,
 				CC7B00A722B40B1A00EDA3E9 /* LoginViewController.swift in Sources */,
 				CC0162D4229C281100F624AF /* ProfileInteractor.swift in Sources */,
+				CCF8640A22C0263D00927F5E /* BarberDetailView.swift in Sources */,
 				CC7B00A922B40B4300EDA3E9 /* LoginViewController+PresenterDelegate.swift in Sources */,
 				CC7EEEAE22BD06D1008E51BD /* BookingViewCell.swift in Sources */,
 				CC7B00B322B40C1000EDA3E9 /* RegistrationViewController+TextFieldDelegate.swift in Sources */,
+				CCF8641622C0396600927F5E /* ServiceDetailViewController+PresenterDelegate.swift in Sources */,
 				CCDC571022A596E10073F1F7 /* NetworkingConstants.swift in Sources */,
 				CC561C42229BDBEC0048EB86 /* Instalook.xcdatamodeld in Sources */,
+				CCF8641A22C039FE00927F5E /* ServiceDetailPresenter.swift in Sources */,
 				CC7B009F22B40A8E00EDA3E9 /* LoginView.swift in Sources */,
 				CC561C3C229BDBEC0048EB86 /* ProfileViewController.swift in Sources */,
 				CC561C3A229BDBEC0048EB86 /* AppDelegate.swift in Sources */,
@@ -795,6 +830,7 @@
 				CC7B009D22B409C700EDA3E9 /* SalonInteractor.swift in Sources */,
 				CCC608DC22B693A40027FD01 /* ProfileView.swift in Sources */,
 				CC397E3C22B82EBD007308A9 /* Barber.swift in Sources */,
+				CCF8641422C038F900927F5E /* ServiceDetailViewController+TextFieldDelegate.swift in Sources */,
 				CC963C4322BAEC8500929553 /* BarberDetailViewController.swift in Sources */,
 				CC397E4022B837E9007308A9 /* BarberInteractor.swift in Sources */,
 				CC0A1B3422A5EC09003E0315 /* ServiceInteractor.swift in Sources */,
