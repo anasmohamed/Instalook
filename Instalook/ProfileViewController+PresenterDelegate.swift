@@ -23,13 +23,23 @@ extension ProfileViewController: ProfileView {
     }
 
     func setSalonEmail(salonEmail: String) {
-    
+
     }
     
     func setSalonType(salonType: String) {
-    
+        salonTypeLabel.text = salonType
     }
 
+    func setSalonRate(salonRate: Double) {
+        salonRatingView.rating = salonRate
+    }
+    
+    func signOutSuccess() {
+        let storyboard = UIStoryboard(name: "Authentication", bundle: Bundle.main)
+        let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+        present(loginViewController, animated: true, completion: nil)
+    }
+    
     func showError(error: String) {
         let alertController = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
         

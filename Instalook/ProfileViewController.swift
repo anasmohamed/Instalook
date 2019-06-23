@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Cosmos
 
 class ProfileViewController: UIViewController {
     
     // MARK: Outlets
-    @IBOutlet weak var salonNameLabel: UILabel!
+    @IBOutlet var salonNameLabel: UILabel!
+    @IBOutlet var salonTypeLabel: UILabel!
+    @IBOutlet var salonRatingView: CosmosView!
     @IBOutlet weak var salonProfileImageView: UIImageView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     private var presenter: ProfilePresenter!
@@ -20,8 +23,11 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = ProfilePresenter(view: self)
-        presenter.getSalonById(salonId: 172)
-        
-        Utils.roundImage(imageView: salonProfileImageView)
+        presenter.getSalonById(salonId: 202)
+    }
+    
+    // MARK: Actions
+    @IBAction func signOut(_ sender: UIBarButtonItem) {
+        presenter.signOut()
     }
 }

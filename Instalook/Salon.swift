@@ -17,6 +17,7 @@ class Salon: Mappable {
     var salonPassword: String?
     var salonLocation: String?
     var salonType: String?
+    var salonRate: Double?
     
     init() {
         
@@ -33,5 +34,6 @@ class Salon: Mappable {
         salonPassword <- map[NetworkingConstants.salonPassword]
         salonLocation <- map[NetworkingConstants.salonLocation]
         salonType <- map[NetworkingConstants.salonType]
+        salonRate <- map[NetworkingConstants.salonRate]
     }
 }

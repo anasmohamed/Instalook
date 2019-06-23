@@ -55,11 +55,12 @@ class BookingPresenter{
         let booking = bookings[index]
         guard let userName = booking.userName,
             let barberName = booking.barberName
-        ,
-        let bookTime = booking.bookingTime
+            ,
+            let bookTime = booking.bookingTime
             else { return }
+        
         cell.displayUserName(userName: userName)
         cell.displayBaberName(barberName: barberName)
-       cell.displayBookTimeName(bookTime:bookTime)
-        
-    }}
+        cell.displayBookTimeName(bookTime:bookTime)
+    }
+}

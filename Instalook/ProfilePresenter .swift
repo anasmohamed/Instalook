@@ -33,12 +33,24 @@ class ProfilePresenter {
                     guard let salon = salon else { return }
                     self.salon = salon
                 
-                    guard let salonName = salon.salonName else { return }
+                    guard let salonName = salon.salonName,
+                        let salonType = salon.salonType,
+                        let salonRate = salon.salonRate else { return }
+                    
                     self.view?.setSalonName(salonName: salonName)
+                    self.view?.setSalonType(salonType: salonType)
+                    self.view?.setSalonRate(salonRate: salonRate)
                 }
             }
         } else {
             view?.showError(error: "Invalid Credentials")
         }
+    }
+    
+    func signOut() {
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(0, forKey: "salonId")
+        
+        self.view?.signOutSuccess()
     }
 }

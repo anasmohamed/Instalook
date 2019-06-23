@@ -14,5 +14,7 @@ protocol ProfileView: class {
     func setSalonName(salonName: String)
     func setSalonEmail(salonEmail: String)
     func setSalonType(salonType: String)
+    func setSalonRate(salonRate: Double)
+    func signOutSuccess()
     func showError(error: String)
 }

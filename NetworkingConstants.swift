@@ -48,6 +48,7 @@ struct NetworkingConstants {
     static let salonPassword = "salonPassword"
     static let salonLocation = "salonLocation"
     static let salonType = "salonType"
+    static let salonRate = "salonRate"
     
     // Barber Requests
     static let addBarber = "add"

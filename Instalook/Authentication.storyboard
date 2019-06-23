@@ -177,7 +177,7 @@
         <!--Login View Controller-->
         <scene sceneID="CEX-Vd-3KE">
             <objects>
-                <viewController id="Iae-4i-fcE" customClass="LoginViewController" customModule="Instalook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Iae-4i-fcE" customClass="LoginViewController" customModule="Instalook" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fkp-rj-Zse"/>
                         <viewControllerLayoutGuide type="bottom" id="KqG-2s-afq"/>
