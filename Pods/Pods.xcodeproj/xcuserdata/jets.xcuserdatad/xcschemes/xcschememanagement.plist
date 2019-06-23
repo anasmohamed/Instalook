@@ -23,8 +23,6 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
 		<key>ObjectMapper.xcscheme</key>
 		<dict>
@@ -35,24 +33,23 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>Pods-InstalookTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-InstalookUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -65,11 +62,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>08056F766E155171B1E351F8F4003144</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>0882708950626A3ECBCB6A065347330B</key>
 		<dict>
 			<key>primary</key>
@@ -85,11 +77,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>66045386F567611663BE7DB01548764C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>743E4A349913BA26BF7AEE81D0D0DC34</key>
 		<dict>
 			<key>primary</key>
@@ -100,7 +87,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>87E27C18CD9934AE3395C2EC3281E200</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8C510545768DC62F0D5562EA06997E95</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>93CD8EB336A382A7B9FA4380EC07963A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>947CEB966FBB536760B6A6358EAB75C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

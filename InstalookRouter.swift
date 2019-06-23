@@ -55,9 +55,9 @@ enum InstalookRouter: URLRequestConvertible {
     var httpMethod: HTTPMethod {
         
         switch self {
-        case .login, .register, .getSalonById, .addBarber, .getAllBarbers, .addService, .getAllServices, .getBookings:
+        case .login, .register, .getSalonById, .addBarber, .getAllBarbers, .addService, .getBookings:
             return .post
-        case .search:
+        case .search, .getAllServices:
             return .get
         }
     }
