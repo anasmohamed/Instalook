@@ -34,6 +34,9 @@ class LoginPresenter {
                     guard let salon = salon else { return }
                     self.salon = salon
                     self.view?.loginSuccess()
+                    
+                    guard let salonId = salon.salonId else { return }
+                    self.saveSalonIdIntoUserDefaults(salonId: salonId)
                 }
             }
         } else {
@@ -47,5 +50,10 @@ class LoginPresenter {
     
     private func isValidPassword(password: String) -> Bool {
         return !(password.isEmpty)
+    }
+    
+    private func saveSalonIdIntoUserDefaults(salonId: Int) {
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(salonId, forKey: "salonId")
     }
 }

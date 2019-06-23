@@ -17,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let salonId = UserDefaults.standard.integer(forKey: "salonId")
+        
+        if salonId != 0 {
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let tabBarController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+            
+            window!.rootViewController = tabBarController
+        }
+        
         return true
     }
 

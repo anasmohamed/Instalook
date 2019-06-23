@@ -106,6 +106,16 @@
                                     <action selector="register:" destination="O2f-ni-AzW" eventType="touchUpInside" id="rVI-sg-p24"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdI-nU-31l">
+                                <rect key="frame" x="79" y="613" width="217" height="30"/>
+                                <state key="normal" title="Already have an account? Login">
+                                    <color key="titleColor" white="1" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="O2f-ni-AzW" eventType="touchUpInside" id="s0v-hI-PiX"/>
+                                    <action selector="register:" destination="Iae-4i-fcE" eventType="touchUpInside" id="pUi-Kr-qHp"/>
+                                </connections>
+                            </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="HLW-Fd-IvU">
                                 <rect key="frame" x="178" y="324" width="20" height="20"/>
                             </activityIndicatorView>
@@ -114,6 +124,7 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ttS-XP-9RR" firstAttribute="top" secondItem="KUS-8H-QU6" secondAttribute="bottom" constant="8" id="0Lx-vY-VyR"/>
+                            <constraint firstItem="1pa-gU-lNh" firstAttribute="top" secondItem="sdI-nU-31l" secondAttribute="bottom" constant="24" id="19k-5I-rI2"/>
                             <constraint firstItem="ttS-XP-9RR" firstAttribute="trailing" secondItem="KUS-8H-QU6" secondAttribute="trailing" id="2EV-8v-6qt"/>
                             <constraint firstItem="0xg-jS-voA" firstAttribute="top" secondItem="oTn-WF-znS" secondAttribute="bottom" constant="32" id="7C3-9G-W7C"/>
                             <constraint firstItem="O2d-QC-46L" firstAttribute="top" secondItem="gqK-K5-hzl" secondAttribute="bottom" constant="8" id="7lY-Xg-ChM"/>
@@ -125,6 +136,7 @@
                             <constraint firstItem="2kb-xg-2y5" firstAttribute="leading" secondItem="ttS-XP-9RR" secondAttribute="leading" id="P6o-LC-U7T"/>
                             <constraint firstItem="KUS-8H-QU6" firstAttribute="top" secondItem="O2d-QC-46L" secondAttribute="bottom" constant="8" id="U6I-kI-pl8"/>
                             <constraint firstItem="2kb-xg-2y5" firstAttribute="trailing" secondItem="ttS-XP-9RR" secondAttribute="trailing" id="Xih-Ks-kat"/>
+                            <constraint firstItem="sdI-nU-31l" firstAttribute="centerX" secondItem="hhe-0f-uci" secondAttribute="centerX" id="cDu-FZ-yh6"/>
                             <constraint firstItem="gqK-K5-hzl" firstAttribute="leading" secondItem="hhe-0f-uci" secondAttribute="leadingMargin" constant="16" id="ewF-dm-WLU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gqK-K5-hzl" secondAttribute="trailing" constant="16" id="hTl-1S-KV3"/>
                             <constraint firstItem="KUS-8H-QU6" firstAttribute="leading" secondItem="O2d-QC-46L" secondAttribute="leading" id="jYH-tG-3W2"/>
@@ -142,6 +154,7 @@
                     <connections>
                         <outlet property="confirmPasswordTextField" destination="ttS-XP-9RR" id="dd5-Mc-dqz"/>
                         <outlet property="emailTextField" destination="O2d-QC-46L" id="io2-4u-4SR"/>
+                        <outlet property="loginButton" destination="sdI-nU-31l" id="PPF-kh-lQ1"/>
                         <outlet property="nameTextField" destination="gqK-K5-hzl" id="cDa-KN-fq1"/>
                         <outlet property="passwordTextField" destination="KUS-8H-QU6" id="mTj-ZO-Knm"/>
                         <outlet property="spinner" destination="HLW-Fd-IvU" id="SJz-Nc-H4z"/>
