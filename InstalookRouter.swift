@@ -59,9 +59,9 @@ enum InstalookRouter: URLRequestConvertible {
     var httpMethod: HTTPMethod {
         
         switch self {
-        case .login, .register, .getSalonById, .addBarber, .getAllBarbers, .addService, .getBookings:
+        case .login, .register, .getSalonById, .addBarber, .getAllBarbers, .addService, .getAllServices :
             return .post
-        case .search, .getAllServices:
+        case .search, .getBookings:
             return .get
         case .deleteBarber, .deleteService:
             return .delete
@@ -156,10 +156,10 @@ enum InstalookRouter: URLRequestConvertible {
         var urlRequest = URLRequest(url: baseURL.appendingPathComponent(path))
         urlRequest.httpMethod = httpMethod.rawValue
         urlRequest.allHTTPHeaderFields = httpHeaders
-        
         switch self {
         case .login, .getSalonById, .search, .getAllBarbers, .deleteBarber, .getAllServices, .deleteService, .getBookings:
             return try URLEncoding.methodDependent.encode(urlRequest, with: params)
+            
         case .register, .addBarber, .addService:
             return try JSONEncoding.default.encode(urlRequest, with: body)
         }

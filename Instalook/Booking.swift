@@ -24,9 +24,9 @@ class Booking: Mappable {
     }
     
     func mapping(map: Map) {
-        userName <- map[NetworkingConstants.serviceId]
-        bookingTime <- map[NetworkingConstants.serviceName]
-        barberName <- map[NetworkingConstants.serviceType]
+        userName <- map[NetworkingConstants.bookingUserName]
+        bookingTime <- map[NetworkingConstants.bookingTime]
+        barberName <- map[NetworkingConstants.bookingBarberName]
     }
     
 }

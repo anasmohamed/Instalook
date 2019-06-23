@@ -9,4 +9,9 @@
 import Foundation
 protocol BookingCellView: class {
     func displayUserName(userName: String)
+    
+    func displayBaberName(barberName: String)
+    
+    func displayBookTimeName(bookTime: Double)
+    
 }
