@@ -10,4 +10,6 @@ import Foundation
 
 protocol ServiceCellView: class {
     func displayServiceName(serviceName: String)
+    func displayServiceType(serviceType: String)
+    func displayServicePrice(servicePrice: Double)
 }

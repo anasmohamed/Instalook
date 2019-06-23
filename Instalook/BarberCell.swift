@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Cosmos
 
 class BarberCell: UITableViewCell, BarberCellView {
 
     @IBOutlet var barberNameLabel: UILabel!
-    
+    @IBOutlet var barberRoleLabel: UILabel!
+    @IBOutlet var barberRatingView: CosmosView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
@@ -21,4 +24,11 @@ class BarberCell: UITableViewCell, BarberCellView {
         barberNameLabel.text = barberName
     }
     
+    func displayBarberRole(barberRole: String) {
+        barberRoleLabel.text = barberRole
+    }
+    
+    func displayBarberRating(barberRating: Double) {
+        barberRatingView.rating = barberRating
+    }
 }

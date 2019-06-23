@@ -72,8 +72,13 @@ class BarberPresenter {
     func configure(cell: BarberCellView, for index: Int) {
         let barber = barbers[index]
         guard let firstName = barber.firstName,
-            let lastName = barber.lastName else { return }
+            let lastName = barber.lastName,
+            let barberRole = barber.role,
+            let barberRate = barber.rate else { return }
+        
         cell.displayBarberName(barberName: firstName + lastName)
+        cell.displayBarberRole(barberRole: barberRole)
+        cell.displayBarberRating(barberRating: barberRate)
     }
     
 }

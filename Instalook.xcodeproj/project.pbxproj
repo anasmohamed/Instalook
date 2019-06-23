@@ -245,7 +245,6 @@
 		CC397E3D22B83781007308A9 /* Barbers */ = {
 			isa = PBXGroup;
 			children = (
-				CC7EEE9D22BCF7D3008E51BD /* Bookings */,
 				CC397E4622B83BF3007308A9 /* BarberViewController.swift */,
 				CC397E4D22B8509F007308A9 /* BarberViewController+PresenterDelegate.swift */,
 				CC963C4222BAEC8500929553 /* BarberDetailViewController.swift */,
@@ -377,6 +376,7 @@
 			children = (
 				CC7B009922B4097700EDA3E9 /* Authentication */,
 				CC397E3D22B83781007308A9 /* Barbers */,
+				CC7EEE9D22BCF7D3008E51BD /* Bookings */,
 				CC7AEDFE22B54BCC00FF9593 /* Services */,
 				CC561C6F229BDD040048EB86 /* Profile */,
 			);
@@ -678,6 +678,7 @@
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -688,6 +689,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

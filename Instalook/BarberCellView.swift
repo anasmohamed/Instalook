@@ -10,4 +10,6 @@ import Foundation
 
 protocol BarberCellView: class {
     func displayBarberName(barberName: String)
+    func displayBarberRole(barberRole: String)
+    func displayBarberRating(barberRating: Double)
 }

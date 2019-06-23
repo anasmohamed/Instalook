@@ -6,30 +6,74 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BarberCell" customModule="Instalook" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BarberCell" id="KGk-i7-Jjw" customClass="BarberCell" customModule="Instalook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="111.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbx-lL-cSp">
-                        <rect key="frame" x="108" y="8" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barber" translatesAutoresizingMaskIntoConstraints="NO" id="R85-6j-VHQ">
+                        <rect key="frame" x="16" y="16" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="X9w-T3-wPd"/>
+                            <constraint firstAttribute="width" constant="80" id="qet-KY-bFM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barber Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbx-lL-cSp">
+                        <rect key="frame" x="104" y="16" width="200" height="21"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJl-OY-17P" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="104" y="71" width="120" height="20"/>
+                        <color key="backgroundColor" red="0.1960784314" green="0.21176470589999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barber Role" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ub6-K9-I2M">
+                        <rect key="frame" x="104" y="45" width="200" height="18"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="0.1960784314" green="0.21176470589999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="vbx-lL-cSp" firstAttribute="leading" secondItem="R85-6j-VHQ" secondAttribute="trailing" constant="8" id="3F7-fq-YHe"/>
+                    <constraint firstItem="uJl-OY-17P" firstAttribute="top" secondItem="Ub6-K9-I2M" secondAttribute="bottom" constant="8" id="Bq9-gN-2tB"/>
+                    <constraint firstItem="R85-6j-VHQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="EOe-NK-DL6"/>
+                    <constraint firstItem="Ub6-K9-I2M" firstAttribute="top" secondItem="vbx-lL-cSp" secondAttribute="bottom" constant="8" id="QHO-m5-kUX"/>
+                    <constraint firstItem="R85-6j-VHQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="fXc-bM-G3j"/>
+                    <constraint firstItem="vbx-lL-cSp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="kSN-Wn-CbX"/>
+                    <constraint firstItem="Ub6-K9-I2M" firstAttribute="trailing" secondItem="vbx-lL-cSp" secondAttribute="trailing" id="mKZ-G2-lG4"/>
+                    <constraint firstItem="Ub6-K9-I2M" firstAttribute="leading" secondItem="vbx-lL-cSp" secondAttribute="leading" id="pKt-Bf-t4H"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vbx-lL-cSp" secondAttribute="trailing" constant="8" id="rab-Pd-7Qs"/>
+                    <constraint firstItem="uJl-OY-17P" firstAttribute="leading" secondItem="Ub6-K9-I2M" secondAttribute="leading" id="yyE-zq-Dbh"/>
+                </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="barberNameLabel" destination="vbx-lL-cSp" id="KpJ-s6-0W2"/>
+                <outlet property="barberRatingView" destination="uJl-OY-17P" id="Hax-L7-juf"/>
+                <outlet property="barberRoleLabel" destination="Ub6-K9-I2M" id="TMM-dz-ikK"/>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Barber" width="170" height="170"/>
+    </resources>
 </document>

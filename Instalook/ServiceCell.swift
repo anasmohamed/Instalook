@@ -11,7 +11,9 @@ import UIKit
 class ServiceCell: UITableViewCell, ServiceCellView {
     
     @IBOutlet var serviceNameLabel: UILabel!
-    
+    @IBOutlet var serviceTypeLabel: UILabel!
+    @IBOutlet var servicePriceLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
@@ -21,4 +23,11 @@ class ServiceCell: UITableViewCell, ServiceCellView {
         serviceNameLabel.text = serviceName
     }
     
+    func displayServiceType(serviceType: String) {
+        serviceTypeLabel.text = serviceType
+    }
+    
+    func displayServicePrice(servicePrice: Double) {
+        servicePriceLabel.text = "$ \(servicePrice)"
+    }
 }

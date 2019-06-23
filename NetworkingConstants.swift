@@ -63,7 +63,7 @@ struct NetworkingConstants {
     
     // Salon Service Requests
     static let addService = "add"
-    static let getAllServices = "getAllServices"
+    static let getAllServices = "all"
     
     // Salon Service Query Parameters
     static let serviceId = "serviceId"

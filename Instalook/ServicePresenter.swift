@@ -22,7 +22,7 @@ class ServicePresenter {
     }
     
     func viewDidLoad() {
-        getAllServices(salonId: 172)
+        getAllServices(salonId: 202)
     }
     
     func addService(salonId: Int, service: Service) {
@@ -71,9 +71,13 @@ class ServicePresenter {
     
     func configure(cell: ServiceCellView, for index: Int) {
         let service = services[index]
-        guard let serviceName = service.serviceName else { return }
+        guard let serviceName = service.serviceName,
+            let serviceType = service.serviceType,
+            let servicePrice = service.servicePrice else { return }
         
         cell.displayServiceName(serviceName: serviceName)
+        cell.displayServiceType(serviceType: serviceType)
+        cell.displayServicePrice(servicePrice: servicePrice)
     }
     
 }
