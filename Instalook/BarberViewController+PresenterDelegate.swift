@@ -25,6 +25,11 @@ extension BarberViewController: BarberView {
         tableView.reloadData()
     }
     
+    func deleteBarberSuccess(indexPath: IndexPath) {
+        // Also remove that row from the table view with an animation
+        tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
+    
     func showError(error: String) {
         let alertController = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
         

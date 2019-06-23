@@ -9,14 +9,14 @@
 import Foundation
 import ObjectMapper
 
-class Service: Mappable {
+class Service: NSObject, Mappable {
     
     var serviceId: Int?
     var serviceName: String?
     var serviceType: String?
     var servicePrice: Double?
     
-    init() {
+    override init() {
         
     }
     

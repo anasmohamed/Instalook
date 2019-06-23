@@ -42,4 +42,19 @@ class ServiceInteractor {
             }
         }
     }
+    
+    func deleteServiceById(serviceId: Int,
+                           completionHandler: @escaping (Error?) -> Void) {
+        
+        Alamofire.request(InstalookRouter.deleteService(serviceId: serviceId)).responseJSON {
+            (response: DataResponse<Any>) in
+            let result = response.result
+            switch result {
+            case .success:
+                completionHandler(nil)
+            case .failure(let error):
+                completionHandler(error)
+            }
+        }
+    }
 }

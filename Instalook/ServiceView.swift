@@ -13,5 +13,6 @@ protocol ServiceView: class {
     func hideIndicator()
     func addServiceSuccess()
     func getAllServicesSuccess()
+    func deleteServiceSuccess(indexPath: IndexPath)
     func showError(error: String)
 }

@@ -14,11 +14,12 @@
         <scene sceneID="Iey-Q2-KDP">
             <objects>
                 <navigationController id="ffm-HU-06J" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Barbers" id="dKo-ps-Gax"/>
+                    <tabBarItem key="tabBarItem" title="Barbers" image="Barber-Icon" id="dKo-ps-Gax"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="GhY-qA-IUR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="1AC-we-JQT" kind="relationship" relationship="rootViewController" id="5nJ-jU-X4T"/>
@@ -62,7 +63,6 @@
                     <tabBarItem key="tabBarItem" title="Barbers" id="Oh9-5s-pHt"/>
                     <navigationItem key="navigationItem" title="Barbers" id="taf-sj-lGU">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gSC-VH-fXm">
-                            <color key="tintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="addNewBarber:" destination="1AC-we-JQT" id="AgB-hp-9Mb"/>
                                 <segue destination="153-vJ-xZM" kind="show" identifier="addBarber" id="lpg-j8-vfu"/>
@@ -81,11 +81,12 @@
         <scene sceneID="6uf-rP-RmG">
             <objects>
                 <navigationController id="DG9-Ak-uR7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Services" id="fWe-jc-aXN"/>
+                    <tabBarItem key="tabBarItem" title="Services" image="Service" id="fWe-jc-aXN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="uiS-sX-7jC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="dgP-pL-MUr" kind="relationship" relationship="rootViewController" id="FEk-OJ-Q4J"/>
@@ -99,10 +100,11 @@
         <scene sceneID="nry-zO-IOM">
             <objects>
                 <navigationController id="cCt-gg-YRt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="N0G-E4-Rzr"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="snU-6t-4xj">
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="N0G-E4-Rzr"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="snU-6t-4xj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
@@ -181,7 +183,6 @@
                     <tabBarItem key="tabBarItem" title="Services" id="Otq-cf-dmh"/>
                     <navigationItem key="navigationItem" title="Services" id="YN1-gd-NN9">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Fji-tA-k2T">
-                            <color key="tintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="addNewService:" destination="dgP-pL-MUr" id="qHh-Qn-BOv"/>
                             </connections>
@@ -256,7 +257,6 @@
                     <tabBarItem key="tabBarItem" title="Profile" id="LQH-s8-Hse"/>
                     <navigationItem key="navigationItem" title="Instalook" id="Aau-at-vTD">
                         <barButtonItem key="rightBarButtonItem" title="Sign Out" style="plain" id="W3E-gf-9PT">
-                            <color key="tintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="signOut:" destination="nBa-4w-QLJ" id="Baz-H7-2bM"/>
                             </connections>
@@ -277,14 +277,14 @@
         <!--Tab Bar Controller-->
         <scene sceneID="BwF-p2-DSc">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="2et-Cu-LCz" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2et-Cu-LCz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="gdW-Wj-Sk5">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="ffm-HU-06J" kind="relationship" relationship="viewControllers" id="GMF-Fs-ulh"/>
@@ -375,7 +375,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1960784314" green="0.21176470589999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="dpa-9h-d2F" firstAttribute="top" secondItem="Rn5-pe-hij" secondAttribute="bottom" constant="8" id="5rI-Fq-9zB"/>
@@ -402,6 +402,9 @@
     </scenes>
     <resources>
         <image name="Barber" width="170" height="170"/>
+        <image name="Barber-Icon" width="24" height="36"/>
+        <image name="Profile" width="36" height="36"/>
+        <image name="Service" width="36" height="36"/>
         <image name="heart-5" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>

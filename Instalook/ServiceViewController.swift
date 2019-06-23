@@ -51,4 +51,32 @@ class ServiceViewController: UITableViewController {
         presenter.configure(cell: cell, for: indexPath.row)
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView,
+                            commit editingStyle: UITableViewCellEditingStyle,
+                            forRowAt indexPath: IndexPath) {
+        // If the table view is asking to commit a delete command...
+        if editingStyle == .delete {
+            let serviceName = presenter.getServiceName(index: indexPath.row)
+            let title = "Delete \(serviceName)"
+            let message = "Are you sure you want to delete this service?"
+            
+            let ac = UIAlertController(title: title,
+                                       message: message,
+                                       preferredStyle: .actionSheet)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            ac.addAction(cancelAction)
+            
+            let deleteAction = UIAlertAction(title: "Delete", style: .destructive,
+                                             handler: { [unowned self] (action) -> Void in
+                                                // Remove the service from the services array
+                                                self.presenter.deleteService(indexPath: indexPath)
+            })
+            ac.addAction(deleteAction)
+            
+            // Present the alert controller
+            present(ac, animated: true, completion: nil)
+        }
+    }
 }

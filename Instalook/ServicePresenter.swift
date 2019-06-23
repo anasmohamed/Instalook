@@ -65,8 +65,45 @@ class ServicePresenter {
         }
     }
     
+    func deleteService(indexPath: IndexPath) {
+        
+        let row = indexPath.row
+        
+        if let serviceId = services[row].serviceId {
+
+            view?.showIndicator()
+            serviceInteractor.deleteServiceById(serviceId: serviceId) { [unowned self] (error) in
+                
+                self.view?.hideIndicator()
+                if let error = error {
+                    self.view?.showError(error: error.localizedDescription)
+                } else {
+                    let service = self.services[row]
+                    self.removeService(service: service)
+                    self.view?.deleteServiceSuccess(indexPath: indexPath)
+                }
+            }
+        } else {
+            view?.showError(error: "Invalid Credentials")
+        }
+    }
+    
     func getServicesCount() -> Int {
         return services.count
+    }
+    
+    func getServiceName(index: Int) -> String {
+        if let serviceName = services[index].serviceName {
+            return serviceName
+        } else {
+            return ""
+        }
+    }
+    
+    func removeService(service: Service) {
+        if let index = services.index(of: service) {
+            services.remove(at: index)
+        }
     }
     
     func configure(cell: ServiceCellView, for index: Int) {
@@ -79,5 +116,4 @@ class ServicePresenter {
         cell.displayServiceType(serviceType: serviceType)
         cell.displayServicePrice(servicePrice: servicePrice)
     }
-    
 }
