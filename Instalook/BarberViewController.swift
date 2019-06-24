@@ -32,10 +32,10 @@ class BarberViewController: UITableViewController {
     }
     
     // MARK: Actions
-    @IBAction func addNewBarber(_ sender: UIBarButtonItem) {
+    /*@IBAction func addNewBarber(_ sender: UIBarButtonItem) {
         //let salonId = UserDefaults.standard.integer(forKey: "salonId")
         //presenter.addBarber(salonId: salonId, barber: barber)
-    }
+    }*/
     
     // MARK: TableView
     func setupTableView() {

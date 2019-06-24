@@ -20,8 +20,8 @@ extension LoginViewController: LoginView {
     
     func loginSuccess() {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let tabBarController = storyboard.instantiateInitialViewController()
-        self.present(tabBarController!, animated: true, completion: nil)
+        let tabBarController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+        self.present(tabBarController, animated: true, completion: nil)
     }
     
     func showError(error: String) {

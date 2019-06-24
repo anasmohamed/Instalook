@@ -61,7 +61,6 @@
                     <navigationItem key="navigationItem" title="Barbers" id="taf-sj-lGU">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gSC-VH-fXm">
                             <connections>
-                                <action selector="addNewBarber:" destination="1AC-we-JQT" id="AgB-hp-9Mb"/>
                                 <segue destination="oif-j2-zYX" kind="show" id="T4S-Id-hMN"/>
                             </connections>
                         </barButtonItem>
@@ -181,7 +180,6 @@
                     <navigationItem key="navigationItem" title="Services" id="YN1-gd-NN9">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Fji-tA-k2T">
                             <connections>
-                                <action selector="addNewService:" destination="dgP-pL-MUr" id="qHh-Qn-BOv"/>
                                 <segue destination="Ug4-pu-NMN" kind="show" id="H2K-E0-Gmd"/>
                             </connections>
                         </barButtonItem>
@@ -276,7 +274,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="BwF-p2-DSc">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2et-Cu-LCz" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="2et-Cu-LCz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="gdW-Wj-Sk5">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -316,9 +314,12 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ow-qT-Jjn">
-                                <rect key="frame" x="36" y="278" width="342" height="30"/>
+                                <rect key="frame" x="36" y="278" width="342" height="35"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Az1-dE-ANA"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
@@ -332,9 +333,12 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mto-Ow-ROQ">
-                                <rect key="frame" x="36" y="316" width="342" height="30"/>
+                                <rect key="frame" x="36" y="321" width="342" height="35"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="aOU-yw-IEk"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -348,9 +352,12 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Role" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jx4-0X-zT2">
-                                <rect key="frame" x="36" y="354" width="342" height="30"/>
+                                <rect key="frame" x="36" y="364" width="342" height="35"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="tTY-cW-XWy"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
@@ -364,7 +371,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBk-du-j9Z">
-                                <rect key="frame" x="36" y="408" width="342" height="50"/>
+                                <rect key="frame" x="36" y="423" width="342" height="50"/>
                                 <color key="backgroundColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="NP8-XG-U0P"/>
@@ -434,7 +441,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Service-Add" translatesAutoresizingMaskIntoConstraints="NO" id="woN-oT-oki">
-                                <rect key="frame" x="157" y="52" width="100" height="100"/>
+                                <rect key="frame" x="157" y="96" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="52N-UB-6f5"/>
                                     <constraint firstAttribute="height" constant="100" id="77D-zO-PVj"/>
@@ -442,7 +449,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Service Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aj2-lC-BS6">
-                                <rect key="frame" x="36" y="184" width="342" height="35"/>
+                                <rect key="frame" x="36" y="228" width="342" height="35"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -461,7 +468,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Service Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7XK-0p-5Z9">
-                                <rect key="frame" x="36" y="227" width="342" height="35"/>
+                                <rect key="frame" x="36" y="271" width="342" height="35"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -480,7 +487,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Service Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sgW-lN-tK6">
-                                <rect key="frame" x="36" y="270" width="342" height="35"/>
+                                <rect key="frame" x="36" y="314" width="342" height="35"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -499,7 +506,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jk-2W-c1F">
-                                <rect key="frame" x="36" y="329" width="342" height="50"/>
+                                <rect key="frame" x="36" y="373" width="342" height="50"/>
                                 <color key="backgroundColor" red="0.54117647059999996" green="0.70588235290000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Xda-Q4-2Ag"/>

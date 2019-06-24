@@ -24,17 +24,11 @@ class ServiceViewController: UITableViewController {
         super.viewDidLoad()
         setupTableView()
         presenter = ServicePresenter(view: self)
-        presenter.viewDidLoad()
     }
     
-    // MARK: Actions
-    @IBAction func addNewService(_ sender: UIBarButtonItem) {
-        let salonId = 182
-        let service = Service()
-        service.serviceName = "iOS"
-        service.serviceType = "iOS"
-        service.servicePrice = 100
-        presenter.addService(salonId: salonId, service: service)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.viewDidLoad()
     }
     
     // MARK: TableView
