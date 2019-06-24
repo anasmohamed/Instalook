@@ -31,7 +31,11 @@ class LoginPresenter {
                 if let error = error {
                     self.view?.showError(error: error.localizedDescription)
                 } else {
-                    guard let salon = salon else { return }
+                    guard let salon = salon else {
+                        self.view?.showError(error: "Wrong username or password.")
+                        return
+                    }
+                    
                     self.salon = salon
                     self.view?.loginSuccess()
                     
